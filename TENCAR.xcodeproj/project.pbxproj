@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77BB57371B53F87C0060E181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57361B53F87C0060E181 /* main.m */; };
+		77BB573A1B53F87C0060E181 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57391B53F87C0060E181 /* AppDelegate.m */; };
+		77BB573D1B53F87C0060E181 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB573C1B53F87C0060E181 /* ViewController.m */; };
+		77BB57401B53F87C0060E181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77BB573E1B53F87C0060E181 /* Main.storyboard */; };
+		77BB57431B53F87C0060E181 /* TENCAR.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57411B53F87C0060E181 /* TENCAR.xcdatamodeld */; };
+		77BB57451B53F87C0060E181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77BB57441B53F87C0060E181 /* Assets.xcassets */; };
+		77BB57481B53F87C0060E181 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77BB57461B53F87C0060E181 /* LaunchScreen.storyboard */; };
+		77BB57531B53F87D0060E181 /* TENCARTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57521B53F87D0060E181 /* TENCARTests.m */; };
+		77BB575E1B53F87D0060E181 /* TENCARUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB575D1B53F87D0060E181 /* TENCARUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77BB574F1B53F87D0060E181 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77BB572A1B53F87C0060E181 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77BB57311B53F87C0060E181;
+			remoteInfo = TENCAR;
+		};
+		77BB575A1B53F87D0060E181 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77BB572A1B53F87C0060E181 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77BB57311B53F87C0060E181;
+			remoteInfo = TENCAR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		77BB57321B53F87C0060E181 /* TENCAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TENCAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77BB57361B53F87C0060E181 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77BB57381B53F87C0060E181 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		77BB57391B53F87C0060E181 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		77BB573B1B53F87C0060E181 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		77BB573C1B53F87C0060E181 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		77BB573F1B53F87C0060E181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77BB57421B53F87C0060E181 /* TENCAR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TENCAR.xcdatamodel; sourceTree = "<group>"; };
+		77BB57441B53F87C0060E181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77BB57471B53F87C0060E181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77BB57491B53F87C0060E181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77BB574E1B53F87D0060E181 /* TENCARTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TENCARTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77BB57521B53F87D0060E181 /* TENCARTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TENCARTests.m; sourceTree = "<group>"; };
+		77BB57541B53F87D0060E181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77BB57591B53F87D0060E181 /* TENCARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TENCARUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77BB575D1B53F87D0060E181 /* TENCARUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TENCARUITests.m; sourceTree = "<group>"; };
+		77BB575F1B53F87D0060E181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77BB572F1B53F87C0060E181 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77BB574B1B53F87D0060E181 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77BB57561B53F87D0060E181 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77BB57291B53F87C0060E181 = {
+			isa = PBXGroup;
+			children = (
+				77BB57341B53F87C0060E181 /* TENCAR */,
+				77BB57511B53F87D0060E181 /* TENCARTests */,
+				77BB575C1B53F87D0060E181 /* TENCARUITests */,
+				77BB57331B53F87C0060E181 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77BB57331B53F87C0060E181 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77BB57321B53F87C0060E181 /* TENCAR.app */,
+				77BB574E1B53F87D0060E181 /* TENCARTests.xctest */,
+				77BB57591B53F87D0060E181 /* TENCARUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77BB57341B53F87C0060E181 /* TENCAR */ = {
+			isa = PBXGroup;
+			children = (
+				77BB57381B53F87C0060E181 /* AppDelegate.h */,
+				77BB57391B53F87C0060E181 /* AppDelegate.m */,
+				77BB573B1B53F87C0060E181 /* ViewController.h */,
+				77BB573C1B53F87C0060E181 /* ViewController.m */,
+				77BB573E1B53F87C0060E181 /* Main.storyboard */,
+				77BB57441B53F87C0060E181 /* Assets.xcassets */,
+				77BB57461B53F87C0060E181 /* LaunchScreen.storyboard */,
+				77BB57491B53F87C0060E181 /* Info.plist */,
+				77BB57411B53F87C0060E181 /* TENCAR.xcdatamodeld */,
+				77BB57351B53F87C0060E181 /* Supporting Files */,
+			);
+			path = TENCAR;
+			sourceTree = "<group>";
+		};
+		77BB57351B53F87C0060E181 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77BB57361B53F87C0060E181 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77BB57511B53F87D0060E181 /* TENCARTests */ = {
+			isa = PBXGroup;
+			children = (
+				77BB57521B53F87D0060E181 /* TENCARTests.m */,
+				77BB57541B53F87D0060E181 /* Info.plist */,
+			);
+			path = TENCARTests;
+			sourceTree = "<group>";
+		};
+		77BB575C1B53F87D0060E181 /* TENCARUITests */ = {
+			isa = PBXGroup;
+			children = (
+				77BB575D1B53F87D0060E181 /* TENCARUITests.m */,
+				77BB575F1B53F87D0060E181 /* Info.plist */,
+			);
+			path = TENCARUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77BB57311B53F87C0060E181 /* TENCAR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77BB57621B53F87D0060E181 /* Build configuration list for PBXNativeTarget "TENCAR" */;
+			buildPhases = (
+				77BB572E1B53F87C0060E181 /* Sources */,
+				77BB572F1B53F87C0060E181 /* Frameworks */,
+				77BB57301B53F87C0060E181 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TENCAR;
+			productName = TENCAR;
+			productReference = 77BB57321B53F87C0060E181 /* TENCAR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77BB574D1B53F87D0060E181 /* TENCARTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77BB57651B53F87D0060E181 /* Build configuration list for PBXNativeTarget "TENCARTests" */;
+			buildPhases = (
+				77BB574A1B53F87D0060E181 /* Sources */,
+				77BB574B1B53F87D0060E181 /* Frameworks */,
+				77BB574C1B53F87D0060E181 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77BB57501B53F87D0060E181 /* PBXTargetDependency */,
+			);
+			name = TENCARTests;
+			productName = TENCARTests;
+			productReference = 77BB574E1B53F87D0060E181 /* TENCARTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77BB57581B53F87D0060E181 /* TENCARUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77BB57681B53F87D0060E181 /* Build configuration list for PBXNativeTarget "TENCARUITests" */;
+			buildPhases = (
+				77BB57551B53F87D0060E181 /* Sources */,
+				77BB57561B53F87D0060E181 /* Frameworks */,
+				77BB57571B53F87D0060E181 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77BB575B1B53F87D0060E181 /* PBXTargetDependency */,
+			);
+			name = TENCARUITests;
+			productName = TENCARUITests;
+			productReference = 77BB57591B53F87D0060E181 /* TENCARUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77BB572A1B53F87C0060E181 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "ilab.pro LLC";
+				TargetAttributes = {
+					77BB57311B53F87C0060E181 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					77BB574D1B53F87D0060E181 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 77BB57311B53F87C0060E181;
+					};
+					77BB57581B53F87D0060E181 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 77BB57311B53F87C0060E181;
+					};
+				};
+			};
+			buildConfigurationList = 77BB572D1B53F87C0060E181 /* Build configuration list for PBXProject "TENCAR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77BB57291B53F87C0060E181;
+			productRefGroup = 77BB57331B53F87C0060E181 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77BB57311B53F87C0060E181 /* TENCAR */,
+				77BB574D1B53F87D0060E181 /* TENCARTests */,
+				77BB57581B53F87D0060E181 /* TENCARUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77BB57301B53F87C0060E181 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77BB57481B53F87C0060E181 /* LaunchScreen.storyboard in Resources */,
+				77BB57451B53F87C0060E181 /* Assets.xcassets in Resources */,
+				77BB57401B53F87C0060E181 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77BB574C1B53F87D0060E181 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77BB57571B53F87D0060E181 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77BB572E1B53F87C0060E181 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77BB57431B53F87C0060E181 /* TENCAR.xcdatamodeld in Sources */,
+				77BB573D1B53F87C0060E181 /* ViewController.m in Sources */,
+				77BB573A1B53F87C0060E181 /* AppDelegate.m in Sources */,
+				77BB57371B53F87C0060E181 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77BB574A1B53F87D0060E181 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77BB57531B53F87D0060E181 /* TENCARTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77BB57551B53F87D0060E181 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77BB575E1B53F87D0060E181 /* TENCARUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77BB57501B53F87D0060E181 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77BB57311B53F87C0060E181 /* TENCAR */;
+			targetProxy = 77BB574F1B53F87D0060E181 /* PBXContainerItemProxy */;
+		};
+		77BB575B1B53F87D0060E181 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77BB57311B53F87C0060E181 /* TENCAR */;
+			targetProxy = 77BB575A1B53F87D0060E181 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		77BB573E1B53F87C0060E181 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77BB573F1B53F87C0060E181 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77BB57461B53F87C0060E181 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77BB57471B53F87C0060E181 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77BB57601B53F87D0060E181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77BB57611B53F87D0060E181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77BB57631B53F87D0060E181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TENCAR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pro.ilab.TENCAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		77BB57641B53F87D0060E181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TENCAR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pro.ilab.TENCAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		77BB57661B53F87D0060E181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TENCARTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pro.ilab.TENCARTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TENCAR.app/TENCAR";
+			};
+			name = Debug;
+		};
+		77BB57671B53F87D0060E181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TENCARTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pro.ilab.TENCARTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TENCAR.app/TENCAR";
+			};
+			name = Release;
+		};
+		77BB57691B53F87D0060E181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TENCARUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pro.ilab.TENCARUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TENCAR;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		77BB576A1B53F87D0060E181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TENCARUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pro.ilab.TENCARUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TENCAR;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77BB572D1B53F87C0060E181 /* Build configuration list for PBXProject "TENCAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77BB57601B53F87D0060E181 /* Debug */,
+				77BB57611B53F87D0060E181 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77BB57621B53F87D0060E181 /* Build configuration list for PBXNativeTarget "TENCAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77BB57631B53F87D0060E181 /* Debug */,
+				77BB57641B53F87D0060E181 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		77BB57651B53F87D0060E181 /* Build configuration list for PBXNativeTarget "TENCARTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77BB57661B53F87D0060E181 /* Debug */,
+				77BB57671B53F87D0060E181 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		77BB57681B53F87D0060E181 /* Build configuration list for PBXNativeTarget "TENCARUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77BB57691B53F87D0060E181 /* Debug */,
+				77BB576A1B53F87D0060E181 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		77BB57411B53F87C0060E181 /* TENCAR.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				77BB57421B53F87C0060E181 /* TENCAR.xcdatamodel */,
+			);
+			currentVersion = 77BB57421B53F87C0060E181 /* TENCAR.xcdatamodel */;
+			path = TENCAR.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 77BB572A1B53F87C0060E181 /* Project object */;
+}

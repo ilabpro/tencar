@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7772007B1B54E55A00A1218A /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7772007A1B54E55A00A1218A /* CloudKit.framework */; };
 		77BB57371B53F87C0060E181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57361B53F87C0060E181 /* main.m */; };
 		77BB573A1B53F87C0060E181 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57391B53F87C0060E181 /* AppDelegate.m */; };
 		77BB573D1B53F87C0060E181 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB573C1B53F87C0060E181 /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		770449E11B54E2B7007C099F /* TENCAR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TENCAR.entitlements; sourceTree = "<group>"; };
+		7772007A1B54E55A00A1218A /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		77BB57321B53F87C0060E181 /* TENCAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TENCAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77BB57361B53F87C0060E181 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77BB57381B53F87C0060E181 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +56,8 @@
 		77BB57591B53F87D0060E181 /* TENCARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TENCARUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77BB575D1B53F87D0060E181 /* TENCARUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TENCARUITests.m; sourceTree = "<group>"; };
 		77BB575F1B53F87D0060E181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77BB576B1B5402A70060E181 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		77BB576C1B5402A70060E181 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7772007B1B54E55A00A1218A /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,7 @@
 		77BB57291B53F87C0060E181 = {
 			isa = PBXGroup;
 			children = (
+				7772007A1B54E55A00A1218A /* CloudKit.framework */,
 				77BB57341B53F87C0060E181 /* TENCAR */,
 				77BB57511B53F87D0060E181 /* TENCARTests */,
 				77BB575C1B53F87D0060E181 /* TENCARUITests */,
@@ -103,6 +110,7 @@
 		77BB57341B53F87C0060E181 /* TENCAR */ = {
 			isa = PBXGroup;
 			children = (
+				770449E11B54E2B7007C099F /* TENCAR.entitlements */,
 				77BB57381B53F87C0060E181 /* AppDelegate.h */,
 				77BB57391B53F87C0060E181 /* AppDelegate.m */,
 				77BB573B1B53F87C0060E181 /* ViewController.h */,
@@ -210,6 +218,12 @@
 				TargetAttributes = {
 					77BB57311B53F87C0060E181 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = FXA6R77S3W;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					77BB574D1B53F87D0060E181 = {
 						CreatedOnToolsVersion = 7.0;
@@ -226,7 +240,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 77BB57291B53F87C0060E181;
@@ -316,6 +329,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				77BB573F1B53F87C0060E181 /* Base */,
+				77BB576B1B5402A70060E181 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -324,6 +338,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				77BB57471B53F87C0060E181 /* Base */,
+				77BB576C1B5402A70060E181 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -417,10 +432,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = TENCAR/TENCAR.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TENCAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pro.ilab.TENCAR;
+				PRODUCT_BUNDLE_IDENTIFIER = pro.ilab.tencar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -428,10 +449,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = TENCAR/TENCAR.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TENCAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pro.ilab.TENCAR;
+				PRODUCT_BUNDLE_IDENTIFIER = pro.ilab.tencar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -502,6 +529,7 @@
 				77BB57641B53F87D0060E181 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77BB57651B53F87D0060E181 /* Build configuration list for PBXNativeTarget "TENCARTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +538,7 @@
 				77BB57671B53F87D0060E181 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77BB57681B53F87D0060E181 /* Build configuration list for PBXNativeTarget "TENCARUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +547,7 @@
 				77BB576A1B53F87D0060E181 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

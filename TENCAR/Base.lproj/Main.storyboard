@@ -4,6 +4,11 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Panton-SemiBold.otf">
+            <string>Panton-SemiBold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -25,12 +30,25 @@
                                     <constraint firstAttribute="width" constant="80" id="Gvg-wP-dSY"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TENCAR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47q-57-ibb">
+                                <rect key="frame" x="225" y="117" width="151" height="33"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="AZ1-uq-tJi"/>
+                                    <constraint firstAttribute="height" constant="33" id="VLN-cm-cEZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Panton-SemiBold" family="Panton" pointSize="40"/>
+                                <color key="textColor" red="0.22745098039215686" green="0.2196078431372549" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.90196078430000004" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="WJe-c6-7O3" firstAttribute="top" secondItem="47q-57-ibb" secondAttribute="bottom" constant="110" id="5A1-DG-OV2"/>
                             <constraint firstItem="WJe-c6-7O3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B0b-c3-Roa"/>
                             <constraint firstItem="WJe-c6-7O3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TRm-FZ-qNe"/>
+                            <constraint firstItem="47q-57-ibb" firstAttribute="centerX" secondItem="WJe-c6-7O3" secondAttribute="centerX" id="v6A-5K-47M"/>
                         </constraints>
                     </view>
                     <connections>
@@ -39,6 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="628" y="334"/>
         </scene>
     </scenes>
 </document>

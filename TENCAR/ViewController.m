@@ -25,6 +25,9 @@
     //[self.view addSubview:imgView];
     self.test.image = [UIImage animatedImageNamed:@"tencar_logo_loader" duration:2.0f];
    
+    
+    
+   
    
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77057A481B5663D200FCE40C /* Panton-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77057A461B5663D200FCE40C /* Panton-SemiBold.otf */; };
+		77057A491B5663D200FCE40C /* Panton.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77057A471B5663D200FCE40C /* Panton.otf */; };
 		7772007B1B54E55A00A1218A /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7772007A1B54E55A00A1218A /* CloudKit.framework */; };
 		77BB57371B53F87C0060E181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57361B53F87C0060E181 /* main.m */; };
 		77BB573A1B53F87C0060E181 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57391B53F87C0060E181 /* AppDelegate.m */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		770449E11B54E2B7007C099F /* TENCAR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TENCAR.entitlements; sourceTree = "<group>"; };
+		77057A461B5663D200FCE40C /* Panton-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Panton-SemiBold.otf"; sourceTree = "<group>"; };
+		77057A471B5663D200FCE40C /* Panton.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panton.otf; sourceTree = "<group>"; };
 		7772007A1B54E55A00A1218A /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		77BB57321B53F87C0060E181 /* TENCAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TENCAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77BB57361B53F87C0060E181 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +90,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77057A451B56639400FCE40C /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				77057A461B5663D200FCE40C /* Panton-SemiBold.otf */,
+				77057A471B5663D200FCE40C /* Panton.otf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		77057A4A1B5669A200FCE40C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				77057A451B56639400FCE40C /* fonts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		77BB57291B53F87C0060E181 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +141,7 @@
 				77BB57461B53F87C0060E181 /* LaunchScreen.storyboard */,
 				77BB57491B53F87C0060E181 /* Info.plist */,
 				77BB57411B53F87C0060E181 /* TENCAR.xcdatamodeld */,
+				77057A4A1B5669A200FCE40C /* Resources */,
 				77BB57351B53F87C0060E181 /* Supporting Files */,
 			);
 			path = TENCAR;
@@ -261,7 +283,9 @@
 			files = (
 				77BB57481B53F87C0060E181 /* LaunchScreen.storyboard in Resources */,
 				77BB57451B53F87C0060E181 /* Assets.xcassets in Resources */,
+				77057A481B5663D200FCE40C /* Panton-SemiBold.otf in Resources */,
 				77BB57401B53F87C0060E181 /* Main.storyboard in Resources */,
+				77057A491B5663D200FCE40C /* Panton.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

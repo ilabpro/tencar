@@ -53,11 +53,93 @@
                     </view>
                     <connections>
                         <outlet property="test" destination="WJe-c6-7O3" id="PGj-td-7Tt"/>
+                        <segue destination="EuW-4v-oLa" kind="showDetail" identifier="goHome" id="dAi-Vt-NZ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="628" y="334"/>
+            <point key="canvasLocation" x="419" y="328"/>
+        </scene>
+        <!--Panels Controller-->
+        <scene sceneID="Rgx-7f-7SZ">
+            <objects>
+                <viewController storyboardIdentifier="RootViewController" id="EuW-4v-oLa" customClass="PanelsController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R2E-Nw-2wA"/>
+                        <viewControllerLayoutGuide type="bottom" id="IzC-4J-L9Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5rP-2t-gfP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XFR-4C-w5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1096" y="328"/>
+        </scene>
+        <!--ViewController-->
+        <scene sceneID="dGt-xn-xdK">
+            <objects>
+                <viewController storyboardIdentifier="leftViewController" id="8yS-cR-Bhh" userLabel="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z6K-Ip-6rw"/>
+                        <viewControllerLayoutGuide type="bottom" id="GjD-1l-Qpf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Xo-Yh-eQa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.2274509804" green="0.21960784310000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wP4-OX-91o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724" y="997"/>
+        </scene>
+        <!--ViewController-->
+        <scene sceneID="EMH-KN-yfD">
+            <objects>
+                <viewController storyboardIdentifier="centerView" id="pl3-fY-ELj" userLabel="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fPs-br-YDa"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Gd-hm-Q3b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a98-pI-A9T">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Panton" id="2zR-e1-Z3e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GgN-Ww-Q1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="997"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XsX-a9-SHR">
+            <objects>
+                <navigationController storyboardIdentifier="centerViewController" id="xEi-yE-a7O" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="dx8-ty-KmW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="tintColor" red="0.2274509804" green="0.21960784310000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.95294117649999999" green="0.90196078430000004" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.2274509804" green="0.21960784310000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pl3-fY-ELj" kind="relationship" relationship="rootViewController" id="Dtl-ik-4Ej"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8X0-J5-hqW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1742" y="328"/>
         </scene>
     </scenes>
 </document>

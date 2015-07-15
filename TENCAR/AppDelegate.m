@@ -18,6 +18,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     //sleep(5);
+   
+    //AppDelegate *AppDelegate = [UIApplication sharedApplication].delegate;
+    [[UINavigationBar appearance] setTitleTextAttributes: @{
+                                                           
+                                                            UITextAttributeFont: [UIFont fontWithName:@"Panton-SemiBold" size:18.0f]
+                                                            }];
     return YES;
 }
 

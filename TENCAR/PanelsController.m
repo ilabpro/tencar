@@ -29,7 +29,12 @@
    [self setCenterPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"centerViewController"]];
   //[self setCenterPanel:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"centerViewController"]]];
     
+    self.leftFixedWidth = 220;
     
     
+}
+-(void)stylePanel:(UIView *)panel
+{
+   //чтобы углы не загруглялись у центральной панели во время открытого меню
 }
 @end

@@ -7,6 +7,7 @@
     <customFonts key="customFonts">
         <mutableArray key="Panton-SemiBold.otf">
             <string>Panton-SemiBold</string>
+            <string>Panton-SemiBold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -80,25 +81,6 @@
             <point key="canvasLocation" x="1096" y="328"/>
         </scene>
         <!--ViewController-->
-        <scene sceneID="dGt-xn-xdK">
-            <objects>
-                <viewController storyboardIdentifier="leftViewController" id="8yS-cR-Bhh" userLabel="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Z6K-Ip-6rw"/>
-                        <viewControllerLayoutGuide type="bottom" id="GjD-1l-Qpf"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6Xo-Yh-eQa">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" red="0.2274509804" green="0.21960784310000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wP4-OX-91o" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="724" y="997"/>
-        </scene>
-        <!--ViewController-->
         <scene sceneID="EMH-KN-yfD">
             <objects>
                 <viewController storyboardIdentifier="centerView" id="pl3-fY-ELj" userLabel="ViewController" sceneMemberID="viewController">
@@ -117,6 +99,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GgN-Ww-Q1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1417" y="997"/>
+        </scene>
+        <!--Leftmenu Table View Controller-->
+        <scene sceneID="xeO-PY-aDt">
+            <objects>
+                <viewController storyboardIdentifier="leftViewController" id="tB8-CD-lv0" customClass="leftmenuTableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h3o-Dq-hBY"/>
+                        <viewControllerLayoutGuide type="bottom" id="srD-TF-Hxl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ky7-nf-UnN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_ava" translatesAutoresizingMaskIntoConstraints="NO" id="vj1-8f-RRc">
+                                <rect key="frame" x="20" y="28" width="40" height="40"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name or login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1Q-mP-TZE">
+                                <rect key="frame" x="68" y="37" width="512" height="24"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Panton-SemiBold" family="Panton" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3Zg-EB-qrO">
+                                <rect key="frame" x="0.0" y="86" width="600" height="428"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="khO-CL-dDz" style="IBUITableViewCellStyleDefault" id="Aar-MJ-IhZ">
+                                        <rect key="frame" x="0.0" y="22" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Aar-MJ-IhZ" id="Zrd-jp-LLF">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="khO-CL-dDz">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="tB8-CD-lv0" id="bdM-dK-ZMg"/>
+                                    <outlet property="delegate" destination="tB8-CD-lv0" id="WDo-KK-HUQ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.28235294119999998" green="0.2784313725" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="view" destination="3Zg-EB-qrO" id="eKE-Py-XWi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wmb-IY-uHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757" y="997"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XsX-a9-SHR">
@@ -142,4 +190,7 @@
             <point key="canvasLocation" x="1742" y="328"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo_ava" width="40" height="40"/>
+    </resources>
 </document>

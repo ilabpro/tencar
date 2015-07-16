@@ -11,6 +11,7 @@
 		77057A491B5663D200FCE40C /* Panton.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77057A471B5663D200FCE40C /* Panton.otf */; };
 		77057A4D1B566FAE00FCE40C /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77057A4C1B566FAE00FCE40C /* JASidePanelController.m */; };
 		77057A501B56711800FCE40C /* PanelsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77057A4F1B56711800FCE40C /* PanelsController.m */; };
+		77057A531B578AFF00FCE40C /* leftmenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77057A521B578AFF00FCE40C /* leftmenuTableViewController.m */; };
 		7772007B1B54E55A00A1218A /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7772007A1B54E55A00A1218A /* CloudKit.framework */; };
 		77BB57371B53F87C0060E181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57361B53F87C0060E181 /* main.m */; };
 		77BB573A1B53F87C0060E181 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57391B53F87C0060E181 /* AppDelegate.m */; };
@@ -48,6 +49,8 @@
 		77057A4C1B566FAE00FCE40C /* JASidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASidePanelController.m; sourceTree = "<group>"; };
 		77057A4E1B56711800FCE40C /* PanelsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanelsController.h; sourceTree = "<group>"; };
 		77057A4F1B56711800FCE40C /* PanelsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelsController.m; sourceTree = "<group>"; };
+		77057A511B578AFF00FCE40C /* leftmenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leftmenuTableViewController.h; sourceTree = "<group>"; };
+		77057A521B578AFF00FCE40C /* leftmenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = leftmenuTableViewController.m; sourceTree = "<group>"; };
 		7772007A1B54E55A00A1218A /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		77BB57321B53F87C0060E181 /* TENCAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TENCAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77BB57361B53F87C0060E181 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -149,6 +152,8 @@
 				77BB573E1B53F87C0060E181 /* Main.storyboard */,
 				77BB57441B53F87C0060E181 /* Assets.xcassets */,
 				77BB57461B53F87C0060E181 /* LaunchScreen.storyboard */,
+				77057A511B578AFF00FCE40C /* leftmenuTableViewController.h */,
+				77057A521B578AFF00FCE40C /* leftmenuTableViewController.m */,
 				77BB57491B53F87C0060E181 /* Info.plist */,
 				77BB57411B53F87C0060E181 /* TENCAR.xcdatamodeld */,
 				77057A4A1B5669A200FCE40C /* Resources */,
@@ -320,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77057A531B578AFF00FCE40C /* leftmenuTableViewController.m in Sources */,
 				77057A501B56711800FCE40C /* PanelsController.m in Sources */,
 				77BB57431B53F87C0060E181 /* TENCAR.xcdatamodeld in Sources */,
 				77057A4D1B566FAE00FCE40C /* JASidePanelController.m in Sources */,

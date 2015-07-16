@@ -22,7 +22,7 @@
     //AppDelegate *AppDelegate = [UIApplication sharedApplication].delegate;
     [[UINavigationBar appearance] setTitleTextAttributes: @{
                                                            
-                                                            UITextAttributeFont: [UIFont fontWithName:@"Panton-SemiBold" size:18.0f]
+                                                            NSFontAttributeName: [UIFont fontWithName:@"Panton-SemiBold" size:18.0f]
                                                             }];
     return YES;
 }

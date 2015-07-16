@@ -8,11 +8,16 @@
 
 #import "leftmenuTableViewController.h"
 
+
 @interface leftmenuTableViewController ()
+
 
 @end
 
 @implementation leftmenuTableViewController
+
+NSArray *tableData;
+NSArray *thumbnails;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,6 +27,12 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    tableData = [NSArray arrayWithObjects:@"Панель", @"Взять в прокат", @"История проката", @"Штрафы", @"Баланс", @"Бонусы", @"Настройки", @"Помощь", nil];
+    
+    // Initialize thumbnails
+    thumbnails = [NSArray arrayWithObjects:@"dashboard", @"renticon", @"renthistory", @"rollover", @"balance", @"bonusicon", @"settings", @"help", nil];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,13 +43,13 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
+
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 3;
+
+    return [tableData count];
 }
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -53,6 +64,22 @@
     if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
         [cell setLayoutMargins:UIEdgeInsetsZero];
     }
+    
+    BOOL bIsLastRow = NO;
+    
+    //Add logic to check last row for your data source
+    NSDictionary *dict = [tableData objectAtIndex:indexPath.row];
+    if([tableData lastObject] == dict)
+    {
+        bIsLastRow = YES;
+    }
+    
+    //Set last row separate inset left value large, so it will go outside of view
+    if ([cell respondsToSelector:@selector(setSeparatorInset:)])
+    {
+        [cell setSeparatorInset:UIEdgeInsetsMake(0, bIsLastRow ? 1000 :0, 0, 0)];
+    }
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -63,8 +90,25 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         
     }
-    // Configure the cell...
-    cell.backgroundColor = [self colorFromHexString:@"#484746"];
+    
+   
+    
+   
+    //UIView *bgColorView = [[UIView alloc] init];
+    //bgColorView.backgroundColor = [self colorFromHexString:@"#3A3839"];//F3E638
+    
+   
+    
+    
+    //[cell setSelectedBackgroundView:bgColorView];
+    
+    
+    UIImageView *menuImageView = (UIImageView *)[cell viewWithTag:100];
+    menuImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
+    
+    UILabel *menuNameLabel = (UILabel *)[cell viewWithTag:101];
+    menuNameLabel.text = [tableData objectAtIndex:indexPath.row];
+    
     
     return cell;
 }
@@ -74,6 +118,27 @@
     [scanner setScanLocation:1]; // bypass '#' character
     [scanner scanHexInt:&rgbValue];
     return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+}
+-(BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = (UITableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
+    UIView *selectionColor = [[UIView alloc] init];
+    selectionColor.backgroundColor = [self colorFromHexString:@"#3A3839"];
+    cell.selectedBackgroundView = selectionColor;
+    //71
+    UIView* separatorLineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 250, 1)];
+    separatorLineView.backgroundColor = [self colorFromHexString:@"#6D6C6B"];
+    [cell.selectedBackgroundView addSubview:separatorLineView];
+    
+    UIView* separatorLineView1 = [[UIView alloc] initWithFrame:CGRectMake(0, 60, 250, 1)];
+    separatorLineView1.backgroundColor = [self colorFromHexString:@"#6D6C6B"];
+    [cell.selectedBackgroundView addSubview:separatorLineView1];
+    
+    return YES;
 }
 /*
 // Override to support conditional editing of the table view.

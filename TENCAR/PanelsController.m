@@ -24,14 +24,20 @@
    
     //AppDelegate.window.rootViewController = self;
     //[AppDelegate.window makeKeyAndVisible];
+    UINavigationController *navcontr = [self.storyboard instantiateViewControllerWithIdentifier:@"centerViewController"];
+    
+    
     
     [self setLeftPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"leftViewController"]];
-   [self setCenterPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"centerViewController"]];
+   [self setCenterPanel:navcontr];
+    [self setRightPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"rightViewController"]];
+   
   //[self setCenterPanel:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"centerViewController"]]];
     
+    
     self.leftFixedWidth = 220;
-    
-    
+    self.shouldResizeRightPanel = true;
+    self.shouldResizeLeftPanel = true;
 }
 -(void)stylePanel:(UIView *)panel
 {

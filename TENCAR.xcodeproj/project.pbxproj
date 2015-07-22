@@ -12,6 +12,16 @@
 		77057A4D1B566FAE00FCE40C /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77057A4C1B566FAE00FCE40C /* JASidePanelController.m */; };
 		77057A501B56711800FCE40C /* PanelsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77057A4F1B56711800FCE40C /* PanelsController.m */; };
 		77057A531B578AFF00FCE40C /* leftmenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77057A521B578AFF00FCE40C /* leftmenuTableViewController.m */; };
+		770D6AEF1B5D0EE6000B16DA /* dashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D6AEE1B5D0EE6000B16DA /* dashboardViewController.m */; };
+		770D6AF41B5E2388000B16DA /* rightmenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D6AF31B5E2388000B16DA /* rightmenuViewController.m */; };
+		770D6AFA1B5F869E000B16DA /* UIViewController+JASidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D6AF91B5F869E000B16DA /* UIViewController+JASidePanel.m */; };
+		770D6AFC1B5F8776000B16DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770D6AFB1B5F8776000B16DA /* Foundation.framework */; };
+		770D6AFE1B5F87CC000B16DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770D6AFD1B5F87CC000B16DA /* UIKit.framework */; };
+		770D6B001B5F87D1000B16DA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770D6AFF1B5F87D1000B16DA /* QuartzCore.framework */; };
+		770D6B021B5F87E3000B16DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770D6B011B5F87E3000B16DA /* CoreGraphics.framework */; };
+		770D6B091B5F98B7000B16DA /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D6B061B5F98B7000B16DA /* UIBarButtonItem+Badge.m */; };
+		770D6B0A1B5F98B7000B16DA /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D6B081B5F98B7000B16DA /* UIButton+Badge.m */; };
+		770D6B0F1B5FB2ED000B16DA /* navbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D6B0E1B5FB2ED000B16DA /* navbarViewController.m */; };
 		7772007B1B54E55A00A1218A /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7772007A1B54E55A00A1218A /* CloudKit.framework */; };
 		77BB57371B53F87C0060E181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57361B53F87C0060E181 /* main.m */; };
 		77BB573A1B53F87C0060E181 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57391B53F87C0060E181 /* AppDelegate.m */; };
@@ -51,6 +61,27 @@
 		77057A4F1B56711800FCE40C /* PanelsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelsController.m; sourceTree = "<group>"; };
 		77057A511B578AFF00FCE40C /* leftmenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leftmenuTableViewController.h; sourceTree = "<group>"; };
 		77057A521B578AFF00FCE40C /* leftmenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = leftmenuTableViewController.m; sourceTree = "<group>"; };
+		770D6AEB1B5D0841000B16DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		770D6AEC1B5D0845000B16DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		770D6AED1B5D0EE6000B16DA /* dashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dashboardViewController.h; sourceTree = "<group>"; };
+		770D6AEE1B5D0EE6000B16DA /* dashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dashboardViewController.m; sourceTree = "<group>"; };
+		770D6AF01B5D0F69000B16DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		770D6AF11B5D0F69000B16DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		770D6AF21B5E2388000B16DA /* rightmenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rightmenuViewController.h; sourceTree = "<group>"; };
+		770D6AF31B5E2388000B16DA /* rightmenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rightmenuViewController.m; sourceTree = "<group>"; };
+		770D6AF81B5F869E000B16DA /* UIViewController+JASidePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JASidePanel.h"; sourceTree = "<group>"; };
+		770D6AF91B5F869E000B16DA /* UIViewController+JASidePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JASidePanel.m"; sourceTree = "<group>"; };
+		770D6AFB1B5F8776000B16DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		770D6AFD1B5F87CC000B16DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		770D6AFF1B5F87D1000B16DA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		770D6B011B5F87E3000B16DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		770D6B041B5F8938000B16DA /* tencar-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "tencar-Prefix.pch"; sourceTree = "<group>"; };
+		770D6B051B5F98B7000B16DA /* UIBarButtonItem+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Badge.h"; sourceTree = "<group>"; };
+		770D6B061B5F98B7000B16DA /* UIBarButtonItem+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Badge.m"; sourceTree = "<group>"; };
+		770D6B071B5F98B7000B16DA /* UIButton+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Badge.h"; sourceTree = "<group>"; };
+		770D6B081B5F98B7000B16DA /* UIButton+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Badge.m"; sourceTree = "<group>"; };
+		770D6B0D1B5FB2ED000B16DA /* navbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = navbarViewController.h; sourceTree = "<group>"; };
+		770D6B0E1B5FB2ED000B16DA /* navbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = navbarViewController.m; sourceTree = "<group>"; };
 		7772007A1B54E55A00A1218A /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		77BB57321B53F87C0060E181 /* TENCAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TENCAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77BB57361B53F87C0060E181 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,10 +89,8 @@
 		77BB57391B53F87C0060E181 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		77BB573B1B53F87C0060E181 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		77BB573C1B53F87C0060E181 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		77BB573F1B53F87C0060E181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77BB57421B53F87C0060E181 /* TENCAR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TENCAR.xcdatamodel; sourceTree = "<group>"; };
 		77BB57441B53F87C0060E181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		77BB57471B53F87C0060E181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77BB57491B53F87C0060E181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77BB574E1B53F87D0060E181 /* TENCARTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TENCARTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77BB57521B53F87D0060E181 /* TENCARTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TENCARTests.m; sourceTree = "<group>"; };
@@ -78,6 +107,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770D6B021B5F87E3000B16DA /* CoreGraphics.framework in Frameworks */,
+				770D6B001B5F87D1000B16DA /* QuartzCore.framework in Frameworks */,
+				770D6AFE1B5F87CC000B16DA /* UIKit.framework in Frameworks */,
+				770D6AFC1B5F8776000B16DA /* Foundation.framework in Frameworks */,
 				7772007B1B54E55A00A1218A /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,10 +149,44 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		770D6B031B5F885C000B16DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				770D6B011B5F87E3000B16DA /* CoreGraphics.framework */,
+				770D6AFF1B5F87D1000B16DA /* QuartzCore.framework */,
+				770D6AFD1B5F87CC000B16DA /* UIKit.framework */,
+				770D6AFB1B5F8776000B16DA /* Foundation.framework */,
+				7772007A1B54E55A00A1218A /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		770D6B0B1B5F98BF000B16DA /* jaside */ = {
+			isa = PBXGroup;
+			children = (
+				77057A4B1B566FAE00FCE40C /* JASidePanelController.h */,
+				77057A4C1B566FAE00FCE40C /* JASidePanelController.m */,
+				770D6AF81B5F869E000B16DA /* UIViewController+JASidePanel.h */,
+				770D6AF91B5F869E000B16DA /* UIViewController+JASidePanel.m */,
+			);
+			name = jaside;
+			sourceTree = "<group>";
+		};
+		770D6B0C1B5F98CB000B16DA /* badges */ = {
+			isa = PBXGroup;
+			children = (
+				770D6B051B5F98B7000B16DA /* UIBarButtonItem+Badge.h */,
+				770D6B061B5F98B7000B16DA /* UIBarButtonItem+Badge.m */,
+				770D6B071B5F98B7000B16DA /* UIButton+Badge.h */,
+				770D6B081B5F98B7000B16DA /* UIButton+Badge.m */,
+			);
+			name = badges;
+			sourceTree = "<group>";
+		};
 		77BB57291B53F87C0060E181 = {
 			isa = PBXGroup;
 			children = (
-				7772007A1B54E55A00A1218A /* CloudKit.framework */,
+				770D6B031B5F885C000B16DA /* Frameworks */,
 				77BB57341B53F87C0060E181 /* TENCAR */,
 				77BB57511B53F87D0060E181 /* TENCARTests */,
 				77BB575C1B53F87D0060E181 /* TENCARUITests */,
@@ -141,8 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				770449E11B54E2B7007C099F /* TENCAR.entitlements */,
-				77057A4B1B566FAE00FCE40C /* JASidePanelController.h */,
-				77057A4C1B566FAE00FCE40C /* JASidePanelController.m */,
+				770D6B0B1B5F98BF000B16DA /* jaside */,
+				770D6B0C1B5F98CB000B16DA /* badges */,
 				77BB57381B53F87C0060E181 /* AppDelegate.h */,
 				77BB57391B53F87C0060E181 /* AppDelegate.m */,
 				77057A4E1B56711800FCE40C /* PanelsController.h */,
@@ -150,10 +217,16 @@
 				77BB573B1B53F87C0060E181 /* ViewController.h */,
 				77BB573C1B53F87C0060E181 /* ViewController.m */,
 				77BB573E1B53F87C0060E181 /* Main.storyboard */,
+				770D6B0D1B5FB2ED000B16DA /* navbarViewController.h */,
+				770D6B0E1B5FB2ED000B16DA /* navbarViewController.m */,
+				770D6AED1B5D0EE6000B16DA /* dashboardViewController.h */,
+				770D6AEE1B5D0EE6000B16DA /* dashboardViewController.m */,
 				77BB57441B53F87C0060E181 /* Assets.xcassets */,
 				77BB57461B53F87C0060E181 /* LaunchScreen.storyboard */,
 				77057A511B578AFF00FCE40C /* leftmenuTableViewController.h */,
 				77057A521B578AFF00FCE40C /* leftmenuTableViewController.m */,
+				770D6AF21B5E2388000B16DA /* rightmenuViewController.h */,
+				770D6AF31B5E2388000B16DA /* rightmenuViewController.m */,
 				77BB57491B53F87C0060E181 /* Info.plist */,
 				77BB57411B53F87C0060E181 /* TENCAR.xcdatamodeld */,
 				77057A4A1B5669A200FCE40C /* Resources */,
@@ -166,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				77BB57361B53F87C0060E181 /* main.m */,
+				770D6B041B5F8938000B16DA /* tencar-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -278,6 +352,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
+				en,
 			);
 			mainGroup = 77BB57291B53F87C0060E181;
 			productRefGroup = 77BB57331B53F87C0060E181 /* Products */;
@@ -328,9 +403,15 @@
 				77057A531B578AFF00FCE40C /* leftmenuTableViewController.m in Sources */,
 				77057A501B56711800FCE40C /* PanelsController.m in Sources */,
 				77BB57431B53F87C0060E181 /* TENCAR.xcdatamodeld in Sources */,
+				770D6AEF1B5D0EE6000B16DA /* dashboardViewController.m in Sources */,
 				77057A4D1B566FAE00FCE40C /* JASidePanelController.m in Sources */,
+				770D6AFA1B5F869E000B16DA /* UIViewController+JASidePanel.m in Sources */,
+				770D6B0F1B5FB2ED000B16DA /* navbarViewController.m in Sources */,
 				77BB573D1B53F87C0060E181 /* ViewController.m in Sources */,
+				770D6B0A1B5F98B7000B16DA /* UIButton+Badge.m in Sources */,
+				770D6B091B5F98B7000B16DA /* UIBarButtonItem+Badge.m in Sources */,
 				77BB573A1B53F87C0060E181 /* AppDelegate.m in Sources */,
+				770D6AF41B5E2388000B16DA /* rightmenuViewController.m in Sources */,
 				77BB57371B53F87C0060E181 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,8 +451,9 @@
 		77BB573E1B53F87C0060E181 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				77BB573F1B53F87C0060E181 /* Base */,
 				77BB576B1B5402A70060E181 /* ru */,
+				770D6AEB1B5D0841000B16DA /* Base */,
+				770D6AF01B5D0F69000B16DA /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -379,8 +461,9 @@
 		77BB57461B53F87C0060E181 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				77BB57471B53F87C0060E181 /* Base */,
 				77BB576C1B5402A70060E181 /* ru */,
+				770D6AEC1B5D0845000B16DA /* Base */,
+				770D6AF11B5D0F69000B16DA /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -424,7 +507,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -462,7 +545,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -478,6 +561,8 @@
 				CODE_SIGN_ENTITLEMENTS = TENCAR/TENCAR.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TENCAR/tencar-Prefix.pch";
 				INFOPLIST_FILE = TENCAR/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -495,6 +580,8 @@
 				CODE_SIGN_ENTITLEMENTS = TENCAR/TENCAR.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TENCAR/tencar-Prefix.pch";
 				INFOPLIST_FILE = TENCAR/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

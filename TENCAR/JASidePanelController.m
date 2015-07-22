@@ -141,7 +141,7 @@ static char ja_kvoContext;
     self.panningLimitedToTopViewController = YES;
     self.recognizesPanGesture = YES;
     self.allowLeftOverpan = YES;
-    self.allowRightOverpan = YES;
+    self.allowRightOverpan = NO;
     self.bounceOnSidePanelOpen = YES;
     self.bounceOnSidePanelClose = NO;
     self.bounceOnCenterPanelChange = YES;
@@ -449,22 +449,27 @@ static char ja_kvoContext;
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
     if (gestureRecognizer.view == self.tapView) {
+        
         return YES;
     } else if (self.panningLimitedToTopViewController && ![self _isOnTopLevelViewController:self.centerPanel]) {
+        
         return NO;
     } else if ([gestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]]) {
         UIPanGestureRecognizer *pan = (UIPanGestureRecognizer *)gestureRecognizer;
         CGPoint translate = [pan translationInView:self.centerPanelContainer];
         // determine if right swipe is allowed
         if (translate.x < 0 && ! self.allowRightSwipe) {
+            
             return NO;
         }
         // determine if left swipe is allowed
         if (translate.x > 0 && ! self.allowLeftSwipe) {
+            
             return NO;
         }
         BOOL possible = translate.x != 0 && ((fabs(translate.y) / fabs(translate.x)) < 1.0f);
         if (possible && ((translate.x > 0 && self.leftPanel) || (translate.x < 0 && self.rightPanel))) {
+            
             return YES;
         }
     }
@@ -483,6 +488,7 @@ static char ja_kvoContext;
 
 - (void)_handlePan:(UIGestureRecognizer *)sender {
 	if (!_recognizesPanGesture) {
+        
 		return;
 	}
 	
@@ -497,8 +503,11 @@ static char ja_kvoContext;
         CGRect frame = _centerPanelRestingFrame;
         frame.origin.x += roundf([self _correctMovement:translate.x]);
         
+        
+        
         if (self.style == JASidePanelMultipleActive) {
             frame.size.width = self.view.bounds.size.width - frame.origin.x;
+            
         }
         
         self.centerPanelContainer.frame = frame;
@@ -597,32 +606,44 @@ static char ja_kvoContext;
 #pragma mark - Internal Methods
 
 - (CGFloat)_correctMovement:(CGFloat)movement {
+    
     CGFloat position = _centerPanelRestingFrame.origin.x + movement;
+    
     if (self.state == JASidePanelCenterVisible) {
         if (self.state != JASidePanelLeftVisible) {
             if (position >= self.leftVisibleWidth) {
+                
                 return self.leftVisibleWidth;
             }
         }
         else if ((position > 0.0f && !self.leftPanel) || (position < 0.0f && !self.rightPanel)) {
+           
             return 0.0f;
         }
     } else if (self.state == JASidePanelRightVisible && !self.allowRightOverpan) {
+        
         if ((position + _centerPanelRestingFrame.size.width) < (self.rightPanelContainer.frame.size.width - self.rightVisibleWidth)) {
+            
             return 0.0f;
         } else if (position > self.rightPanelContainer.frame.origin.x) {
+            
             return self.rightPanelContainer.frame.origin.x - _centerPanelRestingFrame.origin.x;
         }
     } else if (self.state == JASidePanelLeftVisible  && !self.allowLeftOverpan) {
+       
         if (position > self.leftVisibleWidth) {
+            
             return 0.0f;
         } else if (position < self.leftPanelContainer.frame.origin.x) {
+            
             return  self.leftPanelContainer.frame.origin.x - _centerPanelRestingFrame.origin.x;
         }
     }
     else if (self.leftVisibleWidth + movement > self.leftFixedWidth) {
+        
         return self.leftPanelContainer.frame.origin.x;
     } else if (self.leftVisibleWidth + movement < self.leftPanelContainer.frame.origin.x) {
+       
         return self.leftPanelContainer.frame.origin.x - self.leftFixedWidth;
     }
     return movement;

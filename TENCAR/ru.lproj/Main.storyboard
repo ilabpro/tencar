@@ -88,7 +88,7 @@
         <!--ViewController-->
         <scene sceneID="EMH-KN-yfD">
             <objects>
-                <viewController storyboardIdentifier="centerView" id="pl3-fY-ELj" userLabel="ViewController" customClass="dashboardViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="centerView" id="pl3-fY-ELj" userLabel="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fPs-br-YDa"/>
                         <viewControllerLayoutGuide type="bottom" id="6Gd-hm-Q3b"/>
@@ -99,11 +99,11 @@
                         <animations/>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94117647058823528" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2zR-e1-Z3e"/>
+                    <navigationItem key="navigationItem" title="Panton" id="2zR-e1-Z3e"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GgN-Ww-Q1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1096" y="997"/>
+            <point key="canvasLocation" x="1417" y="997"/>
         </scene>
         <!--Leftmenu Table View Controller-->
         <scene sceneID="xeO-PY-aDt">
@@ -220,12 +220,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wmb-IY-uHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="419" y="997"/>
+            <point key="canvasLocation" x="757" y="997"/>
         </scene>
-        <!--Navbar View Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="XsX-a9-SHR">
             <objects>
-                <navigationController storyboardIdentifier="centerViewController" id="xEi-yE-a7O" customClass="navbarViewController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="centerViewController" id="xEi-yE-a7O" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="dx8-ty-KmW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -243,44 +243,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8X0-J5-hqW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1759" y="328"/>
-        </scene>
-        <!--Rightmenu View Controller-->
-        <scene sceneID="EaY-77-qMl">
-            <objects>
-                <viewController storyboardIdentifier="rightViewController" id="fbg-SQ-SnX" customClass="rightmenuViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Auy-jP-aza"/>
-                        <viewControllerLayoutGuide type="bottom" id="SCc-qP-trg"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="uAu-CM-7CW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Z2r-uz-rfb">
-                                <rect key="frame" x="200" y="25" width="201" height="29"/>
-                                <animations/>
-                                <segments>
-                                    <segment title="Уведомления"/>
-                                    <segment title="Сообщения"/>
-                                </segments>
-                                <color key="tintColor" red="0.95294117649999999" green="0.90196078430000004" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
-                            </segmentedControl>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" red="0.2274509804" green="0.21960784310000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="Z2r-uz-rfb" firstAttribute="centerX" secondItem="uAu-CM-7CW" secondAttribute="centerX" id="3SO-hx-X4a"/>
-                            <constraint firstItem="Z2r-uz-rfb" firstAttribute="top" secondItem="Auy-jP-aza" secondAttribute="bottom" constant="5" id="HYp-Dr-lom"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="topsegment" destination="Z2r-uz-rfb" id="ADh-zG-DWz"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wtR-ZK-ugK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1742" y="997"/>
+            <point key="canvasLocation" x="1742" y="328"/>
         </scene>
     </scenes>
     <resources>

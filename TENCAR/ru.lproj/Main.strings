@@ -1,1 +1,10 @@
-
+//left menu
+"Dashboard" = "Информация";
+"Rent car" = "Взять в прокат";
+"Rent history" = "История проката";
+"Fines" = "Штрафы";
+"Balance" = "Баланс";
+"Bonuses" = "Бонусы";
+"Settings" = "Настройки";
+"Help" = "Помощь";
+//

@@ -21,14 +21,15 @@ NSArray *thumbnails;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+  
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+   
     
-    tableData = [NSArray arrayWithObjects:@"Панель", @"Взять в прокат", @"История проката", @"Штрафы", @"Баланс", @"Бонусы", @"Настройки", @"Помощь", nil];
+    tableData = [NSArray arrayWithObjects:NSLocalizedStringFromTable(@"Dashboard", @"Main", nil), NSLocalizedStringFromTable(@"Rent car", @"Main", nil), NSLocalizedStringFromTable(@"Rent history", @"Main", nil), NSLocalizedStringFromTable(@"Fines", @"Main", nil), NSLocalizedStringFromTable(@"Balance", @"Main", nil), NSLocalizedStringFromTable(@"Bonuses", @"Main", nil), NSLocalizedStringFromTable(@"Settings", @"Main", nil), NSLocalizedStringFromTable(@"Help", @"Main", nil), nil];
     
     // Initialize thumbnails
     thumbnails = [NSArray arrayWithObjects:@"dashboard", @"renticon", @"renthistory", @"rollover", @"balance", @"bonusicon", @"settings", @"help", nil];

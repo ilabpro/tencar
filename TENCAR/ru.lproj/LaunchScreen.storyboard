@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="15A216g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="IqE-xZ-rF4">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="lKf-xk-1PR">
+            <objects>
+                <viewController id="IqE-xZ-rF4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KEI-yO-TVG"/>
+                        <viewControllerLayoutGuide type="bottom" id="e1T-i6-rs2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yXc-IY-83F">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="maB-Vq-5PW">
+                                <rect key="frame" x="260" y="260" width="80" height="80"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="KNI-Ac-sBJ"/>
+                                    <constraint firstAttribute="width" constant="80" id="cqC-CT-KOV"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.90196078430000004" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="maB-Vq-5PW" firstAttribute="centerY" secondItem="yXc-IY-83F" secondAttribute="centerY" id="W0a-2z-H7Y"/>
+                            <constraint firstItem="maB-Vq-5PW" firstAttribute="centerX" secondItem="yXc-IY-83F" secondAttribute="centerX" id="j9A-K8-G9r"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U0r-tg-sVZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-505" y="227"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="250" height="250"/>
+    </resources>
+</document>

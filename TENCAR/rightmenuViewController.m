@@ -10,12 +10,14 @@
 
 @interface rightmenuViewController ()
 @property (weak, nonatomic) IBOutlet UISegmentedControl *topsegment;
+@property (weak, nonatomic) IBOutlet UITableView *msgTablevie;
 
 @end
 
 @implementation rightmenuViewController
 
 @synthesize topsegment;
+@synthesize msgTablevie;
 
 NSArray *tableData1;
 NSArray *thumbnails1;
@@ -29,7 +31,7 @@ NSArray *thumbnails1;
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    
+    msgTablevie.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
     tableData1 = [NSArray arrayWithObjects:NSLocalizedStringFromTable(@"Dashboard", @"Main", nil), NSLocalizedStringFromTable(@"Rent car", @"Main", nil), NSLocalizedStringFromTable(@"Rent history", @"Main", nil), NSLocalizedStringFromTable(@"Fines", @"Main", nil), NSLocalizedStringFromTable(@"Balance", @"Main", nil), NSLocalizedStringFromTable(@"Bonuses", @"Main", nil), NSLocalizedStringFromTable(@"Settings", @"Main", nil), NSLocalizedStringFromTable(@"Help", @"Main", nil), nil];
     
@@ -115,10 +117,33 @@ NSArray *thumbnails1;
     
     return cell;
 }
-
+- (UIColor *)colorFromHexString:(NSString *)hexString {
+    unsigned rgbValue = 0;
+    NSScanner *scanner = [NSScanner scannerWithString:hexString];
+    [scanner setScanLocation:1]; // bypass '#' character
+    [scanner scanHexInt:&rgbValue];
+    return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
+}
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+}
+-(BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = (UITableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
+    UIView *selectionColor = [[UIView alloc] init];
+    selectionColor.backgroundColor = [self colorFromHexString:@"#3A3839"];
+    cell.selectedBackgroundView = selectionColor;
+    //71
+    UIView* separatorLineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width, 1)];
+    separatorLineView.backgroundColor = [self colorFromHexString:@"#6D6C6B"];
+    [cell.selectedBackgroundView addSubview:separatorLineView];
+    
+    UIView* separatorLineView1 = [[UIView alloc] initWithFrame:CGRectMake(0, 60, cell.frame.size.width, 1)];
+    separatorLineView1.backgroundColor = [self colorFromHexString:@"#6D6C6B"];
+    [cell.selectedBackgroundView addSubview:separatorLineView1];
+    
+    return YES;
 }
 
 /*

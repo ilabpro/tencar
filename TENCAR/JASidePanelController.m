@@ -142,7 +142,7 @@ static char ja_kvoContext;
     self.recognizesPanGesture = YES;
     self.allowLeftOverpan = YES;
     self.allowRightOverpan = NO;
-    self.bounceOnSidePanelOpen = YES;
+    self.bounceOnSidePanelOpen = NO;
     self.bounceOnSidePanelClose = NO;
     self.bounceOnCenterPanelChange = YES;
     self.shouldDelegateAutorotateToVisiblePanel = YES;

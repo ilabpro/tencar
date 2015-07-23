@@ -10,11 +10,13 @@
 
 
 @interface leftmenuTableViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *menuTableview;
 
 
 @end
 
 @implementation leftmenuTableViewController
+@synthesize menuTableview;
 
 NSArray *tableData;
 NSArray *thumbnails;
@@ -28,6 +30,7 @@ NSArray *thumbnails;
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
    
+    menuTableview.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
     tableData = [NSArray arrayWithObjects:NSLocalizedStringFromTable(@"Dashboard", @"Main", nil), NSLocalizedStringFromTable(@"Rent car", @"Main", nil), NSLocalizedStringFromTable(@"Rent history", @"Main", nil), NSLocalizedStringFromTable(@"Fines", @"Main", nil), NSLocalizedStringFromTable(@"Balance", @"Main", nil), NSLocalizedStringFromTable(@"Bonuses", @"Main", nil), NSLocalizedStringFromTable(@"Settings", @"Main", nil), NSLocalizedStringFromTable(@"Help", @"Main", nil), nil];
     
@@ -131,11 +134,11 @@ NSArray *thumbnails;
     selectionColor.backgroundColor = [self colorFromHexString:@"#3A3839"];
     cell.selectedBackgroundView = selectionColor;
     //71
-    UIView* separatorLineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 250, 1)];
+    UIView* separatorLineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width, 1)];
     separatorLineView.backgroundColor = [self colorFromHexString:@"#6D6C6B"];
     [cell.selectedBackgroundView addSubview:separatorLineView];
     
-    UIView* separatorLineView1 = [[UIView alloc] initWithFrame:CGRectMake(0, 60, 250, 1)];
+    UIView* separatorLineView1 = [[UIView alloc] initWithFrame:CGRectMake(0, 60, cell.frame.size.width, 1)];
     separatorLineView1.backgroundColor = [self colorFromHexString:@"#6D6C6B"];
     [cell.selectedBackgroundView addSubview:separatorLineView1];
     

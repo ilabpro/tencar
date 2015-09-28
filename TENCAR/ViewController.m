@@ -23,10 +23,27 @@
     //imgView.contentMode = UIViewContentModeCenter;
     
     //[self.view addSubview:imgView];
-    self.test.image = [UIImage animatedImageNamed:@"tencar_logo_loader" duration:2.0f];
+    NSMutableArray *images = [[NSMutableArray alloc] init];
+    for (int i = 1; i <= 125; i++) {
+        if(i>99)
+        {
+            [images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"TenCar_animation40%i", i]]];
+        }
+        else if(i>9)
+        {
+            [images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"TenCar_animation400%i", i]]];
+        }
+        else
+        {
+            [images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"TenCar_animation4000%i", i]]];
+        }
+        
+    }
+    
+    self.test.image = [UIImage animatedImageWithImages:images duration:2.0f];
    
     
-    double delayInSeconds = 1.0;
+    double delayInSeconds = 35.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
         [self performSegueWithIdentifier:@"goHome" sender:self];

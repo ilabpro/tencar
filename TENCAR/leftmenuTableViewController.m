@@ -84,6 +84,8 @@ NSArray *thumbnails;
         [cell setSeparatorInset:UIEdgeInsetsMake(0, bIsLastRow ? 1000 :0, 0, 0)];
     }
     
+    [cell setBackgroundColor:[self colorFromHexString:@"#484746"]];
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

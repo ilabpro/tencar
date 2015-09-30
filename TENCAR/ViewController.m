@@ -40,10 +40,11 @@
         
     }
     
+    /*
     self.test.image = [UIImage animatedImageWithImages:images duration:2.0f];
-   
+   */
     
-    double delayInSeconds = 35.0;
+    double delayInSeconds = 1.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
         [self performSegueWithIdentifier:@"goHome" sender:self];

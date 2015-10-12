@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		77057A481B5663D200FCE40C /* Panton-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77057A461B5663D200FCE40C /* Panton-SemiBold.otf */; };
-		77057A491B5663D200FCE40C /* Panton.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77057A471B5663D200FCE40C /* Panton.otf */; };
 		77057A4D1B566FAE00FCE40C /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77057A4C1B566FAE00FCE40C /* JASidePanelController.m */; };
 		77057A501B56711800FCE40C /* PanelsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77057A4F1B56711800FCE40C /* PanelsController.m */; };
 		77057A531B578AFF00FCE40C /* leftmenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77057A521B578AFF00FCE40C /* leftmenuTableViewController.m */; };
@@ -22,6 +20,11 @@
 		770D6B091B5F98B7000B16DA /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D6B061B5F98B7000B16DA /* UIBarButtonItem+Badge.m */; };
 		770D6B0A1B5F98B7000B16DA /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D6B081B5F98B7000B16DA /* UIButton+Badge.m */; };
 		770D6B0F1B5FB2ED000B16DA /* navbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D6B0E1B5FB2ED000B16DA /* navbarViewController.m */; };
+		771272BD1BC7A72000697807 /* ALSSchlangesans-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 771272B81BC7A72000697807 /* ALSSchlangesans-Black.otf */; };
+		771272BE1BC7A72000697807 /* ALSSchlangesans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 771272B91BC7A72000697807 /* ALSSchlangesans-Bold.otf */; };
+		771272BF1BC7A72000697807 /* ALSSchlangesans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 771272BA1BC7A72000697807 /* ALSSchlangesans-Light.otf */; };
+		771272C01BC7A72000697807 /* ALSSchlangesans-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 771272BB1BC7A72000697807 /* ALSSchlangesans-Thin.otf */; };
+		771272C11BC7A72000697807 /* ALSSchlangesans.otf in Resources */ = {isa = PBXBuildFile; fileRef = 771272BC1BC7A72000697807 /* ALSSchlangesans.otf */; };
 		7772007B1B54E55A00A1218A /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7772007A1B54E55A00A1218A /* CloudKit.framework */; };
 		77BB57371B53F87C0060E181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57361B53F87C0060E181 /* main.m */; };
 		77BB573A1B53F87C0060E181 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57391B53F87C0060E181 /* AppDelegate.m */; };
@@ -53,8 +56,6 @@
 
 /* Begin PBXFileReference section */
 		770449E11B54E2B7007C099F /* TENCAR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TENCAR.entitlements; sourceTree = "<group>"; };
-		77057A461B5663D200FCE40C /* Panton-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Panton-SemiBold.otf"; sourceTree = "<group>"; };
-		77057A471B5663D200FCE40C /* Panton.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Panton.otf; sourceTree = "<group>"; };
 		77057A4B1B566FAE00FCE40C /* JASidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JASidePanelController.h; sourceTree = "<group>"; };
 		77057A4C1B566FAE00FCE40C /* JASidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASidePanelController.m; sourceTree = "<group>"; };
 		77057A4E1B56711800FCE40C /* PanelsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanelsController.h; sourceTree = "<group>"; };
@@ -82,6 +83,11 @@
 		770D6B081B5F98B7000B16DA /* UIButton+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Badge.m"; sourceTree = "<group>"; };
 		770D6B0D1B5FB2ED000B16DA /* navbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = navbarViewController.h; sourceTree = "<group>"; };
 		770D6B0E1B5FB2ED000B16DA /* navbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = navbarViewController.m; sourceTree = "<group>"; };
+		771272B81BC7A72000697807 /* ALSSchlangesans-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ALSSchlangesans-Black.otf"; sourceTree = "<group>"; };
+		771272B91BC7A72000697807 /* ALSSchlangesans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ALSSchlangesans-Bold.otf"; sourceTree = "<group>"; };
+		771272BA1BC7A72000697807 /* ALSSchlangesans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ALSSchlangesans-Light.otf"; sourceTree = "<group>"; };
+		771272BB1BC7A72000697807 /* ALSSchlangesans-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ALSSchlangesans-Thin.otf"; sourceTree = "<group>"; };
+		771272BC1BC7A72000697807 /* ALSSchlangesans.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ALSSchlangesans.otf; sourceTree = "<group>"; };
 		7772007A1B54E55A00A1218A /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		77BB57321B53F87C0060E181 /* TENCAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TENCAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77BB57361B53F87C0060E181 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -135,8 +141,11 @@
 		77057A451B56639400FCE40C /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				77057A461B5663D200FCE40C /* Panton-SemiBold.otf */,
-				77057A471B5663D200FCE40C /* Panton.otf */,
+				771272B81BC7A72000697807 /* ALSSchlangesans-Black.otf */,
+				771272B91BC7A72000697807 /* ALSSchlangesans-Bold.otf */,
+				771272BA1BC7A72000697807 /* ALSSchlangesans-Light.otf */,
+				771272BB1BC7A72000697807 /* ALSSchlangesans-Thin.otf */,
+				771272BC1BC7A72000697807 /* ALSSchlangesans.otf */,
 			);
 			name = fonts;
 			sourceTree = "<group>";
@@ -371,11 +380,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				771272BE1BC7A72000697807 /* ALSSchlangesans-Bold.otf in Resources */,
+				771272BD1BC7A72000697807 /* ALSSchlangesans-Black.otf in Resources */,
 				77BB57481B53F87C0060E181 /* LaunchScreen.storyboard in Resources */,
 				77BB57451B53F87C0060E181 /* Assets.xcassets in Resources */,
-				77057A481B5663D200FCE40C /* Panton-SemiBold.otf in Resources */,
+				771272C11BC7A72000697807 /* ALSSchlangesans.otf in Resources */,
+				771272C01BC7A72000697807 /* ALSSchlangesans-Thin.otf in Resources */,
 				77BB57401B53F87C0060E181 /* Main.storyboard in Resources */,
-				77057A491B5663D200FCE40C /* Panton.otf in Resources */,
+				771272BF1BC7A72000697807 /* ALSSchlangesans-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +569,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_ENTITLEMENTS = TENCAR/TENCAR.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -575,6 +588,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_ENTITLEMENTS = TENCAR/TENCAR.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

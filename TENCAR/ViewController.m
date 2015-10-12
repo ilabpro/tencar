@@ -47,35 +47,27 @@ int n=0;
     
     */
     
-    
-    //self.images = [self creatAnimation:@"loader_anim"];
-    //test.image = [UIImage animatedImageWithImages:[self creatAnimation:@"loader_anim"] duration:2.0f];
+   /*
    
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:.04
                                                       target:self
                                                     selector:@selector(tiktak)
                                                     userInfo:nil repeats:YES];
     
-    
-    
-    
-    
-    /*
-    test.animationImages = [self creatAnimation:@"loader_anim"];
-    test.animationDuration = 2.0f;
-    test.animationRepeatCount = 0;
-    [test startAnimating];
     */
     
-    
+   
+    //[self performSegueWithIdentifier:@"goHome" sender:self];
+   
+    /*
     double delayInSeconds = 5.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
         [self performSegueWithIdentifier:@"goHome" sender:self];
         
     });
-    
-    
+    */
+   
    
    
 }

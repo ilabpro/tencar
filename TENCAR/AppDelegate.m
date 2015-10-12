@@ -17,12 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    //sleep(5);
+    sleep(1);
    
     //AppDelegate *AppDelegate = [UIApplication sharedApplication].delegate;
     [[UINavigationBar appearance] setTitleTextAttributes: @{
                                                            
-                                                            NSFontAttributeName: [UIFont fontWithName:@"Panton-SemiBold" size:18.0f]
+                                                            NSFontAttributeName: [UIFont fontWithName:@"ALSSchlangesans" size:18.0f]
                                                             }];
     return YES;
 }

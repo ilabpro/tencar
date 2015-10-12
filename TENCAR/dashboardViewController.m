@@ -43,7 +43,7 @@
 {
     NSInteger val = [self.navigationItem.rightBarButtonItem.badgeValue integerValue];
     val++;
-    self.navigationItem.rightBarButtonItem.badgeValue = [NSString stringWithFormat:@"%ld",val%150];
+    self.navigationItem.rightBarButtonItem.badgeValue = [NSString stringWithFormat:@"%ld",(long)val%150];
 }
 
 - (void)didReceiveMemoryWarning {

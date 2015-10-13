@@ -25,6 +25,9 @@
 		771272BF1BC7A72000697807 /* ALSSchlangesans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 771272BA1BC7A72000697807 /* ALSSchlangesans-Light.otf */; };
 		771272C01BC7A72000697807 /* ALSSchlangesans-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 771272BB1BC7A72000697807 /* ALSSchlangesans-Thin.otf */; };
 		771272C11BC7A72000697807 /* ALSSchlangesans.otf in Resources */ = {isa = PBXBuildFile; fileRef = 771272BC1BC7A72000697807 /* ALSSchlangesans.otf */; };
+		774156691BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 774156661BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextField.m */; };
+		7741566A1BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 774156681BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextView.m */; };
+		7741566D1BCD0D0600DB6EE7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7741566C1BCD0D0600DB6EE7 /* LoginViewController.m */; };
 		7772007B1B54E55A00A1218A /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7772007A1B54E55A00A1218A /* CloudKit.framework */; };
 		77BB57371B53F87C0060E181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57361B53F87C0060E181 /* main.m */; };
 		77BB573A1B53F87C0060E181 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57391B53F87C0060E181 /* AppDelegate.m */; };
@@ -88,6 +91,13 @@
 		771272BA1BC7A72000697807 /* ALSSchlangesans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ALSSchlangesans-Light.otf"; sourceTree = "<group>"; };
 		771272BB1BC7A72000697807 /* ALSSchlangesans-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ALSSchlangesans-Thin.otf"; sourceTree = "<group>"; };
 		771272BC1BC7A72000697807 /* ALSSchlangesans.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ALSSchlangesans.otf; sourceTree = "<group>"; };
+		774156641BCCEE1700DB6EE7 /* RPFloatingPlaceholderConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderConstants.h; sourceTree = "<group>"; };
+		774156651BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderTextField.h; sourceTree = "<group>"; };
+		774156661BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPFloatingPlaceholderTextField.m; sourceTree = "<group>"; };
+		774156671BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderTextView.h; sourceTree = "<group>"; };
+		774156681BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPFloatingPlaceholderTextView.m; sourceTree = "<group>"; };
+		7741566B1BCD0D0600DB6EE7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		7741566C1BCD0D0600DB6EE7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		7772007A1B54E55A00A1218A /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		77BB57321B53F87C0060E181 /* TENCAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TENCAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77BB57361B53F87C0060E181 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -192,6 +202,18 @@
 			name = badges;
 			sourceTree = "<group>";
 		};
+		774156631BCCEE0D00DB6EE7 /* RPFloatingPlaceholders */ = {
+			isa = PBXGroup;
+			children = (
+				774156641BCCEE1700DB6EE7 /* RPFloatingPlaceholderConstants.h */,
+				774156651BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextField.h */,
+				774156661BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextField.m */,
+				774156671BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextView.h */,
+				774156681BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextView.m */,
+			);
+			name = RPFloatingPlaceholders;
+			sourceTree = "<group>";
+		};
 		77BB57291B53F87C0060E181 = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +238,7 @@
 		77BB57341B53F87C0060E181 /* TENCAR */ = {
 			isa = PBXGroup;
 			children = (
+				774156631BCCEE0D00DB6EE7 /* RPFloatingPlaceholders */,
 				770449E11B54E2B7007C099F /* TENCAR.entitlements */,
 				770D6B0B1B5F98BF000B16DA /* jaside */,
 				770D6B0C1B5F98CB000B16DA /* badges */,
@@ -226,6 +249,8 @@
 				77BB573B1B53F87C0060E181 /* ViewController.h */,
 				77BB573C1B53F87C0060E181 /* ViewController.m */,
 				77BB573E1B53F87C0060E181 /* Main.storyboard */,
+				7741566B1BCD0D0600DB6EE7 /* LoginViewController.h */,
+				7741566C1BCD0D0600DB6EE7 /* LoginViewController.m */,
 				770D6B0D1B5FB2ED000B16DA /* navbarViewController.h */,
 				770D6B0E1B5FB2ED000B16DA /* navbarViewController.m */,
 				770D6AED1B5D0EE6000B16DA /* dashboardViewController.h */,
@@ -417,13 +442,16 @@
 				77BB57431B53F87C0060E181 /* TENCAR.xcdatamodeld in Sources */,
 				770D6AEF1B5D0EE6000B16DA /* dashboardViewController.m in Sources */,
 				77057A4D1B566FAE00FCE40C /* JASidePanelController.m in Sources */,
+				7741566A1BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextView.m in Sources */,
 				770D6AFA1B5F869E000B16DA /* UIViewController+JASidePanel.m in Sources */,
 				770D6B0F1B5FB2ED000B16DA /* navbarViewController.m in Sources */,
+				7741566D1BCD0D0600DB6EE7 /* LoginViewController.m in Sources */,
 				77BB573D1B53F87C0060E181 /* ViewController.m in Sources */,
 				770D6B0A1B5F98B7000B16DA /* UIButton+Badge.m in Sources */,
 				770D6B091B5F98B7000B16DA /* UIBarButtonItem+Badge.m in Sources */,
 				77BB573A1B53F87C0060E181 /* AppDelegate.m in Sources */,
 				770D6AF41B5E2388000B16DA /* rightmenuViewController.m in Sources */,
+				774156691BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextField.m in Sources */,
 				77BB57371B53F87C0060E181 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

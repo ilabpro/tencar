@@ -25,6 +25,12 @@
     //[self registerForKeyboardNotifications];
 
 }
+- (IBAction)tryLogin:(id)sender {
+    NSLog(@"try to login");
+}
+- (IBAction)tryRegister:(id)sender {
+    NSLog(@"try to register");
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -33,6 +39,26 @@
 - (void)handleSingleTap:(UITapGestureRecognizer *) sender
 {
     [self.view endEditing:YES];
+}
+-(BOOL)textFieldShouldReturn:(UITextField*)textField
+{
+    NSInteger nextTag = textField.tag + 1;
+    if(nextTag==2)
+    {
+        NSLog(@"try to login");
+        [textField resignFirstResponder];
+        return NO;
+    }
+    // Try to find next responder
+    UIResponder* nextResponder = [textField.superview viewWithTag:nextTag];
+    if (nextResponder) {
+        // Found next responder, so set it.
+        [nextResponder becomeFirstResponder];
+    } else {
+        // Not found, so remove keyboard.
+        [textField resignFirstResponder];
+    }
+    return NO; // We do not want UITextField to insert line-breaks.
 }
 /*
 #pragma mark - Navigation

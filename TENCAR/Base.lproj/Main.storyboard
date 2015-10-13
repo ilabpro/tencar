@@ -47,10 +47,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K0B-2C-VMy">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4I-nr-BbP">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4I-nr-BbP">
                                         <rect key="frame" x="0.0" y="607" width="188" height="60"/>
                                         <animations/>
-                                        <color key="backgroundColor" red="0.0" green="0.71764705882352942" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.30588235294117649" green="0.37254901960784315" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" priority="100" constant="50" id="1hj-ne-Njc"/>
                                             <constraint firstAttribute="width" constant="100" id="Ocn-jW-p6O"/>
@@ -59,7 +59,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="ALSSchlangesans-Bold" family="ALSSchlangesans-Bold" pointSize="14"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="ВОЙТИ">
+                                        <state key="normal" title="ВОЙТИ" backgroundImage="back_default_login_but">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="default">
@@ -69,11 +69,14 @@
                                                 <exclude reference="Xze-KT-NcW"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="tryLogin:" destination="Wt0-sA-v2s" eventType="touchUpInside" id="3j4-eT-aVL"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyZ-Ri-bMt">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyZ-Ri-bMt">
                                         <rect key="frame" x="188" y="607" width="187" height="60"/>
                                         <animations/>
-                                        <color key="backgroundColor" red="0.0" green="0.71764705882352942" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.30588235294117649" green="0.37254901960784315" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" priority="100" constant="50" id="KL2-Gw-xH5"/>
                                             <constraint firstAttribute="width" constant="100" id="t5o-79-CEw"/>
@@ -82,8 +85,8 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="ALSSchlangesans-Bold" family="ALSSchlangesans-Bold" pointSize="14"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="РЕГИСТРАЦИЯ">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="РЕГИСТРАЦИЯ" backgroundImage="back_default_login_but">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                         </state>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -92,6 +95,9 @@
                                                 <exclude reference="vZg-Uo-lw2"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="tryRegister:" destination="Wt0-sA-v2s" eventType="touchUpInside" id="Sze-8U-SUI"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Rl-EF-grq">
                                         <rect key="frame" x="187" y="622" width="1" height="30"/>
@@ -117,17 +123,22 @@
                                                 <rect key="frame" x="30" y="20" width="315" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450980392156" green="0.48627450980392156" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=""/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="P5H-EH-whX"/>
                                                 </constraints>
                                                 <color key="textColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="xuw-RX-4BO"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ПАРОЛЬ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="SQu-QH-U9K" customClass="RPFloatingPlaceholderTextField">
+                                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ПАРОЛЬ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="SQu-QH-U9K" customClass="RPFloatingPlaceholderTextField">
                                                 <rect key="frame" x="30" y="70" width="315" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450980392156" green="0.48627450980392156" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=""/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="aYW-t5-dij"/>
                                                     <constraint firstAttribute="height" constant="30" id="aya-4V-A6h"/>
@@ -142,9 +153,12 @@
                                                         <exclude reference="epy-TC-yPw"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="3qT-3L-0Pu"/>
+                                                </connections>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1X-Rf-knR">
-                                                <rect key="frame" x="0.0" y="120" width="375" height="29"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1X-Rf-knR">
+                                                <rect key="frame" x="0.0" y="120" width="375" height="26"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
                                                 <state key="normal" title="Забыли пароль?">
@@ -192,16 +206,16 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFg-wI-4jL">
-                                        <rect key="frame" x="96" y="568" width="184" height="29"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFg-wI-4jL">
+                                        <rect key="frame" x="105" y="571" width="165" height="26"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
                                         <state key="normal" title="ПРОДОЛЖИТЬ КАК ГОСТЬ">
                                             <color key="titleColor" red="0.48627450980392156" green="0.48627450980392156" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rUy-7F-QEY">
-                                        <rect key="frame" x="30" y="498" width="143" height="60"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rUy-7F-QEY">
+                                        <rect key="frame" x="30" y="501" width="143" height="60"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.30196078431372547" green="0.45882352941176469" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -220,8 +234,8 @@
                                             </mask>
                                         </variation>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="F4x-p0-UtE">
-                                        <rect key="frame" x="203" y="498" width="142" height="60"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="F4x-p0-UtE">
+                                        <rect key="frame" x="203" y="501" width="142" height="60"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -778,6 +792,7 @@
     </scenes>
     <resources>
         <image name="back" width="2208" height="2208"/>
+        <image name="back_default_login_but" width="10" height="10"/>
         <image name="black_dot" width="5" height="5"/>
         <image name="fb" width="25" height="25"/>
         <image name="login_icon" width="25" height="25"/>

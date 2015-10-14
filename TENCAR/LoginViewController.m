@@ -28,10 +28,16 @@
 - (IBAction)tryLogin:(id)sender {
     NSLog(@"try to login");
 }
+/*
 - (IBAction)tryRegister:(id)sender {
-    NSLog(@"try to register");
+   
+    [self performSegueWithIdentifier:@"go_privacy" sender:nil];
 }
-
+*/
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.navigationController.navigationBar.hidden = YES;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

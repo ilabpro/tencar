@@ -38,6 +38,7 @@
 		77BB57481B53F87C0060E181 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77BB57461B53F87C0060E181 /* LaunchScreen.storyboard */; };
 		77BB57531B53F87D0060E181 /* TENCARTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57521B53F87D0060E181 /* TENCARTests.m */; };
 		77BB575E1B53F87D0060E181 /* TENCARUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB575D1B53F87D0060E181 /* TENCARUITests.m */; };
+		77BD05DB1BCE517600EF648A /* PrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BD05DA1BCE517600EF648A /* PrivacyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,8 @@
 		77BB575F1B53F87D0060E181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77BB576B1B5402A70060E181 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		77BB576C1B5402A70060E181 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		77BD05D91BCE517600EF648A /* PrivacyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivacyViewController.h; sourceTree = "<group>"; };
+		77BD05DA1BCE517600EF648A /* PrivacyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivacyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +254,8 @@
 				77BB573E1B53F87C0060E181 /* Main.storyboard */,
 				7741566B1BCD0D0600DB6EE7 /* LoginViewController.h */,
 				7741566C1BCD0D0600DB6EE7 /* LoginViewController.m */,
+				77BD05D91BCE517600EF648A /* PrivacyViewController.h */,
+				77BD05DA1BCE517600EF648A /* PrivacyViewController.m */,
 				770D6B0D1B5FB2ED000B16DA /* navbarViewController.h */,
 				770D6B0E1B5FB2ED000B16DA /* navbarViewController.m */,
 				770D6AED1B5D0EE6000B16DA /* dashboardViewController.h */,
@@ -442,6 +447,7 @@
 				77BB57431B53F87C0060E181 /* TENCAR.xcdatamodeld in Sources */,
 				770D6AEF1B5D0EE6000B16DA /* dashboardViewController.m in Sources */,
 				77057A4D1B566FAE00FCE40C /* JASidePanelController.m in Sources */,
+				77BD05DB1BCE517600EF648A /* PrivacyViewController.m in Sources */,
 				7741566A1BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextView.m in Sources */,
 				770D6AFA1B5F869E000B16DA /* UIViewController+JASidePanel.m in Sources */,
 				770D6B0F1B5FB2ED000B16DA /* navbarViewController.m in Sources */,

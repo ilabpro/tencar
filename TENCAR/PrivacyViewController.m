@@ -9,14 +9,27 @@
 #import "PrivacyViewController.h"
 
 @interface PrivacyViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *agree_privacyButton;
 
 @end
+int agree_privacySelected;
 
 @implementation PrivacyViewController
+@synthesize agree_privacyButton;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    agree_privacySelected = 0;
+}
+- (IBAction)agree_privacy_touch:(id)sender {
+    if (agree_privacySelected == 0){
+        [agree_privacyButton setSelected:YES];
+        agree_privacySelected = 1;
+    } else {
+        [agree_privacyButton setSelected:NO];
+        agree_privacySelected = 0;
+    };
 }
 - (void)viewWillAppear:(BOOL)animated
 {

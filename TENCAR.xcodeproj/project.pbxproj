@@ -39,6 +39,8 @@
 		77BB57531B53F87D0060E181 /* TENCARTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57521B53F87D0060E181 /* TENCARTests.m */; };
 		77BB575E1B53F87D0060E181 /* TENCARUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB575D1B53F87D0060E181 /* TENCARUITests.m */; };
 		77BD05DB1BCE517600EF648A /* PrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BD05DA1BCE517600EF648A /* PrivacyViewController.m */; };
+		77BD05E91BCF9AE400EF648A /* privacy in Resources */ = {isa = PBXBuildFile; fileRef = 77BD05E81BCF9AE400EF648A /* privacy */; };
+		77BD05EC1BCFD16F00EF648A /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BD05EB1BCFD16F00EF648A /* RegisterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,9 @@
 		77BB576C1B5402A70060E181 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		77BD05D91BCE517600EF648A /* PrivacyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivacyViewController.h; sourceTree = "<group>"; };
 		77BD05DA1BCE517600EF648A /* PrivacyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivacyViewController.m; sourceTree = "<group>"; };
+		77BD05E81BCF9AE400EF648A /* privacy */ = {isa = PBXFileReference; lastKnownFileType = folder; path = privacy; sourceTree = "<group>"; };
+		77BD05EA1BCFD16F00EF648A /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		77BD05EB1BCFD16F00EF648A /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +246,7 @@
 		77BB57341B53F87C0060E181 /* TENCAR */ = {
 			isa = PBXGroup;
 			children = (
+				77BD05E81BCF9AE400EF648A /* privacy */,
 				774156631BCCEE0D00DB6EE7 /* RPFloatingPlaceholders */,
 				770449E11B54E2B7007C099F /* TENCAR.entitlements */,
 				770D6B0B1B5F98BF000B16DA /* jaside */,
@@ -254,6 +260,8 @@
 				77BB573E1B53F87C0060E181 /* Main.storyboard */,
 				7741566B1BCD0D0600DB6EE7 /* LoginViewController.h */,
 				7741566C1BCD0D0600DB6EE7 /* LoginViewController.m */,
+				77BD05EA1BCFD16F00EF648A /* RegisterViewController.h */,
+				77BD05EB1BCFD16F00EF648A /* RegisterViewController.m */,
 				77BD05D91BCE517600EF648A /* PrivacyViewController.h */,
 				77BD05DA1BCE517600EF648A /* PrivacyViewController.m */,
 				770D6B0D1B5FB2ED000B16DA /* navbarViewController.h */,
@@ -416,6 +424,7 @@
 				77BB57451B53F87C0060E181 /* Assets.xcassets in Resources */,
 				771272C11BC7A72000697807 /* ALSSchlangesans.otf in Resources */,
 				771272C01BC7A72000697807 /* ALSSchlangesans-Thin.otf in Resources */,
+				77BD05E91BCF9AE400EF648A /* privacy in Resources */,
 				77BB57401B53F87C0060E181 /* Main.storyboard in Resources */,
 				771272BF1BC7A72000697807 /* ALSSchlangesans-Light.otf in Resources */,
 			);
@@ -455,6 +464,7 @@
 				77BB573D1B53F87C0060E181 /* ViewController.m in Sources */,
 				770D6B0A1B5F98B7000B16DA /* UIButton+Badge.m in Sources */,
 				770D6B091B5F98B7000B16DA /* UIBarButtonItem+Badge.m in Sources */,
+				77BD05EC1BCFD16F00EF648A /* RegisterViewController.m in Sources */,
 				77BB573A1B53F87C0060E181 /* AppDelegate.m in Sources */,
 				770D6AF41B5E2388000B16DA /* rightmenuViewController.m in Sources */,
 				774156691BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextField.m in Sources */,

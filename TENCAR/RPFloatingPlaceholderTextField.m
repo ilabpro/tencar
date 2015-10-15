@@ -168,7 +168,7 @@
     
     CALayer *bottomBorder = [CALayer layer];
     bottomBorder.frame = CGRectMake(0.0f, self.frame.size.height + 1, self.frame.size.width, 1.0f);
-    bottomBorder.backgroundColor = [self colorFromHexString:@"#e2e2e2"].CGColor;
+    bottomBorder.backgroundColor = [self colorFromHexString:@"#9f9e9e"].CGColor;
     [self.layer addSublayer:bottomBorder];
 }
 

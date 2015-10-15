@@ -1153,7 +1153,7 @@
                                                 </constraints>
                                             </imageView>
                                             <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ref_icon" translatesAutoresizingMaskIntoConstraints="NO" id="6Ld-Vv-psB">
-                                                <rect key="frame" x="138" y="40" width="100" height="100"/>
+                                                <rect key="frame" x="138" y="20" width="100" height="100"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="ezd-8c-a1l"/>
@@ -1355,6 +1355,16 @@
                                                     <outlet property="delegate" destination="Wt0-sA-v2s" id="Rr8-z8-1qU"/>
                                                 </connections>
                                             </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Передача персональных данных происходит по защищенному каналу с сервером TENCAR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJZ-o5-Rlx">
+                                                <rect key="frame" x="0.0" y="130" width="375" height="40"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="qPn-dE-apk"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <animations/>
                                         <constraints>
@@ -1365,15 +1375,17 @@
                                             <constraint firstItem="yNk-XE-dPz" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="7Th-nh-8fv"/>
                                             <constraint firstItem="FcE-8z-L4o" firstAttribute="top" secondItem="w8Q-qH-IJg" secondAttribute="bottom" constant="15" id="83t-WL-feD"/>
                                             <constraint firstItem="8Mb-Ms-EtX" firstAttribute="top" secondItem="xR8-8E-yFe" secondAttribute="bottom" constant="15" id="8tc-oH-V9K"/>
+                                            <constraint firstAttribute="trailing" secondItem="DJZ-o5-Rlx" secondAttribute="trailing" id="A8N-mE-cyx"/>
                                             <constraint firstItem="WYZ-34-f4r" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="AIn-5C-1rB"/>
                                             <constraint firstItem="lOU-aj-P1H" firstAttribute="top" secondItem="8Mb-Ms-EtX" secondAttribute="bottom" constant="15" id="B7P-dJ-cUg"/>
                                             <constraint firstAttribute="trailing" secondItem="Pld-91-kkH" secondAttribute="trailing" constant="20" id="Bo5-1g-FTf"/>
                                             <constraint firstAttribute="bottom" secondItem="aRA-rT-2lf" secondAttribute="bottom" constant="15" id="CBo-JC-eWj"/>
                                             <constraint firstItem="1mN-GL-eMg" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="D5j-u8-Tcp"/>
                                             <constraint firstItem="dPN-wr-1Qg" firstAttribute="top" secondItem="FcE-8z-L4o" secondAttribute="bottom" constant="15" id="Ebw-db-koV"/>
+                                            <constraint firstItem="DJZ-o5-Rlx" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" id="Enp-gk-ikz"/>
                                             <constraint firstAttribute="trailing" secondItem="FcE-8z-L4o" secondAttribute="trailing" constant="20" id="FNb-Q5-8bs"/>
                                             <constraint firstItem="MYZ-ST-tO8" firstAttribute="top" secondItem="lOU-aj-P1H" secondAttribute="bottom" constant="15" id="FdF-6D-SpA"/>
-                                            <constraint firstItem="6Ld-Vv-psB" firstAttribute="centerY" secondItem="xR8-8E-yFe" secondAttribute="centerY" id="Hi2-LI-9L5"/>
+                                            <constraint firstItem="6Ld-Vv-psB" firstAttribute="centerY" secondItem="xR8-8E-yFe" secondAttribute="centerY" constant="-20" id="Hi2-LI-9L5"/>
                                             <constraint firstItem="Pld-91-kkH" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="MLK-WI-NNZ"/>
                                             <constraint firstItem="FcE-8z-L4o" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="NND-Wq-hZH"/>
                                             <constraint firstItem="xd7-5D-HQ5" firstAttribute="top" secondItem="1mN-GL-eMg" secondAttribute="bottom" constant="15" id="NQz-gH-6AK"/>
@@ -1389,6 +1401,7 @@
                                             <constraint firstItem="Pld-91-kkH" firstAttribute="top" secondItem="WYZ-34-f4r" secondAttribute="bottom" constant="15" id="aDm-Ps-6OR"/>
                                             <constraint firstAttribute="trailing" secondItem="WYZ-34-f4r" secondAttribute="trailing" constant="20" id="bcq-QI-jzm"/>
                                             <constraint firstAttribute="trailing" secondItem="xWp-Ti-7B3" secondAttribute="trailing" constant="20" id="cve-YL-dgg"/>
+                                            <constraint firstItem="DJZ-o5-Rlx" firstAttribute="top" secondItem="6Ld-Vv-psB" secondAttribute="bottom" constant="10" id="dzf-Uc-geH"/>
                                             <constraint firstItem="8Mb-Ms-EtX" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="fUe-Fg-yoP"/>
                                             <constraint firstAttribute="trailing" secondItem="xd7-5D-HQ5" secondAttribute="trailing" constant="20" id="fvQ-yd-rLy"/>
                                             <constraint firstItem="aRA-rT-2lf" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="gMr-On-ObO"/>

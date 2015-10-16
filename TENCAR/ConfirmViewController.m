@@ -1,36 +1,32 @@
 //
-//  RegisterViewController.m
+//  ConfirmViewController.m
 //  TENCAR
 //
-//  Created by ILAB PRO on 15.10.15.
+//  Created by ILAB PRO on 16.10.15.
 //  Copyright © 2015 ilab.pro LLC. All rights reserved.
 //
 
-#import "RegisterViewController.h"
+#import "ConfirmViewController.h"
 #import "IHKeyboardAvoiding.h"
 
-@interface RegisterViewController ()
+@interface ConfirmViewController ()
 
 @end
 
-@implementation RegisterViewController
+@implementation ConfirmViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
     UIGestureRecognizer *tapper1 = [[UITapGestureRecognizer alloc]
                                     initWithTarget:self action:@selector(handleSingleTap:)];
     tapper1.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:tapper1];
-   
-   
     
-  
 }
 - (void)viewWillAppear:(BOOL)animated
 {
-     [IHKeyboardAvoiding setAvoidingView:self.scroll_reg];
+    [IHKeyboardAvoiding setAvoidingView:self.scroll_reg];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -40,10 +36,6 @@
 {
     [self.view endEditing:YES];
 }
-- (IBAction)try_confirm:(id)sender {
-    [self performSegueWithIdentifier:@"go_confirm" sender:nil];
-}
-
 /*
 #pragma mark - Navigation
 

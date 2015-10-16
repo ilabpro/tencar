@@ -24,13 +24,17 @@ int agree_privacySelected;
     // Do any additional setup after loading the view.
     agree_privacySelected = 0;
     
+    
+    
     NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html" inDirectory:@"privacy"];
     NSURL *url = [NSURL fileURLWithPath:path];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [m_webView loadRequest:request];
-     
+   
+    
     
 }
+
 - (IBAction)agree_privacy_touch:(id)sender {
     if (agree_privacySelected == 0){
         [agree_privacyButton setSelected:YES];

@@ -8,11 +8,14 @@
 
 #import "LoginViewController.h"
 
+
 @interface LoginViewController ()
+@property (weak, nonatomic) IBOutlet UIWebView *precache_webview;
 
 @end
 
 @implementation LoginViewController
+@synthesize precache_webview;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,7 +25,12 @@
                initWithTarget:self action:@selector(handleSingleTap:)];
     tapper1.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:tapper1];
-    //[self registerForKeyboardNotifications];
+   
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html" inDirectory:@"privacy"];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [precache_webview loadRequest:request];
 
 }
 - (IBAction)tryLogin:(id)sender {

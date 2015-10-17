@@ -25,10 +25,10 @@
 		771272BF1BC7A72000697807 /* ALSSchlangesans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 771272BA1BC7A72000697807 /* ALSSchlangesans-Light.otf */; };
 		771272C01BC7A72000697807 /* ALSSchlangesans-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 771272BB1BC7A72000697807 /* ALSSchlangesans-Thin.otf */; };
 		771272C11BC7A72000697807 /* ALSSchlangesans.otf in Resources */ = {isa = PBXBuildFile; fileRef = 771272BC1BC7A72000697807 /* ALSSchlangesans.otf */; };
-		774156691BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 774156661BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextField.m */; };
-		7741566A1BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 774156681BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextView.m */; };
+		773E82311BD26E4E00F57AD1 /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 773E822C1BD26E4E00F57AD1 /* JVFloatLabeledTextField.m */; };
+		773E82321BD26E4E00F57AD1 /* JVFloatLabeledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 773E822E1BD26E4E00F57AD1 /* JVFloatLabeledTextView.m */; };
+		773E82331BD26E4E00F57AD1 /* NSString+TextDirectionality.m in Sources */ = {isa = PBXBuildFile; fileRef = 773E82301BD26E4E00F57AD1 /* NSString+TextDirectionality.m */; };
 		7741566D1BCD0D0600DB6EE7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7741566C1BCD0D0600DB6EE7 /* LoginViewController.m */; };
-		7772007B1B54E55A00A1218A /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7772007A1B54E55A00A1218A /* CloudKit.framework */; };
 		77B77B221BD11D4B00267D94 /* ConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B77B211BD11D4B00267D94 /* ConfirmViewController.m */; };
 		77B77B291BD1399300267D94 /* IHKeyboardAvoiding.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B77B281BD1399300267D94 /* IHKeyboardAvoiding.m */; };
 		77BB57371B53F87C0060E181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57361B53F87C0060E181 /* main.m */; };
@@ -96,14 +96,14 @@
 		771272BA1BC7A72000697807 /* ALSSchlangesans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ALSSchlangesans-Light.otf"; sourceTree = "<group>"; };
 		771272BB1BC7A72000697807 /* ALSSchlangesans-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ALSSchlangesans-Thin.otf"; sourceTree = "<group>"; };
 		771272BC1BC7A72000697807 /* ALSSchlangesans.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ALSSchlangesans.otf; sourceTree = "<group>"; };
-		774156641BCCEE1700DB6EE7 /* RPFloatingPlaceholderConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderConstants.h; sourceTree = "<group>"; };
-		774156651BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderTextField.h; sourceTree = "<group>"; };
-		774156661BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPFloatingPlaceholderTextField.m; sourceTree = "<group>"; };
-		774156671BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderTextView.h; sourceTree = "<group>"; };
-		774156681BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPFloatingPlaceholderTextView.m; sourceTree = "<group>"; };
+		773E822B1BD26E4E00F57AD1 /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextField.h; sourceTree = "<group>"; };
+		773E822C1BD26E4E00F57AD1 /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextField.m; sourceTree = "<group>"; };
+		773E822D1BD26E4E00F57AD1 /* JVFloatLabeledTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextView.h; sourceTree = "<group>"; };
+		773E822E1BD26E4E00F57AD1 /* JVFloatLabeledTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextView.m; sourceTree = "<group>"; };
+		773E822F1BD26E4E00F57AD1 /* NSString+TextDirectionality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TextDirectionality.h"; sourceTree = "<group>"; };
+		773E82301BD26E4E00F57AD1 /* NSString+TextDirectionality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextDirectionality.m"; sourceTree = "<group>"; };
 		7741566B1BCD0D0600DB6EE7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		7741566C1BCD0D0600DB6EE7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		7772007A1B54E55A00A1218A /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		77B77B201BD11D4B00267D94 /* ConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmViewController.h; sourceTree = "<group>"; };
 		77B77B211BD11D4B00267D94 /* ConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmViewController.m; sourceTree = "<group>"; };
 		77B77B271BD1399300267D94 /* IHKeyboardAvoiding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHKeyboardAvoiding.h; sourceTree = "<group>"; };
@@ -141,7 +141,6 @@
 				770D6B001B5F87D1000B16DA /* QuartzCore.framework in Frameworks */,
 				770D6AFE1B5F87CC000B16DA /* UIKit.framework in Frameworks */,
 				770D6AFC1B5F8776000B16DA /* Foundation.framework in Frameworks */,
-				7772007B1B54E55A00A1218A /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,7 +188,6 @@
 				770D6AFF1B5F87D1000B16DA /* QuartzCore.framework */,
 				770D6AFD1B5F87CC000B16DA /* UIKit.framework */,
 				770D6AFB1B5F8776000B16DA /* Foundation.framework */,
-				7772007A1B54E55A00A1218A /* CloudKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -216,16 +214,17 @@
 			name = badges;
 			sourceTree = "<group>";
 		};
-		774156631BCCEE0D00DB6EE7 /* RPFloatingPlaceholders */ = {
+		773E822A1BD26E4500F57AD1 /* JVFloatLabeledTextField */ = {
 			isa = PBXGroup;
 			children = (
-				774156641BCCEE1700DB6EE7 /* RPFloatingPlaceholderConstants.h */,
-				774156651BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextField.h */,
-				774156661BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextField.m */,
-				774156671BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextView.h */,
-				774156681BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextView.m */,
+				773E822B1BD26E4E00F57AD1 /* JVFloatLabeledTextField.h */,
+				773E822C1BD26E4E00F57AD1 /* JVFloatLabeledTextField.m */,
+				773E822D1BD26E4E00F57AD1 /* JVFloatLabeledTextView.h */,
+				773E822E1BD26E4E00F57AD1 /* JVFloatLabeledTextView.m */,
+				773E822F1BD26E4E00F57AD1 /* NSString+TextDirectionality.h */,
+				773E82301BD26E4E00F57AD1 /* NSString+TextDirectionality.m */,
 			);
-			name = RPFloatingPlaceholders;
+			name = JVFloatLabeledTextField;
 			sourceTree = "<group>";
 		};
 		77B77B231BD137F300267D94 /* SLScrollViewKeyboardSupport */ = {
@@ -261,9 +260,9 @@
 		77BB57341B53F87C0060E181 /* TENCAR */ = {
 			isa = PBXGroup;
 			children = (
+				773E822A1BD26E4500F57AD1 /* JVFloatLabeledTextField */,
 				77B77B231BD137F300267D94 /* SLScrollViewKeyboardSupport */,
 				77BD05E81BCF9AE400EF648A /* privacy */,
-				774156631BCCEE0D00DB6EE7 /* RPFloatingPlaceholders */,
 				770449E11B54E2B7007C099F /* TENCAR.entitlements */,
 				770D6B0B1B5F98BF000B16DA /* jaside */,
 				770D6B0C1B5F98CB000B16DA /* badges */,
@@ -397,7 +396,7 @@
 						DevelopmentTeam = FXA6R77S3W;
 						SystemCapabilities = {
 							com.apple.iCloud = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -477,17 +476,18 @@
 				77057A4D1B566FAE00FCE40C /* JASidePanelController.m in Sources */,
 				77B77B221BD11D4B00267D94 /* ConfirmViewController.m in Sources */,
 				77BD05DB1BCE517600EF648A /* PrivacyViewController.m in Sources */,
-				7741566A1BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextView.m in Sources */,
 				770D6AFA1B5F869E000B16DA /* UIViewController+JASidePanel.m in Sources */,
 				770D6B0F1B5FB2ED000B16DA /* navbarViewController.m in Sources */,
 				7741566D1BCD0D0600DB6EE7 /* LoginViewController.m in Sources */,
+				773E82321BD26E4E00F57AD1 /* JVFloatLabeledTextView.m in Sources */,
 				77BB573D1B53F87C0060E181 /* ViewController.m in Sources */,
 				770D6B0A1B5F98B7000B16DA /* UIButton+Badge.m in Sources */,
+				773E82331BD26E4E00F57AD1 /* NSString+TextDirectionality.m in Sources */,
 				770D6B091B5F98B7000B16DA /* UIBarButtonItem+Badge.m in Sources */,
 				77BD05EC1BCFD16F00EF648A /* RegisterViewController.m in Sources */,
 				77BB573A1B53F87C0060E181 /* AppDelegate.m in Sources */,
 				770D6AF41B5E2388000B16DA /* rightmenuViewController.m in Sources */,
-				774156691BCCEE1700DB6EE7 /* RPFloatingPlaceholderTextField.m in Sources */,
+				773E82311BD26E4E00F57AD1 /* JVFloatLabeledTextField.m in Sources */,
 				77BB57371B53F87C0060E181 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -634,7 +634,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				CODE_SIGN_ENTITLEMENTS = TENCAR/TENCAR.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -653,7 +652,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				CODE_SIGN_ENTITLEMENTS = TENCAR/TENCAR.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

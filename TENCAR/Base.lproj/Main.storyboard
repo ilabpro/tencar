@@ -1204,12 +1204,13 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="qnm-fA-0ap"/>
+                                                    <outlet property="delegate" destination="K5T-xy-BTG" id="VCv-9v-XhV"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ИМЯ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="lOU-aj-P1H" customClass="JVFloatLabeledTextField">
+                                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ИМЯ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="lOU-aj-P1H" customClass="JVFloatLabeledTextField">
                                                 <rect key="frame" x="20" y="250" width="335" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1222,12 +1223,13 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="IMS-Lz-MGQ"/>
+                                                    <outlet property="delegate" destination="K5T-xy-BTG" id="06g-es-M0e"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ОТЧЕСТВО" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="MYZ-ST-tO8" customClass="JVFloatLabeledTextField">
+                                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ОТЧЕСТВО" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="MYZ-ST-tO8" customClass="JVFloatLabeledTextField">
                                                 <rect key="frame" x="20" y="305" width="335" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1240,12 +1242,13 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="3P7-WE-Eam"/>
+                                                    <outlet property="delegate" destination="K5T-xy-BTG" id="cW5-fw-MVb"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ДАТА РОЖДЕНИЯ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="w8Q-qH-IJg" customClass="JVFloatLabeledTextField">
+                                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ДАТА РОЖДЕНИЯ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="w8Q-qH-IJg" customClass="JVFloatLabeledTextField">
                                                 <rect key="frame" x="20" y="360" width="335" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1258,12 +1261,13 @@
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="3QR-NO-gWP"/>
+                                                    <outlet property="delegate" destination="K5T-xy-BTG" id="dfu-fb-XwS"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="НОМЕР ПАСПОРТА" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="FcE-8z-L4o" customClass="JVFloatLabeledTextField">
+                                            <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="НОМЕР ПАСПОРТА" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="FcE-8z-L4o" customClass="JVFloatLabeledTextField">
                                                 <rect key="frame" x="20" y="415" width="335" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1276,9 +1280,13 @@
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="K5T-xy-BTG" id="aGc-Kf-ELA"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="КЕМ ВЫДАН ПАСПОРТ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="dPN-wr-1Qg" customClass="JVFloatLabeledTextField">
+                                            <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="КЕМ ВЫДАН ПАСПОРТ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="dPN-wr-1Qg" customClass="JVFloatLabeledTextField">
                                                 <rect key="frame" x="20" y="470" width="335" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1291,12 +1299,13 @@
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="Cpb-nu-Fp0"/>
+                                                    <outlet property="delegate" destination="K5T-xy-BTG" id="ZZQ-1A-T4G"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ДАТА ВЫДАЧИ ПАСПОРТА" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="xWp-Ti-7B3" customClass="JVFloatLabeledTextField">
+                                            <textField opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ДАТА ВЫДАЧИ ПАСПОРТА" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="xWp-Ti-7B3" customClass="JVFloatLabeledTextField">
                                                 <rect key="frame" x="20" y="525" width="335" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1309,12 +1318,13 @@
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="HiH-gl-66a"/>
+                                                    <outlet property="delegate" destination="K5T-xy-BTG" id="Z69-aR-LEd"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="АДРЕС ПРОПИСКИ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="WYZ-34-f4r" customClass="JVFloatLabeledTextField">
+                                            <textField opaque="NO" clipsSubviews="YES" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="АДРЕС ПРОПИСКИ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="WYZ-34-f4r" customClass="JVFloatLabeledTextField">
                                                 <rect key="frame" x="20" y="580" width="335" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1327,84 +1337,13 @@
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="K6G-mn-BoY"/>
+                                                    <outlet property="delegate" destination="K5T-xy-BTG" id="d7r-lO-uHU"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="НОМЕР МОБИЛЬНОГО ТЕЛЕФОНА" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="1mN-GL-eMg" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="690" width="335" height="40"/>
-                                                <animations/>
-                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="ufn-mQ-4bq"/>
-                                                </constraints>
-                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" returnKeyType="next"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="9ai-Fm-Opc"/>
-                                                </connections>
-                                            </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="xd7-5D-HQ5" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="745" width="335" height="40"/>
-                                                <animations/>
-                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="23z-6J-bka"/>
-                                                </constraints>
-                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="7Ci-2p-pRe"/>
-                                                </connections>
-                                            </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ПРИДУМАЙТЕ ПАРОЛЬ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="yNk-XE-dPz" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="800" width="335" height="40"/>
-                                                <animations/>
-                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="Bjp-Eh-AW1"/>
-                                                </constraints>
-                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="FgD-PZ-o7A"/>
-                                                </connections>
-                                            </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ПОДТВЕРДИТЕ ПАРОЛЬ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="aRA-rT-2lf" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="855" width="335" height="40"/>
-                                                <animations/>
-                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="63F-0C-pOi"/>
-                                                </constraints>
-                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="KTB-NP-JMY"/>
-                                                </connections>
-                                            </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="НОМЕР ВОДИТЕЛЬСКИХ ПРАВ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Pld-91-kkH" customClass="JVFloatLabeledTextField">
+                                            <textField opaque="NO" clipsSubviews="YES" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="НОМЕР ВОДИТЕЛЬСКИХ ПРАВ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Pld-91-kkH" customClass="JVFloatLabeledTextField">
                                                 <rect key="frame" x="20" y="635" width="335" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1417,9 +1356,86 @@
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="Rr8-z8-1qU"/>
+                                                    <outlet property="delegate" destination="K5T-xy-BTG" id="zgd-A8-Tai"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="НОМЕР МОБИЛЬНОГО ТЕЛЕФОНА" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="1mN-GL-eMg" customClass="JVFloatLabeledTextField">
+                                                <rect key="frame" x="20" y="690" width="335" height="40"/>
+                                                <animations/>
+                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=""/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="ufn-mQ-4bq"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="K5T-xy-BTG" id="wU7-q1-e4C"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="xd7-5D-HQ5" customClass="JVFloatLabeledTextField">
+                                                <rect key="frame" x="20" y="745" width="335" height="40"/>
+                                                <animations/>
+                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=""/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="23z-6J-bka"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="K5T-xy-BTG" id="aOs-bE-IMU"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ПРИДУМАЙТЕ ПАРОЛЬ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="yNk-XE-dPz" customClass="JVFloatLabeledTextField">
+                                                <rect key="frame" x="20" y="800" width="335" height="40"/>
+                                                <animations/>
+                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=""/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Bjp-Eh-AW1"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="K5T-xy-BTG" id="dES-GF-sUJ"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ПОДТВЕРДИТЕ ПАРОЛЬ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="aRA-rT-2lf" customClass="JVFloatLabeledTextField">
+                                                <rect key="frame" x="20" y="855" width="335" height="40"/>
+                                                <animations/>
+                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=""/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="63F-0C-pOi"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="K5T-xy-BTG" id="m6E-ew-wh2"/>
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDC-m9-Rsp">
@@ -1654,7 +1670,7 @@
                                                     <constraint firstAttribute="width" constant="40" id="bdQ-vB-16p"/>
                                                 </constraints>
                                             </imageView>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ВВЕДИТЕ КОД ИЗ СМС СООБЩЕНИЯ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="5Zz-x1-gub" customClass="JVFloatLabeledTextField">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ВВЕДИТЕ КОД ИЗ EMAIL СООБЩЕНИЯ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="5Zz-x1-gub" customClass="JVFloatLabeledTextField">
                                                 <rect key="frame" x="20" y="75" width="335" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1667,12 +1683,13 @@
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="xhw-Gt-yOJ"/>
+                                                    <outlet property="delegate" destination="fn6-ep-4Tm" id="38Z-BX-bHX"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ВВЕДИТЕ КОД ИЗ EMAIL СООБЩЕНИЯ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="RKm-yD-VIy" customClass="JVFloatLabeledTextField">
+                                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ВВЕДИТЕ КОД ИЗ СМС СООБЩЕНИЯ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="RKm-yD-VIy" customClass="JVFloatLabeledTextField">
                                                 <rect key="frame" x="20" y="130" width="335" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1685,9 +1702,10 @@
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="H0S-eI-5u2"/>
+                                                    <outlet property="delegate" destination="fn6-ep-4Tm" id="PKR-7B-M2O"/>
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uga-jC-HZY">
@@ -1717,7 +1735,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="vh2-hm-mKu"/>
                                                 </constraints>
                                             </imageView>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="НОМЕР КРЕДИТНОЙ КАРТЫ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="8vN-9P-FwX" customClass="JVFloatLabeledTextField">
+                                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="НОМЕР КРЕДИТНОЙ КАРТЫ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="8vN-9P-FwX" customClass="JVFloatLabeledTextField">
                                                 <rect key="frame" x="20" y="275" width="335" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1730,12 +1748,13 @@
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="gt7-Y3-eni"/>
+                                                    <outlet property="delegate" destination="fn6-ep-4Tm" id="dl8-Vb-Npn"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ВЛАДЕЛЕЦ КРЕДИТНОЙ КАРТЫ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="EpF-VA-l5T" customClass="JVFloatLabeledTextField">
+                                            <textField opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ВЛАДЕЛЕЦ КРЕДИТНОЙ КАРТЫ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="EpF-VA-l5T" customClass="JVFloatLabeledTextField">
                                                 <rect key="frame" x="20" y="385" width="335" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1749,12 +1768,13 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="G5c-9O-jgb"/>
+                                                    <outlet property="delegate" destination="fn6-ep-4Tm" id="9gt-xD-C9Z"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="МЕСЯЦ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="0Mn-BY-ere" customClass="JVFloatLabeledTextField">
+                                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="МЕСЯЦ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="0Mn-BY-ere" customClass="JVFloatLabeledTextField">
                                                 <rect key="frame" x="20" y="330" width="75" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1767,12 +1787,13 @@
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="ExI-1H-GhP"/>
+                                                    <outlet property="delegate" destination="fn6-ep-4Tm" id="t0y-k2-v2j"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ГОД" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Q2e-n5-VBC" customClass="JVFloatLabeledTextField">
+                                            <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ГОД" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Q2e-n5-VBC" customClass="JVFloatLabeledTextField">
                                                 <rect key="frame" x="105" y="330" width="75" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1785,12 +1806,13 @@
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="fok-3M-QxA"/>
+                                                    <outlet property="delegate" destination="fn6-ep-4Tm" id="y1n-4Y-82d"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVV/CVC" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="yT1-vq-VNX" customClass="JVFloatLabeledTextField">
+                                            <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVV/CVC" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="yT1-vq-VNX" customClass="JVFloatLabeledTextField">
                                                 <rect key="frame" x="200" y="330" width="155" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1803,9 +1825,10 @@
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next" secureTextEntry="YES"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="0GO-6U-rEE"/>
+                                                    <outlet property="delegate" destination="fn6-ep-4Tm" id="SiC-tz-0i6"/>
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Для проверки подлинности карты будет снят и немедленно возвращен 1 рубль." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="295" translatesAutoresizingMaskIntoConstraints="NO" id="qur-Pb-E0w">

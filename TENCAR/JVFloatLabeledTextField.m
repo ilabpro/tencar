@@ -35,7 +35,9 @@ static CGFloat const kLineViewHeight = 0.5f;
 @interface JVFloatLabeledTextField()
 
 @property (nonatomic, strong) CALayer* bottomBorderLayer;
-
+@property (nonatomic, strong) UIToolbar* numberToolbar;
+@property (nonatomic, strong) UIBarButtonItem *clear_btn;
+@property (nonatomic, strong) UIBarButtonItem *done_btn;
 @end
 
 @implementation JVFloatLabeledTextField
@@ -83,6 +85,7 @@ static CGFloat const kLineViewHeight = 0.5f;
 
 #pragma mark -
 - (void)setIsBottomBorderEnabled:(BOOL)isBottomBorderEnabled {
+    
         _isBottomBorderEnabled = isBottomBorderEnabled;
         if (isBottomBorderEnabled) {
                 if (!_bottomBorderLayer) {
@@ -95,7 +98,59 @@ static CGFloat const kLineViewHeight = 0.5f;
                     [_bottomBorderLayer removeFromSuperlayer];
                 }
 }
-
+- (void)setHaveClearDone:(BOOL)haveClearDone {
+  
+    
+    _haveClearDone = haveClearDone;
+    if (haveClearDone) {
+        if (!_numberToolbar) {
+            
+            _numberToolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 50)];
+            _numberToolbar.barStyle = UIBarStyleDefault; //настройка стиля для панели
+            _numberToolbar.tintColor = [self colorFromHexString:@"#00B7F5"]; // настройка цвета кнопок
+            
+            _clear_btn = [[UIBarButtonItem alloc]initWithTitle:@"ОЧИСТИТЬ" style:UIBarButtonItemStyleBordered target:self action:@selector(clearField)];
+            _done_btn = [[UIBarButtonItem alloc]initWithTitle:@"ГОТОВО >" style:UIBarButtonItemStyleDone target:self action:@selector(doneWithNumberPad)];
+            
+            [_done_btn setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                              [UIFont fontWithName:@"ALSSchlangesans-Bold" size:12], NSFontAttributeName,
+                                              
+                                              nil]
+                                    forState:UIControlStateNormal];
+            [_clear_btn setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                               [UIFont fontWithName:@"ALSSchlangesans" size:12], NSFontAttributeName,
+                                               
+                                               nil]
+                                     forState:UIControlStateNormal];
+            
+            
+            //создание массива кнопок
+            _numberToolbar.items = [NSArray arrayWithObjects: _clear_btn, // кнопка очистки поля
+                                   [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil], // пустое место для заполнения пространства панели
+                                   _done_btn,nil];//кнопка завершения ввода
+            
+            [_numberToolbar sizeToFit]; //метод корректного масштабирования панели
+            
+           
+            self.inputAccessoryView = _numberToolbar; // применение новой панели к нужному текстовому полю
+           
+        }
+    } else {
+       
+        [_numberToolbar removeFromSuperview];
+        
+    }
+}
+- (void)doneWithNumberPad
+{
+    [self resignFirstResponder];
+    
+}
+- (void)clearField
+{
+    self.text = @"";
+    
+}
 - (UIFont *)defaultFloatingLabelFont
 {
     UIFont *textFieldFont = nil;
@@ -334,6 +389,13 @@ static CGFloat const kLineViewHeight = 0.5f;
         [self showFloatingLabel:firstResponder];
     }
     _bottomBorderLayer.frame = CGRectMake(0, CGRectGetHeight(self.frame) - 1, CGRectGetWidth(self.frame), kLineViewHeight);
+}
+- (UIColor *)colorFromHexString:(NSString *)hexString {
+    unsigned rgbValue = 0;
+    NSScanner *scanner = [NSScanner scannerWithString:hexString];
+    [scanner setScanLocation:1]; // bypass '#' character
+    [scanner scanHexInt:&rgbValue];
+    return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
 }
 
 @end

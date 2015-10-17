@@ -122,6 +122,12 @@ IB_DESIGNABLE
  */
 @property (nonatomic, assign) IBInspectable BOOL isBottomBorderEnabled;
 
+/**
+ * Indicates whether the text field have clear and done button.
+ * Defaults value is NO.
+ */
+@property (nonatomic, assign) IBInspectable BOOL haveClearDone;
+
 
 /**
  *  Sets the placeholder and the floating title

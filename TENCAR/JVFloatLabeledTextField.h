@@ -41,7 +41,7 @@
  * Credits for the concept to Matt D. Smith (@mds), and his original design:  http://mattdsmith.com/float-label-pattern/
  */
 IB_DESIGNABLE
-@interface JVFloatLabeledTextField : UITextField
+@interface JVFloatLabeledTextField : UITextField <UITextFieldDelegate>
 
 /**
  * Read-only access to the floating label.
@@ -128,6 +128,22 @@ IB_DESIGNABLE
  */
 @property (nonatomic, assign) IBInspectable BOOL haveClearDone;
 
+@property (nonatomic, assign) IBInspectable BOOL isMaskNeed;
+
+@property (nonatomic, strong) IBInspectable NSString* maskCode;
+
+- (UITextField*)maskedTextField;
+//get the user input text without any format
+- (NSString*)getRawInputText;
+//validation for the completion of the masked field
+
+
+//resets the field
+- (void)showMask;
+
+
+//apply the mask onto a raw input
+- (void)setRawInput:(NSString*)rawInput;
 
 /**
  *  Sets the placeholder and the floating title

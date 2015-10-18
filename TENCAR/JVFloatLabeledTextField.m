@@ -28,6 +28,10 @@
 #import "JVFloatLabeledTextField.h"
 #import "NSString+TextDirectionality.h"
 
+#define MASK_CHAR_NUMERIC      @"#"
+#define MASK_CHAR_ALPHANUMERIC @"&"
+#define MASK_CHAR_LETTER       @"?"
+
 static CGFloat const kFloatingLabelShowAnimationDuration = 0.3f;
 static CGFloat const kFloatingLabelHideAnimationDuration = 0.3f;
 static CGFloat const kLineViewHeight = 0.5f;
@@ -43,6 +47,14 @@ static CGFloat const kLineViewHeight = 0.5f;
 @implementation JVFloatLabeledTextField
 {
     BOOL _isFloatingLabelFontDefault;
+    
+    //masking character for blank parts;
+    NSString *numericBlank;
+    NSString *alphaNumericBlank;
+    NSString *letterBlank;
+    UITextField *maskedTextField;
+    //user input is stored here
+    NSString *inputText;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -59,12 +71,50 @@ static CGFloat const kLineViewHeight = 0.5f;
     self = [super initWithCoder:aDecoder];
     if (self) {
         [self commonInit];
+        
     }
     return self;
 }
 
+-(void)configureViewShowMask:(BOOL)showMask
+{
+    
+    
+    if (showMask)
+    {
+        inputText = @"";
+        numericBlank      = @"_";
+        alphaNumericBlank = @"_";
+        letterBlank       = @"_";
+        [self configureTextField];
+        [self textField:maskedTextField shouldChangeCharactersInRange:NSMakeRange(0, 0) replacementString:@""];
+    }
+    
+}
+
+
+
+
+-(void)configureTextField
+{
+    maskedTextField = self;
+    /*
+    [maskedTextField setFrame:self.bounds];
+    [self addSubview:maskedTextField];
+    maskedTextField.delegate = self;
+     */
+}
+
+
+
+
+
+
+
+
 - (void)commonInit
 {
+    
     _floatingLabel = [UILabel new];
     _floatingLabel.alpha = 0.0f;
     [self addSubview:_floatingLabel];
@@ -81,9 +131,144 @@ static CGFloat const kLineViewHeight = 0.5f;
 
     _adjustsClearButtonRect = YES;
     _isFloatingLabelFontDefault = YES;
+    
+    self.delegate = self;
+    
+    
+   
+   
+   
+    
+    
+    
+}
+#pragma mark - Text Field Delegate Methods
+-(BOOL)textFieldShouldReturn:(UITextField*)textField
+{
+    NSInteger nextTag = textField.tag + 1;
+    
+    // Try to find next responder
+    UIResponder* nextResponder = [textField.superview viewWithTag:nextTag];
+    if (nextResponder) {
+        // Found next responder, so set it.
+        [nextResponder becomeFirstResponder];
+    } else {
+        // Not found, so remove keyboard.
+        [textField resignFirstResponder];
+    }
+    return NO; // We do not want UITextField to insert line-breaks.
 }
 
+-(void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+    if(_isMaskNeed)
+    {
+        [self selectTextForInput:textField atRange:NSMakeRange([self calculateCaretLocation], 0)];
+        
+         if (inputText.length == 0)
+         {
+         [self textField:maskedTextField shouldChangeCharactersInRange:NSMakeRange(0, 0) replacementString:@""];
+         }
+        
+    }
+    
+    
+    
+    
+   
+    
+}
+
+-(void)textFieldDidEndEditing:(UITextField *)textField
+{
+    
+    
+    if(_isMaskNeed)
+    {
+        if (inputText.length == 0)
+        {
+            textField.text = @"";
+        }
+    }
+    
+    
+    
+}
+
+
+
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    if(_isMaskNeed)
+    {
+        return [self applySimpleMaskOnTextfield:textField range:range replacementString:string];
+    }
+    else
+    {
+        return YES;
+    }
+    
+}
+
+
+
 #pragma mark -
+- (void)selectTextForInput:(UITextField *)input atRange:(NSRange)range
+{
+    UITextPosition *start = [input positionFromPosition:[input beginningOfDocument]
+                                                 offset:range.location];
+    UITextPosition *end = [input positionFromPosition:start
+                                               offset:range.length];
+    [input setSelectedTextRange:[input textRangeFromPosition:start toPosition:end]];
+}
+- (NSUInteger)calculateCaretLocation
+{
+    int k = 0;
+    NSUInteger caretLoc = -1;
+    for (int i = 0; i < _maskCode.length; i++)
+    {
+        NSString* formatCharacter = [_maskCode substringWithRange:NSMakeRange(i, 1)];
+        if ([self isSpecialCharacter:formatCharacter])
+        {
+            if (k == inputText.length)
+            {
+                caretLoc = i;
+            }
+            k++;
+        }
+    }
+    if (caretLoc == -1)
+    {
+        caretLoc = _maskCode.length;
+    }
+    return caretLoc;
+}
+
+- (void)setIsMaskNeed:(BOOL)isMaskNeed {
+    
+    _isMaskNeed = isMaskNeed;
+   
+     [self configureViewShowMask:isMaskNeed];
+    
+    
+}
+- (void)setMaskCode:(NSString*)maskCode {
+    
+    _maskCode = maskCode;
+    [maskedTextField resignFirstResponder];
+    [self autoKeyboardDecision];
+    maskedTextField.text = @"";
+    
+}
+- (NSString*)getRawInputText
+{
+    return inputText;
+}
+-(UITextField*)maskedTextField
+{
+    return maskedTextField;
+}
 - (void)setIsBottomBorderEnabled:(BOOL)isBottomBorderEnabled {
     
         _isBottomBorderEnabled = isBottomBorderEnabled;
@@ -98,6 +283,212 @@ static CGFloat const kLineViewHeight = 0.5f;
                     [_bottomBorderLayer removeFromSuperlayer];
                 }
 }
+
+#define BUFFER_SIZE 32
+- (void)setRawInput:(NSString*)rawInput
+{
+    int hardIndex = 0;
+    NSArray *indexArr = [self getSpecialCharIndexArray];
+    
+    NSRange range = { 0, BUFFER_SIZE };
+    NSUInteger end = [rawInput length];
+    while (range.location < end)
+    {
+        unichar buffer[BUFFER_SIZE];
+        if (range.location + range.length > end)
+        {
+            range.length = end - range.location;
+        }
+        [rawInput getCharacters: buffer range: range];
+        range.location += BUFFER_SIZE;
+        for (unsigned i=0 ; i<range.length ; i++)
+        {
+            
+            if (hardIndex >= indexArr.count)
+            {
+                return;
+            }
+            
+            unichar c = buffer[i];
+            NSString* s = [NSString stringWithCharacters:&c length:1];
+            
+            int loc = [[indexArr objectAtIndex:hardIndex] intValue];
+            [self applySimpleMaskOnTextfield:self.maskedTextField range:NSMakeRange(loc, 1) replacementString:s];
+            
+            hardIndex++;
+        }
+    }
+}
+-(NSArray*)getSpecialCharIndexArray
+{
+    int hardIndex = 0;
+    
+    NSMutableArray *indexArr = [[NSMutableArray alloc] init];
+    NSRange range = { 0, BUFFER_SIZE };
+    NSUInteger end = [_maskCode length];
+    while (range.location < end)
+    {
+        unichar buffer[BUFFER_SIZE];
+        if (range.location + range.length > end)
+        {
+            range.length = end - range.location;
+        }
+        [_maskCode getCharacters: buffer range: range];
+        range.location += BUFFER_SIZE;
+        for (unsigned i=0 ; i<range.length ; i++)
+        {
+            hardIndex++;
+            
+            unichar c = buffer[i];
+            NSString* s = [NSString stringWithCharacters:&c length:1];
+            if ([self isSpecialCharacter:s])
+            {
+                [indexArr addObject:[NSNumber numberWithInt:hardIndex]];
+            }
+        }
+    }
+    return [NSArray arrayWithArray:indexArr];
+}
+-(void)autoKeyboardDecision
+{
+    int hardIndex = 0;
+    NSRange range = { 0, BUFFER_SIZE };
+    NSUInteger end = [_maskCode length];
+    while (range.location < end)
+    {
+        unichar buffer[BUFFER_SIZE];
+        if (range.location + range.length > end)
+        {
+            range.length = end - range.location;
+        }
+        [_maskCode getCharacters: buffer range: range];
+        range.location += BUFFER_SIZE;
+        for (unsigned i=0 ; i<range.length ; i++)
+        {
+            hardIndex++;
+            
+            unichar c = buffer[i];
+            NSString* s = [NSString stringWithCharacters:&c length:1];
+            if ([s isEqualToString:MASK_CHAR_ALPHANUMERIC] ||
+                [s isEqualToString:MASK_CHAR_LETTER])
+            {
+                return;
+            }
+        }
+    }
+    [maskedTextField setKeyboardType:UIKeyboardTypeNumberPad];
+}
+#pragma mark - Main Masking Operation
+- (BOOL)applySimpleMaskOnTextfield:(UITextField*)textField range:(NSRange)range replacementString:(NSString *)string
+{
+    
+    if ([string isEqualToString:@""])
+    {
+        //Delete character mode
+        inputText = [inputText substringToIndex:inputText.length-(inputText.length>0)];
+    }
+    else
+    {
+        //Add character mode
+        
+        //dont allow a longer string to be pasted (is it disabled by the button already)
+        if (string.length > 1)
+        {
+            return NO;
+        }
+        //return if the input value is different
+        if (![self isStringValidForMask:string])
+        {
+            return NO;
+        }
+        //add one character
+        inputText = [inputText stringByAppendingString:string];
+        
+    }
+    
+   
+    
+    NSString *finalString = @"";
+    int k = 0;
+    NSUInteger caretLocation = -1;
+    for (int i = 0; i < _maskCode.length; i++)
+    {
+        NSString* formatCharacter = [_maskCode substringWithRange:NSMakeRange(i, 1)];
+        if ([self isSpecialCharacter:formatCharacter])
+        {
+            if (k < inputText.length)
+            {
+                NSString *inputSubstring = [inputText substringWithRange:NSMakeRange(k, 1)];
+                k++;
+                
+                finalString = [finalString stringByAppendingString:inputSubstring];
+               
+            }
+            else
+            {
+                
+                finalString = [finalString stringByAppendingString:[self blankForSpecialCharacter:formatCharacter]];
+            }
+            
+        }
+        else
+        {
+            finalString = [finalString stringByAppendingString:formatCharacter];
+            
+        }
+    }
+    
+    caretLocation = [self calculateCaretLocation];
+    
+    //set the text manually
+    textField.text = finalString;
+    [self selectTextForInput:textField atRange:NSMakeRange(caretLocation, 0)];
+    
+    return NO;
+}
+
+- (void)showMask
+{
+    inputText = @"";
+    [self textField:maskedTextField shouldChangeCharactersInRange:NSMakeRange(0, 0) replacementString:@""];
+}
+
+#pragma mark - characterSet Validation
+
+- (BOOL)isStringValidForMask: (NSString*)string
+{
+    int counter = 0;
+    
+    //iterate through the format string until the next special character slot to be edited is found
+    for (int i = 0; i < _maskCode.length; i++)
+    {
+        NSString* formatCharacter = [_maskCode substringWithRange:NSMakeRange(i, 1)];
+        if ([self isSpecialCharacter:formatCharacter])
+        {
+            //"counter"th special character
+            
+            //current mask character is to be tested with a valid character set
+            if (counter == inputText.length)
+            {
+                NSCharacterSet* charSet = [self characterSetForSpecialCharacter:formatCharacter];
+                NSRange r = [string rangeOfCharacterFromSet: charSet];
+                
+                if (r.location != NSNotFound)
+                {
+                    //string is valid for this set
+                    return YES;
+                }
+                else
+                {
+                    return NO;
+                }
+            }
+            counter++;
+        }
+    }
+    return NO;
+}
+
 - (void)setHaveClearDone:(BOOL)haveClearDone {
   
     
@@ -141,6 +532,8 @@ static CGFloat const kLineViewHeight = 0.5f;
         
     }
 }
+
+
 - (void)doneWithNumberPad
 {
     [self resignFirstResponder];
@@ -148,7 +541,19 @@ static CGFloat const kLineViewHeight = 0.5f;
 }
 - (void)clearField
 {
-    self.text = @"";
+   
+    if(_isMaskNeed)
+    {
+      
+       inputText = @"";
+      [self textField:maskedTextField shouldChangeCharactersInRange:NSMakeRange(0, 0) replacementString:@""];
+        
+    }
+    else
+    {
+        self.text = @"";
+    }
+    
     
 }
 - (UIFont *)defaultFloatingLabelFont
@@ -396,6 +801,69 @@ static CGFloat const kLineViewHeight = 0.5f;
     [scanner setScanLocation:1]; // bypass '#' character
     [scanner scanHexInt:&rgbValue];
     return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
+}
+#pragma mark - Special Character (MASK_CHAR_x)
+
+-(BOOL)isSpecialCharacter: (NSString*)specialCharacter
+{
+    return  [specialCharacter isEqualToString:MASK_CHAR_NUMERIC]      ||
+    [specialCharacter isEqualToString:MASK_CHAR_ALPHANUMERIC] ||
+    [specialCharacter isEqualToString:MASK_CHAR_LETTER];
+}
+
+-(NSString*)blankForSpecialCharacter:(NSString*)specialCharacter
+{
+    if ([specialCharacter isEqualToString:MASK_CHAR_NUMERIC])
+    {
+        
+        return numericBlank;
+    }
+    else if ([specialCharacter isEqualToString:MASK_CHAR_ALPHANUMERIC])
+    {
+        return alphaNumericBlank;
+    }
+    else if ([specialCharacter isEqualToString:MASK_CHAR_LETTER])
+    {
+        return letterBlank;
+    }
+    else
+    {
+        return @"_";
+    }
+}
+- (BOOL)isFieldComplete
+{
+    NSString *speacialChars = [NSString stringWithFormat:@"%@%@%@",MASK_CHAR_ALPHANUMERIC,MASK_CHAR_NUMERIC,MASK_CHAR_LETTER];
+    NSCharacterSet *characterSet = [[NSCharacterSet characterSetWithCharactersInString:speacialChars] invertedSet];
+    NSString *rawFormat = [_maskCode stringByTrimmingCharactersInSet:characterSet];
+    rawFormat = [rawFormat stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    return rawFormat.length == inputText.length;
+}
+-(NSCharacterSet*)characterSetForSpecialCharacter: (NSString*)specialCharacter
+{
+    if ([specialCharacter isEqualToString:MASK_CHAR_NUMERIC])
+    {
+        return [NSCharacterSet decimalDigitCharacterSet];
+    }
+    else if ([specialCharacter isEqualToString:MASK_CHAR_ALPHANUMERIC])
+    {
+        return [NSCharacterSet alphanumericCharacterSet];
+    }
+    else if ([specialCharacter isEqualToString:MASK_CHAR_LETTER])
+    {
+        return [NSCharacterSet letterCharacterSet];
+    }
+    else
+    {
+        return nil;
+    }
+}
+#pragma mark - Clear
+
+-(void)dealloc
+{
+    maskedTextField.delegate = nil;
 }
 
 @end

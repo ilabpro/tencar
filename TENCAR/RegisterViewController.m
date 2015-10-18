@@ -8,7 +8,7 @@
 
 #import "RegisterViewController.h"
 #import "IHKeyboardAvoiding.h"
-#import "JVFloatLabeledTextField.h"
+
 
 @interface RegisterViewController ()
 
@@ -45,21 +45,6 @@
 }
 - (IBAction)try_confirm:(id)sender {
     [self performSegueWithIdentifier:@"go_confirm" sender:nil];
-}
--(BOOL)textFieldShouldReturn:(UITextField*)textField
-{
-    NSInteger nextTag = textField.tag + 1;
-    
-    // Try to find next responder
-    UIResponder* nextResponder = [textField.superview viewWithTag:nextTag];
-    if (nextResponder) {
-        // Found next responder, so set it.
-        [nextResponder becomeFirstResponder];
-    } else {
-        // Not found, so remove keyboard.
-        [textField resignFirstResponder];
-    }
-    return NO; // We do not want UITextField to insert line-breaks.
 }
 
 /*

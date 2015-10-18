@@ -256,6 +256,7 @@ static CGFloat const kLineViewHeight = 0.5f;
 }
 
 
+
 - (void)setMaskCode:(NSString*)maskCode {
     
     _maskCode = maskCode;

@@ -132,6 +132,8 @@ IB_DESIGNABLE
 
 @property (nonatomic, assign) IBInspectable BOOL isDatePicker;
 
+
+
 @property (nonatomic, strong) IBInspectable NSString* maskCode;
 
 - (UITextField*)maskedTextField;

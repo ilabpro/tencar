@@ -18,7 +18,6 @@
             <string>ALSSchlangesans-Bold</string>
             <string>ALSSchlangesans-Bold</string>
             <string>ALSSchlangesans-Bold</string>
-            <string>ALSSchlangesans-Bold</string>
         </mutableArray>
         <mutableArray key="ALSSchlangesans.otf">
             <string>ALSSchlangesans</string>
@@ -1700,7 +1699,7 @@
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="НОМЕР КРЕДИТНОЙ КАРТЫ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="8vN-9P-FwX" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="275" width="215" height="40"/>
+                                                <rect key="frame" x="20" y="275" width="335" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" identifier=""/>
@@ -1728,7 +1727,7 @@
                                                 </constraints>
                                                 <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
@@ -1793,18 +1792,6 @@
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8U-g7-wot">
-                                                <rect key="frame" x="255" y="275" width="100" height="40"/>
-                                                <animations/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="ci2-VJ-170"/>
-                                                    <constraint firstAttribute="height" constant="40" id="gcN-p7-ZuI"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans-Bold" family="ALSSchlangesans-Bold" pointSize="14"/>
-                                                <state key="normal" title="РАСПОЗНАТЬ">
-                                                    <color key="titleColor" red="0.0" green="0.73333333329999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                            </button>
                                         </subviews>
                                         <animations/>
                                         <constraints>
@@ -1826,13 +1813,12 @@
                                             <constraint firstItem="RKm-yD-VIy" firstAttribute="top" secondItem="5Zz-x1-gub" secondAttribute="bottom" constant="15" id="DKL-YJ-Ga0"/>
                                             <constraint firstAttribute="trailing" secondItem="BL2-uX-zme" secondAttribute="trailing" constant="20" id="Fft-Zb-97J"/>
                                             <constraint firstAttribute="trailing" secondItem="EpF-VA-l5T" secondAttribute="trailing" constant="20" id="G9V-1D-RgH"/>
+                                            <constraint firstAttribute="trailing" secondItem="8vN-9P-FwX" secondAttribute="trailing" constant="20" id="H5K-4b-JIm"/>
                                             <constraint firstItem="BL2-uX-zme" firstAttribute="centerY" secondItem="uga-jC-HZY" secondAttribute="centerY" id="MvB-7e-Gec"/>
-                                            <constraint firstItem="I8U-g7-wot" firstAttribute="leading" secondItem="8vN-9P-FwX" secondAttribute="trailing" constant="20" id="PDS-Ta-Yvl"/>
                                             <constraint firstItem="8vN-9P-FwX" firstAttribute="top" secondItem="uga-jC-HZY" secondAttribute="bottom" constant="15" id="PbJ-pO-DGp"/>
                                             <constraint firstItem="Q2e-n5-VBC" firstAttribute="leading" secondItem="0Mn-BY-ere" secondAttribute="trailing" constant="10" id="PzP-S0-AcQ"/>
                                             <constraint firstAttribute="trailing" secondItem="qur-Pb-E0w" secondAttribute="trailing" constant="20" id="QCM-PK-0hv"/>
                                             <constraint firstItem="uga-jC-HZY" firstAttribute="top" secondItem="RKm-yD-VIy" secondAttribute="bottom" constant="15" id="R7B-Ng-TnH"/>
-                                            <constraint firstItem="I8U-g7-wot" firstAttribute="top" secondItem="BL2-uX-zme" secondAttribute="bottom" constant="15" id="RZi-ip-4K9"/>
                                             <constraint firstItem="0Mn-BY-ere" firstAttribute="top" secondItem="8vN-9P-FwX" secondAttribute="bottom" constant="15" id="UV3-uF-rVT"/>
                                             <constraint firstItem="38I-fB-MgO" firstAttribute="leading" secondItem="oDk-3X-a2T" secondAttribute="leading" constant="20" id="VFC-Ki-yc3"/>
                                             <constraint firstItem="mJ5-pC-gqW" firstAttribute="top" secondItem="oDk-3X-a2T" secondAttribute="top" id="ZYN-Jm-Crz"/>
@@ -1855,7 +1841,6 @@
                                             <constraint firstItem="bMk-qx-Lfn" firstAttribute="leading" secondItem="mJ5-pC-gqW" secondAttribute="trailing" constant="-316" id="sDi-kv-F7L"/>
                                             <constraint firstAttribute="trailing" secondItem="bMk-qx-Lfn" secondAttribute="trailing" constant="20" id="tSR-RT-57w"/>
                                             <constraint firstItem="bMk-qx-Lfn" firstAttribute="centerY" secondItem="mJ5-pC-gqW" secondAttribute="centerY" id="tap-as-x3L"/>
-                                            <constraint firstAttribute="trailing" secondItem="I8U-g7-wot" secondAttribute="trailing" constant="20" id="uFj-jf-MtE"/>
                                             <constraint firstItem="qur-Pb-E0w" firstAttribute="leading" secondItem="oDk-3X-a2T" secondAttribute="leading" constant="20" id="vIs-aH-1DA"/>
                                             <constraint firstItem="Q2e-n5-VBC" firstAttribute="width" secondItem="oDk-3X-a2T" secondAttribute="width" multiplier="0.2" id="vey-pN-SLe"/>
                                             <constraint firstItem="EpF-VA-l5T" firstAttribute="top" secondItem="Q2e-n5-VBC" secondAttribute="bottom" constant="15" id="zQh-fo-S75"/>

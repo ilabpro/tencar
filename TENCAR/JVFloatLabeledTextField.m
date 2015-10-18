@@ -42,6 +42,7 @@ static CGFloat const kLineViewHeight = 0.5f;
 @property (nonatomic, strong) UIToolbar* numberToolbar;
 @property (nonatomic, strong) UIBarButtonItem *clear_btn;
 @property (nonatomic, strong) UIBarButtonItem *done_btn;
+@property (nonatomic, strong) UIDatePicker* datePicker;
 @end
 
 @implementation JVFloatLabeledTextField
@@ -253,6 +254,8 @@ static CGFloat const kLineViewHeight = 0.5f;
     
     
 }
+
+
 - (void)setMaskCode:(NSString*)maskCode {
     
     _maskCode = maskCode;
@@ -282,6 +285,49 @@ static CGFloat const kLineViewHeight = 0.5f;
             } else {
                     [_bottomBorderLayer removeFromSuperlayer];
                 }
+}
+- (void)setIsDatePicker:(BOOL)isDatePicker {
+    
+    _isDatePicker = isDatePicker;
+    
+    if(isDatePicker)
+    {
+        if(!_datePicker)
+        {
+            NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+            NSDate *currentDate = [NSDate date];
+            NSDateComponents *comps = [[NSDateComponents alloc] init];
+            [comps setYear:-21];
+            NSDate *maxDate = [calendar dateByAddingComponents:comps toDate:currentDate options:0];
+            [comps setYear:-80];
+            NSDate *minDate = [calendar dateByAddingComponents:comps toDate:currentDate options:0];
+            
+            
+            _datePicker = [[UIDatePicker alloc] initWithFrame:CGRectZero];
+            [_datePicker addTarget:self action:@selector(onDatePickerValueChanged:) forControlEvents:UIControlEventValueChanged];
+            _datePicker.backgroundColor = [UIColor whiteColor];
+            _datePicker.datePickerMode = UIDatePickerModeDate;
+            
+            [_datePicker setMaximumDate:maxDate];
+            [_datePicker setMinimumDate:minDate];
+            
+            self.inputView = _datePicker;
+            
+        }
+    }
+    else
+    {
+        [_datePicker removeFromSuperview];
+    }
+        
+
+    
+}
+-(void)onDatePickerValueChanged:(UIDatePicker *)datePicker
+{
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"dd.MM.yyyy"];
+    self.text = [dateFormat stringFromDate:datePicker.date];
 }
 
 #define BUFFER_SIZE 32

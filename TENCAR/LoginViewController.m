@@ -34,14 +34,9 @@
 
 }
 - (IBAction)tryLogin:(id)sender {
-    NSLog(@"try to login");
+    [self performSegueWithIdentifier:@"go_dasboard" sender:nil];
 }
-/*
-- (IBAction)tryRegister:(id)sender {
-   
-    [self performSegueWithIdentifier:@"go_privacy" sender:nil];
-}
-*/
+
 - (void)viewWillAppear:(BOOL)animated
 {
     self.navigationController.navigationBar.hidden = YES;

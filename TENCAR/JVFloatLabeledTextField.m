@@ -36,6 +36,7 @@ static CGFloat const kFloatingLabelShowAnimationDuration = 0.3f;
 static CGFloat const kFloatingLabelHideAnimationDuration = 0.3f;
 static CGFloat const kLineViewHeight = 0.5f;
 
+
 @interface JVFloatLabeledTextField()
 
 @property (nonatomic, strong) CALayer* bottomBorderLayer;
@@ -128,6 +129,9 @@ static CGFloat const kLineViewHeight = 0.5f;
     _animateEvenIfNotFirstResponder = NO;
     _floatingLabelShowAnimationDuration = kFloatingLabelShowAnimationDuration;
     _floatingLabelHideAnimationDuration = kFloatingLabelHideAnimationDuration;
+    
+    
+    [self setValue:[self colorFromHexString:@"#666666"] forKeyPath:@"_placeholderLabel.textColor"];
     [self setFloatingLabelText:self.placeholder];
 
     _adjustsClearButtonRect = YES;
@@ -280,12 +284,19 @@ static CGFloat const kLineViewHeight = 0.5f;
                 if (!_bottomBorderLayer) {
                         // add bottom border
                         _bottomBorderLayer = [[CALayer alloc] init];
-                        _bottomBorderLayer.backgroundColor = [UIColor grayColor].CGColor;
+                        _bottomBorderLayer.backgroundColor = [self colorFromHexString:@"#999999"].CGColor;
                         [self.layer addSublayer:_bottomBorderLayer];
                     }
             } else {
                     [_bottomBorderLayer removeFromSuperlayer];
                 }
+}
+- (UIColor *)colorFromHexString:(NSString *)hexString {
+    unsigned rgbValue = 0;
+    NSScanner *scanner = [NSScanner scannerWithString:hexString];
+    [scanner setScanLocation:1]; // bypass '#' character
+    [scanner scanHexInt:&rgbValue];
+    return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
 }
 - (void)setIsDatePicker:(BOOL)isDatePicker {
     
@@ -842,13 +853,7 @@ static CGFloat const kLineViewHeight = 0.5f;
     }
     _bottomBorderLayer.frame = CGRectMake(0, CGRectGetHeight(self.frame) - 1, CGRectGetWidth(self.frame), kLineViewHeight);
 }
-- (UIColor *)colorFromHexString:(NSString *)hexString {
-    unsigned rgbValue = 0;
-    NSScanner *scanner = [NSScanner scannerWithString:hexString];
-    [scanner setScanLocation:1]; // bypass '#' character
-    [scanner scanHexInt:&rgbValue];
-    return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
-}
+
 #pragma mark - Special Character (MASK_CHAR_x)
 
 -(BOOL)isSpecialCharacter: (NSString*)specialCharacter

@@ -1173,14 +1173,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="413"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_reg" translatesAutoresizingMaskIntoConstraints="NO" id="xR8-8E-yFe">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                                                <rect key="frame" x="0.0" y="60" width="375" height="120"/>
                                                 <animations/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="180" id="KBG-k4-7tf"/>
+                                                    <constraint firstAttribute="height" constant="120" id="KBG-k4-7tf"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ref_icon" translatesAutoresizingMaskIntoConstraints="NO" id="6Ld-Vv-psB">
-                                                <rect key="frame" x="153" y="25" width="70" height="70"/>
+                                                <rect key="frame" x="153" y="85" width="70" height="70"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="ezd-8c-a1l">
@@ -1408,7 +1408,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDC-m9-Rsp">
-                                                <rect key="frame" x="0.0" y="120" width="375" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                                 <animations/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -1419,15 +1419,15 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Передача данных происходит по защищенному каналу с сервером TENCAR. Проверьте точность данных." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" preferredMaxLayoutWidth="295" translatesAutoresizingMaskIntoConstraints="NO" id="836-us-gMw">
-                                                <rect key="frame" x="70" y="120" width="285" height="60"/>
+                                                <rect key="frame" x="70" y="0.0" width="285" height="60"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="DSF-GD-xuc">
                                                         <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                                                     </constraint>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="15"/>
-                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
                                                     <mask key="constraints">
@@ -1441,7 +1441,7 @@
                                                 </variation>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sec_warn" translatesAutoresizingMaskIntoConstraints="NO" id="0ee-e3-SK7">
-                                                <rect key="frame" x="20" y="130" width="40" height="40"/>
+                                                <rect key="frame" x="20" y="10" width="40" height="40"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="faw-tS-ZJ7"/>
@@ -1468,11 +1468,11 @@
                                             <constraint firstAttribute="trailing" secondItem="FcE-8z-L4o" secondAttribute="trailing" constant="20" id="FNb-Q5-8bs"/>
                                             <constraint firstItem="MYZ-ST-tO8" firstAttribute="top" secondItem="lOU-aj-P1H" secondAttribute="bottom" constant="15" id="FdF-6D-SpA"/>
                                             <constraint firstAttribute="trailing" secondItem="836-us-gMw" secondAttribute="trailing" constant="20" id="GOE-Wy-DaV"/>
-                                            <constraint firstItem="6Ld-Vv-psB" firstAttribute="centerY" secondItem="xR8-8E-yFe" secondAttribute="centerY" constant="-30" id="Hi2-LI-9L5">
+                                            <constraint firstItem="6Ld-Vv-psB" firstAttribute="centerY" secondItem="xR8-8E-yFe" secondAttribute="centerY" id="Hi2-LI-9L5">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="-25"/>
                                             </constraint>
                                             <constraint firstItem="FDC-m9-Rsp" firstAttribute="top" secondItem="836-us-gMw" secondAttribute="bottom" id="JfP-uO-Knv"/>
-                                            <constraint firstItem="FDC-m9-Rsp" firstAttribute="top" secondItem="xR8-8E-yFe" secondAttribute="bottom" constant="-60" id="KbR-7z-drA"/>
+                                            <constraint firstItem="FDC-m9-Rsp" firstAttribute="top" secondItem="xR8-8E-yFe" secondAttribute="bottom" constant="-180" id="KbR-7z-drA"/>
                                             <constraint firstItem="Pld-91-kkH" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="MLK-WI-NNZ"/>
                                             <constraint firstItem="0ee-e3-SK7" firstAttribute="centerY" secondItem="FDC-m9-Rsp" secondAttribute="centerY" id="NEE-wc-EYS"/>
                                             <constraint firstItem="FcE-8z-L4o" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="NND-Wq-hZH"/>
@@ -1498,7 +1498,7 @@
                                             <constraint firstItem="lOU-aj-P1H" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="iZY-gO-JcL"/>
                                             <constraint firstAttribute="trailing" secondItem="FDC-m9-Rsp" secondAttribute="trailing" id="jMC-Gr-Pgs"/>
                                             <constraint firstItem="6Ld-Vv-psB" firstAttribute="centerX" secondItem="xR8-8E-yFe" secondAttribute="centerX" id="jtR-7q-UiL"/>
-                                            <constraint firstItem="xR8-8E-yFe" firstAttribute="top" secondItem="hCB-SR-Ja9" secondAttribute="top" id="lZ2-v0-QOG"/>
+                                            <constraint firstItem="xR8-8E-yFe" firstAttribute="top" secondItem="hCB-SR-Ja9" secondAttribute="top" constant="60" id="lZ2-v0-QOG"/>
                                             <constraint firstAttribute="trailing" secondItem="lOU-aj-P1H" secondAttribute="trailing" constant="20" id="n4V-eS-2ZW"/>
                                             <constraint firstItem="1mN-GL-eMg" firstAttribute="top" secondItem="Pld-91-kkH" secondAttribute="bottom" constant="15" id="nwZ-ae-kE0"/>
                                             <constraint firstAttribute="trailing" secondItem="MYZ-ST-tO8" secondAttribute="trailing" constant="20" id="pJ9-h0-Z8g"/>
@@ -1627,8 +1627,8 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Передача данных происходит по защищенному каналу с сервером TENCAR." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" preferredMaxLayoutWidth="295" translatesAutoresizingMaskIntoConstraints="NO" id="bMk-qx-Lfn">
                                                 <rect key="frame" x="70" y="0.0" width="285" height="60"/>
                                                 <animations/>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="15"/>
-                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sec_warn" translatesAutoresizingMaskIntoConstraints="NO" id="38I-fB-MgO">
@@ -1647,7 +1647,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="y8N-8P-Iaj"/>
                                                 </constraints>
-                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
@@ -1686,8 +1686,8 @@
                                                 <rect key="frame" x="70" y="185" width="285" height="75"/>
                                                 <animations/>
                                                 <string key="text">Привязка кредитной карты обязательна и требуется для мгновенного бронирования автомобиля, а так же своевременного погашения штрафов ГИБДД.</string>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="15"/>
-                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warn_personal" translatesAutoresizingMaskIntoConstraints="NO" id="PKM-Ns-WCG">
@@ -1785,7 +1785,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Для проверки подлинности карты будет снят и немедленно возвращен 1 рубль." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="295" translatesAutoresizingMaskIntoConstraints="NO" id="qur-Pb-E0w">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для проверки подлинности карты будет снят и немедленно возвращен 1 рубль." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="295" translatesAutoresizingMaskIntoConstraints="NO" id="qur-Pb-E0w">
                                                 <rect key="frame" x="20" y="445" width="335" height="28"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>

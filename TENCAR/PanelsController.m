@@ -7,7 +7,7 @@
 //
 
 #import "PanelsController.h"
-#import "AppDelegate.h"
+
 
 @implementation PanelsController
 
@@ -16,31 +16,16 @@
     
     
     
-    //AppDelegate *AppDelegate = [UIApplication sharedApplication].delegate;
-    
-    //UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-   // PanelsController *newRootViewController = [mainStoryBoard instantiateViewControllerWithIdentifier:@"RootViewController"];
    
-    //AppDelegate.window.rootViewController = self;
-    //[AppDelegate.window makeKeyAndVisible];
-    UINavigationController *navcontr = [self.storyboard instantiateViewControllerWithIdentifier:@"centerViewController"];
+    self.liveBlur = NO;
+    self.blurTintColor = [UIColor colorWithRed:0.0f/255.0f green:183.0f/255.0f blue:245.0f/255.0f alpha:0.65f];
+    
+    
+    self.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"contentController"];
+    self.menuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"menuController"];
     
     
     
-    [self setLeftPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"leftViewController"]];
-   [self setCenterPanel:navcontr];
-    [self setRightPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"rightViewController"]];
-   
-  //[self setCenterPanel:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"centerViewController"]]];
-    
-    
-    self.leftFixedWidth = 220;
-    self.shouldResizeRightPanel = true;
-    self.shouldResizeLeftPanel = true;
 }
--(void)stylePanel:(UIView *)panel
-{
-   //чтобы углы не загруглялись у центральной панели во время открытого меню
-}
+
 @end

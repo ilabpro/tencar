@@ -1,5 +1,5 @@
 //
-//  dashboardViewController.h
+//  MenuViewController.h
 //  TENCAR
 //
 //  Created by ILAB PRO on 19.10.15.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "REFrostedViewController.h"
-@interface dashboardViewController : UIViewController
+
+@interface MenuViewController : UITableViewController
 
 @end

@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		77057A4D1B566FAE00FCE40C /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77057A4C1B566FAE00FCE40C /* JASidePanelController.m */; };
 		77057A501B56711800FCE40C /* PanelsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77057A4F1B56711800FCE40C /* PanelsController.m */; };
-		77057A531B578AFF00FCE40C /* leftmenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77057A521B578AFF00FCE40C /* leftmenuTableViewController.m */; };
-		770D6AEF1B5D0EE6000B16DA /* dashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D6AEE1B5D0EE6000B16DA /* dashboardViewController.m */; };
-		770D6AF41B5E2388000B16DA /* rightmenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D6AF31B5E2388000B16DA /* rightmenuViewController.m */; };
 		770D6AFA1B5F869E000B16DA /* UIViewController+JASidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D6AF91B5F869E000B16DA /* UIViewController+JASidePanel.m */; };
 		770D6AFC1B5F8776000B16DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770D6AFB1B5F8776000B16DA /* Foundation.framework */; };
 		770D6AFE1B5F87CC000B16DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770D6AFD1B5F87CC000B16DA /* UIKit.framework */; };
@@ -19,7 +16,6 @@
 		770D6B021B5F87E3000B16DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770D6B011B5F87E3000B16DA /* CoreGraphics.framework */; };
 		770D6B091B5F98B7000B16DA /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D6B061B5F98B7000B16DA /* UIBarButtonItem+Badge.m */; };
 		770D6B0A1B5F98B7000B16DA /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D6B081B5F98B7000B16DA /* UIButton+Badge.m */; };
-		770D6B0F1B5FB2ED000B16DA /* navbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D6B0E1B5FB2ED000B16DA /* navbarViewController.m */; };
 		7710587F1BD3E8C40010CAD8 /* 2208_2208.png in Resources */ = {isa = PBXBuildFile; fileRef = 7710587E1BD3E8C40010CAD8 /* 2208_2208.png */; };
 		771272BD1BC7A72000697807 /* ALSSchlangesans-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 771272B81BC7A72000697807 /* ALSSchlangesans-Black.otf */; };
 		771272BE1BC7A72000697807 /* ALSSchlangesans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 771272B91BC7A72000697807 /* ALSSchlangesans-Bold.otf */; };
@@ -30,11 +26,20 @@
 		773E82321BD26E4E00F57AD1 /* JVFloatLabeledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 773E822E1BD26E4E00F57AD1 /* JVFloatLabeledTextView.m */; };
 		773E82331BD26E4E00F57AD1 /* NSString+TextDirectionality.m in Sources */ = {isa = PBXBuildFile; fileRef = 773E82301BD26E4E00F57AD1 /* NSString+TextDirectionality.m */; };
 		7741566D1BCD0D0600DB6EE7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7741566C1BCD0D0600DB6EE7 /* LoginViewController.m */; };
+		77522A5F1BD5028F008F5EDF /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 77522A541BD5028F008F5EDF /* RECommonFunctions.m */; };
+		77522A601BD5028F008F5EDF /* REFrostedContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77522A561BD5028F008F5EDF /* REFrostedContainerViewController.m */; };
+		77522A611BD5028F008F5EDF /* REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77522A581BD5028F008F5EDF /* REFrostedViewController.m */; };
+		77522A621BD5028F008F5EDF /* UIImage+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77522A5A1BD5028F008F5EDF /* UIImage+REFrostedViewController.m */; };
+		77522A631BD5028F008F5EDF /* UIView+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77522A5C1BD5028F008F5EDF /* UIView+REFrostedViewController.m */; };
+		77522A641BD5028F008F5EDF /* UIViewController+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77522A5E1BD5028F008F5EDF /* UIViewController+REFrostedViewController.m */; };
+		77522A6A1BD507E4008F5EDF /* navbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77522A691BD507E4008F5EDF /* navbarViewController.m */; };
+		77522A6D1BD50864008F5EDF /* dashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77522A6C1BD50864008F5EDF /* dashboardViewController.m */; };
+		77522A701BD5092A008F5EDF /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77522A6F1BD5092A008F5EDF /* MenuViewController.m */; };
+		77522A751BD65B83008F5EDF /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77522A741BD65B83008F5EDF /* avatar.jpg */; };
 		77B77B221BD11D4B00267D94 /* ConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B77B211BD11D4B00267D94 /* ConfirmViewController.m */; };
 		77B77B291BD1399300267D94 /* IHKeyboardAvoiding.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B77B281BD1399300267D94 /* IHKeyboardAvoiding.m */; };
 		77BB57371B53F87C0060E181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57361B53F87C0060E181 /* main.m */; };
 		77BB573A1B53F87C0060E181 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57391B53F87C0060E181 /* AppDelegate.m */; };
-		77BB573D1B53F87C0060E181 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BB573C1B53F87C0060E181 /* ViewController.m */; };
 		77BB57401B53F87C0060E181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77BB573E1B53F87C0060E181 /* Main.storyboard */; };
 		77BB57431B53F87C0060E181 /* TENCAR.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77BB57411B53F87C0060E181 /* TENCAR.xcdatamodeld */; };
 		77BB57451B53F87C0060E181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77BB57441B53F87C0060E181 /* Assets.xcassets */; };
@@ -69,16 +74,10 @@
 		77057A4C1B566FAE00FCE40C /* JASidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASidePanelController.m; sourceTree = "<group>"; };
 		77057A4E1B56711800FCE40C /* PanelsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanelsController.h; sourceTree = "<group>"; };
 		77057A4F1B56711800FCE40C /* PanelsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelsController.m; sourceTree = "<group>"; };
-		77057A511B578AFF00FCE40C /* leftmenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leftmenuTableViewController.h; sourceTree = "<group>"; };
-		77057A521B578AFF00FCE40C /* leftmenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = leftmenuTableViewController.m; sourceTree = "<group>"; };
 		770D6AEB1B5D0841000B16DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		770D6AEC1B5D0845000B16DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		770D6AED1B5D0EE6000B16DA /* dashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dashboardViewController.h; sourceTree = "<group>"; };
-		770D6AEE1B5D0EE6000B16DA /* dashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dashboardViewController.m; sourceTree = "<group>"; };
 		770D6AF01B5D0F69000B16DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		770D6AF11B5D0F69000B16DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		770D6AF21B5E2388000B16DA /* rightmenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rightmenuViewController.h; sourceTree = "<group>"; };
-		770D6AF31B5E2388000B16DA /* rightmenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rightmenuViewController.m; sourceTree = "<group>"; };
 		770D6AF81B5F869E000B16DA /* UIViewController+JASidePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JASidePanel.h"; sourceTree = "<group>"; };
 		770D6AF91B5F869E000B16DA /* UIViewController+JASidePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JASidePanel.m"; sourceTree = "<group>"; };
 		770D6AFB1B5F8776000B16DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -90,8 +89,6 @@
 		770D6B061B5F98B7000B16DA /* UIBarButtonItem+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Badge.m"; sourceTree = "<group>"; };
 		770D6B071B5F98B7000B16DA /* UIButton+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Badge.h"; sourceTree = "<group>"; };
 		770D6B081B5F98B7000B16DA /* UIButton+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Badge.m"; sourceTree = "<group>"; };
-		770D6B0D1B5FB2ED000B16DA /* navbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = navbarViewController.h; sourceTree = "<group>"; };
-		770D6B0E1B5FB2ED000B16DA /* navbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = navbarViewController.m; sourceTree = "<group>"; };
 		7710587E1BD3E8C40010CAD8 /* 2208_2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2208_2208.png; sourceTree = "<group>"; };
 		771272B81BC7A72000697807 /* ALSSchlangesans-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ALSSchlangesans-Black.otf"; sourceTree = "<group>"; };
 		771272B91BC7A72000697807 /* ALSSchlangesans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ALSSchlangesans-Bold.otf"; sourceTree = "<group>"; };
@@ -106,6 +103,25 @@
 		773E82301BD26E4E00F57AD1 /* NSString+TextDirectionality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextDirectionality.m"; sourceTree = "<group>"; };
 		7741566B1BCD0D0600DB6EE7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		7741566C1BCD0D0600DB6EE7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		77522A531BD5028F008F5EDF /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		77522A541BD5028F008F5EDF /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		77522A551BD5028F008F5EDF /* REFrostedContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFrostedContainerViewController.h; sourceTree = "<group>"; };
+		77522A561BD5028F008F5EDF /* REFrostedContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFrostedContainerViewController.m; sourceTree = "<group>"; };
+		77522A571BD5028F008F5EDF /* REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFrostedViewController.h; sourceTree = "<group>"; };
+		77522A581BD5028F008F5EDF /* REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFrostedViewController.m; sourceTree = "<group>"; };
+		77522A591BD5028F008F5EDF /* UIImage+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+REFrostedViewController.h"; sourceTree = "<group>"; };
+		77522A5A1BD5028F008F5EDF /* UIImage+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+REFrostedViewController.m"; sourceTree = "<group>"; };
+		77522A5B1BD5028F008F5EDF /* UIView+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+REFrostedViewController.h"; sourceTree = "<group>"; };
+		77522A5C1BD5028F008F5EDF /* UIView+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+REFrostedViewController.m"; sourceTree = "<group>"; };
+		77522A5D1BD5028F008F5EDF /* UIViewController+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+REFrostedViewController.h"; sourceTree = "<group>"; };
+		77522A5E1BD5028F008F5EDF /* UIViewController+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+REFrostedViewController.m"; sourceTree = "<group>"; };
+		77522A681BD507E4008F5EDF /* navbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = navbarViewController.h; sourceTree = "<group>"; };
+		77522A691BD507E4008F5EDF /* navbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = navbarViewController.m; sourceTree = "<group>"; };
+		77522A6B1BD50864008F5EDF /* dashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dashboardViewController.h; sourceTree = "<group>"; };
+		77522A6C1BD50864008F5EDF /* dashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dashboardViewController.m; sourceTree = "<group>"; };
+		77522A6E1BD5092A008F5EDF /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		77522A6F1BD5092A008F5EDF /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		77522A741BD65B83008F5EDF /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
 		77B77B201BD11D4B00267D94 /* ConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmViewController.h; sourceTree = "<group>"; };
 		77B77B211BD11D4B00267D94 /* ConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmViewController.m; sourceTree = "<group>"; };
 		77B77B271BD1399300267D94 /* IHKeyboardAvoiding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHKeyboardAvoiding.h; sourceTree = "<group>"; };
@@ -114,8 +130,6 @@
 		77BB57361B53F87C0060E181 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77BB57381B53F87C0060E181 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77BB57391B53F87C0060E181 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		77BB573B1B53F87C0060E181 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		77BB573C1B53F87C0060E181 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		77BB57421B53F87C0060E181 /* TENCAR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TENCAR.xcdatamodel; sourceTree = "<group>"; };
 		77BB57441B53F87C0060E181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77BB57491B53F87C0060E181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -220,6 +234,7 @@
 		7710587D1BD3E8B90010CAD8 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				77522A741BD65B83008F5EDF /* avatar.jpg */,
 				7710587E1BD3E8C40010CAD8 /* 2208_2208.png */,
 			);
 			name = images;
@@ -236,6 +251,25 @@
 				773E82301BD26E4E00F57AD1 /* NSString+TextDirectionality.m */,
 			);
 			name = JVFloatLabeledTextField;
+			sourceTree = "<group>";
+		};
+		77522A521BD50281008F5EDF /* REFrostedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				77522A531BD5028F008F5EDF /* RECommonFunctions.h */,
+				77522A541BD5028F008F5EDF /* RECommonFunctions.m */,
+				77522A551BD5028F008F5EDF /* REFrostedContainerViewController.h */,
+				77522A561BD5028F008F5EDF /* REFrostedContainerViewController.m */,
+				77522A571BD5028F008F5EDF /* REFrostedViewController.h */,
+				77522A581BD5028F008F5EDF /* REFrostedViewController.m */,
+				77522A591BD5028F008F5EDF /* UIImage+REFrostedViewController.h */,
+				77522A5A1BD5028F008F5EDF /* UIImage+REFrostedViewController.m */,
+				77522A5B1BD5028F008F5EDF /* UIView+REFrostedViewController.h */,
+				77522A5C1BD5028F008F5EDF /* UIView+REFrostedViewController.m */,
+				77522A5D1BD5028F008F5EDF /* UIViewController+REFrostedViewController.h */,
+				77522A5E1BD5028F008F5EDF /* UIViewController+REFrostedViewController.m */,
+			);
+			name = REFrostedViewController;
 			sourceTree = "<group>";
 		};
 		77B77B231BD137F300267D94 /* SLScrollViewKeyboardSupport */ = {
@@ -271,6 +305,7 @@
 		77BB57341B53F87C0060E181 /* TENCAR */ = {
 			isa = PBXGroup;
 			children = (
+				77522A521BD50281008F5EDF /* REFrostedViewController */,
 				773E822A1BD26E4500F57AD1 /* JVFloatLabeledTextField */,
 				77B77B231BD137F300267D94 /* SLScrollViewKeyboardSupport */,
 				77BD05E81BCF9AE400EF648A /* privacy */,
@@ -281,10 +316,14 @@
 				77BB57391B53F87C0060E181 /* AppDelegate.m */,
 				77057A4E1B56711800FCE40C /* PanelsController.h */,
 				77057A4F1B56711800FCE40C /* PanelsController.m */,
-				77BB573B1B53F87C0060E181 /* ViewController.h */,
-				77BB573C1B53F87C0060E181 /* ViewController.m */,
 				77BB573E1B53F87C0060E181 /* Main.storyboard */,
+				77522A6E1BD5092A008F5EDF /* MenuViewController.h */,
+				77522A6F1BD5092A008F5EDF /* MenuViewController.m */,
+				77522A6B1BD50864008F5EDF /* dashboardViewController.h */,
+				77522A6C1BD50864008F5EDF /* dashboardViewController.m */,
 				7741566B1BCD0D0600DB6EE7 /* LoginViewController.h */,
+				77522A681BD507E4008F5EDF /* navbarViewController.h */,
+				77522A691BD507E4008F5EDF /* navbarViewController.m */,
 				7741566C1BCD0D0600DB6EE7 /* LoginViewController.m */,
 				77BD05EA1BCFD16F00EF648A /* RegisterViewController.h */,
 				77BD05EB1BCFD16F00EF648A /* RegisterViewController.m */,
@@ -292,16 +331,8 @@
 				77B77B211BD11D4B00267D94 /* ConfirmViewController.m */,
 				77BD05D91BCE517600EF648A /* PrivacyViewController.h */,
 				77BD05DA1BCE517600EF648A /* PrivacyViewController.m */,
-				770D6B0D1B5FB2ED000B16DA /* navbarViewController.h */,
-				770D6B0E1B5FB2ED000B16DA /* navbarViewController.m */,
-				770D6AED1B5D0EE6000B16DA /* dashboardViewController.h */,
-				770D6AEE1B5D0EE6000B16DA /* dashboardViewController.m */,
 				77BB57441B53F87C0060E181 /* Assets.xcassets */,
 				77BB57461B53F87C0060E181 /* LaunchScreen.storyboard */,
-				77057A511B578AFF00FCE40C /* leftmenuTableViewController.h */,
-				77057A521B578AFF00FCE40C /* leftmenuTableViewController.m */,
-				770D6AF21B5E2388000B16DA /* rightmenuViewController.h */,
-				770D6AF31B5E2388000B16DA /* rightmenuViewController.m */,
 				77BB57491B53F87C0060E181 /* Info.plist */,
 				77BB57411B53F87C0060E181 /* TENCAR.xcdatamodeld */,
 				77057A4A1B5669A200FCE40C /* Resources */,
@@ -456,6 +487,7 @@
 				7710587F1BD3E8C40010CAD8 /* 2208_2208.png in Resources */,
 				77BB57401B53F87C0060E181 /* Main.storyboard in Resources */,
 				771272BF1BC7A72000697807 /* ALSSchlangesans-Light.otf in Resources */,
+				77522A751BD65B83008F5EDF /* avatar.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,25 +512,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77057A531B578AFF00FCE40C /* leftmenuTableViewController.m in Sources */,
 				77057A501B56711800FCE40C /* PanelsController.m in Sources */,
 				77B77B291BD1399300267D94 /* IHKeyboardAvoiding.m in Sources */,
 				77BB57431B53F87C0060E181 /* TENCAR.xcdatamodeld in Sources */,
-				770D6AEF1B5D0EE6000B16DA /* dashboardViewController.m in Sources */,
+				77522A6D1BD50864008F5EDF /* dashboardViewController.m in Sources */,
 				77057A4D1B566FAE00FCE40C /* JASidePanelController.m in Sources */,
 				77B77B221BD11D4B00267D94 /* ConfirmViewController.m in Sources */,
 				77BD05DB1BCE517600EF648A /* PrivacyViewController.m in Sources */,
 				770D6AFA1B5F869E000B16DA /* UIViewController+JASidePanel.m in Sources */,
-				770D6B0F1B5FB2ED000B16DA /* navbarViewController.m in Sources */,
+				77522A641BD5028F008F5EDF /* UIViewController+REFrostedViewController.m in Sources */,
+				77522A701BD5092A008F5EDF /* MenuViewController.m in Sources */,
+				77522A621BD5028F008F5EDF /* UIImage+REFrostedViewController.m in Sources */,
+				77522A5F1BD5028F008F5EDF /* RECommonFunctions.m in Sources */,
+				77522A601BD5028F008F5EDF /* REFrostedContainerViewController.m in Sources */,
 				7741566D1BCD0D0600DB6EE7 /* LoginViewController.m in Sources */,
 				773E82321BD26E4E00F57AD1 /* JVFloatLabeledTextView.m in Sources */,
-				77BB573D1B53F87C0060E181 /* ViewController.m in Sources */,
 				770D6B0A1B5F98B7000B16DA /* UIButton+Badge.m in Sources */,
 				773E82331BD26E4E00F57AD1 /* NSString+TextDirectionality.m in Sources */,
+				77522A631BD5028F008F5EDF /* UIView+REFrostedViewController.m in Sources */,
+				77522A611BD5028F008F5EDF /* REFrostedViewController.m in Sources */,
 				770D6B091B5F98B7000B16DA /* UIBarButtonItem+Badge.m in Sources */,
 				77BD05EC1BCFD16F00EF648A /* RegisterViewController.m in Sources */,
 				77BB573A1B53F87C0060E181 /* AppDelegate.m in Sources */,
-				770D6AF41B5E2388000B16DA /* rightmenuViewController.m in Sources */,
+				77522A6A1BD507E4008F5EDF /* navbarViewController.m in Sources */,
 				773E82311BD26E4E00F57AD1 /* JVFloatLabeledTextField.m in Sources */,
 				77BB57371B53F87C0060E181 /* main.m in Sources */,
 			);

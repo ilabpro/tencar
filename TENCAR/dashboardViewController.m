@@ -2,14 +2,11 @@
 //  dashboardViewController.m
 //  TENCAR
 //
-//  Created by ILAB PRO on 20.07.15.
+//  Created by ILAB PRO on 19.10.15.
 //  Copyright © 2015 ilab.pro LLC. All rights reserved.
 //
 
 #import "dashboardViewController.h"
-#import "PanelsController.h"
-#import "UIViewController+JASidePanel.h"
-#import "UIBarButtonItem+Badge.h"
 
 @interface dashboardViewController ()
 
@@ -17,38 +14,25 @@
 
 @implementation dashboardViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self setTitle:NSLocalizedStringFromTable(@"Dashboard", @"Main", nil)];
-
-   
-        UIImage* image = [UIImage imageNamed:@"right_but_sidebar"];
-        CGRect frameimg = CGRectMake(0, 0, image.size.width, image.size.height);
-        UIButton *button = [[UIButton alloc] initWithFrame:frameimg];
-        [button setBackgroundImage:image forState:UIControlStateNormal];
-        [button addTarget:self.sidePanelController action:@selector(toggleRightPanel:) forControlEvents:UIControlEventTouchUpInside];
-        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
-        self.navigationItem.rightBarButtonItem.badgeValue = @"0";
-    
-    
-    [NSTimer scheduledTimerWithTimeInterval:1.0
-                                     target:self
-                                   selector:@selector(incrementBadge:)
-                                   userInfo:nil
-                                    repeats:YES];
-    
-}
--(void)incrementBadge:(id)sender
-{
-    NSInteger val = [self.navigationItem.rightBarButtonItem.badgeValue integerValue];
-    val++;
-    self.navigationItem.rightBarButtonItem.badgeValue = [NSString stringWithFormat:@"%ld",(long)val%150];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)showMenu:(id)sender {
+    // Dismiss keyboard (optional)
+    //
+    [self.view endEditing:YES];
+    [self.frostedViewController.view endEditing:YES];
+    
+    // Present the view controller
+    //
+    [self.frostedViewController presentMenuViewController];
 }
 
 /*

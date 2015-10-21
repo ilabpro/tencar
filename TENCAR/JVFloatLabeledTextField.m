@@ -34,7 +34,7 @@
 
 static CGFloat const kFloatingLabelShowAnimationDuration = 0.3f;
 static CGFloat const kFloatingLabelHideAnimationDuration = 0.3f;
-static CGFloat const kLineViewHeight = 0.5f;
+static CGFloat const kLineViewHeight = 1.0f;
 
 
 @interface JVFloatLabeledTextField()

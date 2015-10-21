@@ -491,10 +491,10 @@
                                 <animations/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9lj-UC-ycQ">
-                                <rect key="frame" x="113" y="64" width="375" height="473"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsY-cC-XLB">
-                                        <rect key="frame" x="0.0" y="413" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="476" width="600" height="60"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.0" green="0.71764705880000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -520,49 +520,49 @@
                                         </connections>
                                     </button>
                                     <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kSx-kw-chy">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="413"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="476"/>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BlL-GD-WwO">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="413"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="476"/>
                                         <subviews>
                                             <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sx0-d9-peP">
-                                                <rect key="frame" x="20" y="20" width="335" height="122"/>
+                                                <rect key="frame" x="20" y="20" width="560" height="128"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                             </webView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пожалуйста, загрузите" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="141" translatesAutoresizingMaskIntoConstraints="NO" id="SSu-hT-BKX">
-                                                <rect key="frame" x="117" y="239" width="141" height="14"/>
+                                                <rect key="frame" x="230" y="245" width="141" height="14"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" name="ALSSchlangesans-Bold" family="ALSSchlangesans-Bold" pointSize="14"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ПАСПОРТ ПРОПИСКА" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" preferredMaxLayoutWidth="94" translatesAutoresizingMaskIntoConstraints="NO" id="60B-4b-mlb">
-                                                <rect key="frame" x="141" y="273" width="94" height="22"/>
+                                                <rect key="frame" x="225" y="279" width="150" height="22"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="11"/>
                                                 <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ВОДИТЕЛЬСКОЕ УДОСТОВЕРЕНИЕ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" preferredMaxLayoutWidth="94" translatesAutoresizingMaskIntoConstraints="NO" id="djD-5Q-ySC">
-                                                <rect key="frame" x="255" y="273" width="94" height="22"/>
+                                                <rect key="frame" x="395" y="279" width="150" height="22"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="11"/>
                                                 <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ПАСПОРТ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" preferredMaxLayoutWidth="94" translatesAutoresizingMaskIntoConstraints="NO" id="Aep-Jx-p1c">
-                                                <rect key="frame" x="27" y="273" width="94" height="11"/>
+                                                <rect key="frame" x="55" y="279" width="150" height="11"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="11"/>
                                                 <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCZ-ve-YUZ">
-                                                <rect key="frame" x="27" y="299" width="94" height="94"/>
+                                                <rect key="frame" x="55" y="306" width="150" height="150"/>
                                                 <animations/>
                                                 <color key="backgroundColor" red="0.0" green="0.71764705880000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -573,7 +573,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sP4-e7-Wes">
-                                                <rect key="frame" x="254" y="299" width="94" height="94"/>
+                                                <rect key="frame" x="395" y="306" width="150" height="150"/>
                                                 <animations/>
                                                 <color key="backgroundColor" red="0.0" green="0.71764705880000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -584,7 +584,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="EGt-h0-qH0">
-                                                <rect key="frame" x="20" y="172" width="335" height="37"/>
+                                                <rect key="frame" x="20" y="178" width="560" height="37"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="37" id="X7q-Cp-CG2"/>
@@ -606,7 +606,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xni-3j-k3D">
-                                                <rect key="frame" x="141" y="300" width="93" height="93"/>
+                                                <rect key="frame" x="225" y="306" width="150" height="150"/>
                                                 <animations/>
                                                 <color key="backgroundColor" red="0.0" green="0.71764705880000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -684,7 +684,9 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="0vu-fn-tFq"/>
                                         <exclude reference="J1K-PE-D9Q"/>
+                                        <exclude reference="bCg-ze-yoD"/>
                                         <exclude reference="dGL-oi-B4A"/>
                                         <exclude reference="kR3-RZ-neW"/>
                                         <exclude reference="q1F-br-h0m"/>
@@ -709,15 +711,15 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="9lj-UC-ycQ" secondAttribute="trailing" priority="750" id="0rw-SN-dnX"/>
                             <constraint firstItem="9lj-UC-ycQ" firstAttribute="leading" secondItem="I4X-8p-RJh" secondAttribute="leadingMargin" priority="750" id="1fU-oH-fpk"/>
-                            <constraint firstItem="8Jr-rj-ew9" firstAttribute="top" secondItem="9lj-UC-ycQ" secondAttribute="bottom" priority="750" id="3jD-Px-V9B"/>
+                            <constraint firstItem="8Jr-rj-ew9" firstAttribute="top" secondItem="9lj-UC-ycQ" secondAttribute="bottom" id="3jD-Px-V9B"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9lj-UC-ycQ" secondAttribute="trailing" priority="900" constant="-20" id="D1C-Y5-d9d"/>
                             <constraint firstItem="9lj-UC-ycQ" firstAttribute="leading" secondItem="I4X-8p-RJh" secondAttribute="leading" priority="750" id="HpV-pw-Pst"/>
                             <constraint firstAttribute="trailing" secondItem="ewf-Bt-5AO" secondAttribute="trailing" id="Ivy-3u-FjL"/>
-                            <constraint firstAttribute="trailing" secondItem="9lj-UC-ycQ" secondAttribute="trailing" priority="900" id="RgW-XU-diW"/>
-                            <constraint firstItem="9lj-UC-ycQ" firstAttribute="leading" secondItem="I4X-8p-RJh" secondAttribute="leading" priority="900" id="Rjp-XF-0Ht"/>
+                            <constraint firstAttribute="trailing" secondItem="9lj-UC-ycQ" secondAttribute="trailing" id="RgW-XU-diW"/>
+                            <constraint firstItem="9lj-UC-ycQ" firstAttribute="leading" secondItem="I4X-8p-RJh" secondAttribute="leading" id="Rjp-XF-0Ht"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ewf-Bt-5AO" secondAttribute="trailing" id="T6g-Dv-OZw"/>
                             <constraint firstItem="ewf-Bt-5AO" firstAttribute="top" secondItem="B3r-tT-ZLs" secondAttribute="bottom" id="ZE3-Jr-ylA"/>
-                            <constraint firstItem="9lj-UC-ycQ" firstAttribute="top" secondItem="B3r-tT-ZLs" secondAttribute="bottom" priority="900" id="e83-tZ-eFQ"/>
+                            <constraint firstItem="9lj-UC-ycQ" firstAttribute="top" secondItem="B3r-tT-ZLs" secondAttribute="bottom" id="e83-tZ-eFQ"/>
                             <constraint firstItem="9lj-UC-ycQ" firstAttribute="leading" secondItem="I4X-8p-RJh" secondAttribute="leadingMargin" priority="900" constant="-20" id="fYx-og-DZg"/>
                             <constraint firstItem="8Jr-rj-ew9" firstAttribute="top" secondItem="ewf-Bt-5AO" secondAttribute="bottom" id="g3X-Ym-XRj"/>
                             <constraint firstItem="9lj-UC-ycQ" firstAttribute="top" secondItem="I4X-8p-RJh" secondAttribute="topMargin" priority="750" id="g7R-lW-eve"/>
@@ -737,6 +739,8 @@
                                 <exclude reference="HpV-pw-Pst"/>
                                 <exclude reference="fYx-og-DZg"/>
                                 <exclude reference="g7R-lW-eve"/>
+                                <exclude reference="hW6-kI-t1A"/>
+                                <exclude reference="pCa-U9-8w0"/>
                                 <exclude reference="xx0-ZX-DTp"/>
                             </mask>
                         </variation>
@@ -887,7 +891,7 @@
                                             </variation>
                                         </tableViewCellContentView>
                                         <animations/>
-                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.71764705880000002" blue="0.96078431369999995" alpha="0.0" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="JTT-fX-rLF">
                                         <rect key="frame" x="0.0" y="182" width="600" height="60"/>
@@ -936,8 +940,8 @@
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
-                                                    <exclude reference="pO1-GJ-vJh"/>
                                                     <exclude reference="NET-cT-xsJ"/>
+                                                    <exclude reference="pO1-GJ-vJh"/>
                                                     <exclude reference="Jkl-NL-s7W"/>
                                                     <exclude reference="tiA-4J-JMy"/>
                                                 </mask>
@@ -995,8 +999,8 @@
                                                 <mask key="constraints">
                                                     <exclude reference="5Hs-EX-iMx"/>
                                                     <exclude reference="MO3-9l-aoX"/>
-                                                    <exclude reference="fNa-hI-p0k"/>
                                                     <exclude reference="0IU-Rg-hhF"/>
+                                                    <exclude reference="fNa-hI-p0k"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -1052,8 +1056,8 @@
                                                 <mask key="constraints">
                                                     <exclude reference="4ux-uw-KDD"/>
                                                     <exclude reference="KAD-Nz-4dJ"/>
-                                                    <exclude reference="Z6i-jN-mmC"/>
                                                     <exclude reference="Vhs-Ur-5mJ"/>
+                                                    <exclude reference="Z6i-jN-mmC"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -1164,10 +1168,10 @@
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
-                                                    <exclude reference="mm2-Z0-ABh"/>
                                                     <exclude reference="gWH-B0-nhX"/>
-                                                    <exclude reference="xE1-ei-Qo1"/>
+                                                    <exclude reference="mm2-Z0-ABh"/>
                                                     <exclude reference="QfI-PU-Tz4"/>
+                                                    <exclude reference="xE1-ei-Qo1"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -1278,10 +1282,10 @@
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
-                                                    <exclude reference="S8F-aS-BFp"/>
                                                     <exclude reference="8N7-wQ-6Bz"/>
-                                                    <exclude reference="uDd-FL-Y0T"/>
+                                                    <exclude reference="S8F-aS-BFp"/>
                                                     <exclude reference="46a-cx-UDi"/>
+                                                    <exclude reference="uDd-FL-Y0T"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -1325,135 +1329,253 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ГОРОД" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Kip-Jz-VIF" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="20" y="140" width="560" height="40"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z7c-Q1-8CZ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="476"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_reg" translatesAutoresizingMaskIntoConstraints="NO" id="klb-2a-mJJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="UHC-FE-lJF"/>
+                                            <constraint firstAttribute="height" constant="120" id="uk9-eG-spr"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="UHC-FE-lJF"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Взять в прокат" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ei-0I-Z3E">
+                                        <rect key="frame" x="235" y="50" width="130" height="20"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="ALSSchlangesans-Bold" family="ALSSchlangesans-Bold" pointSize="20"/>
+                                        <color key="textColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99607849120000003" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="заполните поля" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kd-lK-9hy">
+                                        <rect key="frame" x="253" y="70" width="95" height="20"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="CS4-xh-WUa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                        <color key="textColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99607849120000003" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ГОРОД" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Kip-Jz-VIF" customClass="JVFloatLabeledTextField">
+                                        <rect key="frame" x="20" y="135" width="560" height="40"/>
+                                        <animations/>
+                                        <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier=""/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="2X1-Vl-bdU"/>
+                                            <constraint firstAttribute="height" constant="40" id="3po-9u-GN5"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="2X1-Vl-bdU"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="delegate" destination="Wt0-sA-v2s" id="25k-mH-XkT"/>
+                                        </connections>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="geo" translatesAutoresizingMaskIntoConstraints="NO" id="LO4-2S-Zdz">
+                                        <rect key="frame" x="555" y="143" width="25" height="25"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="7sr-6S-e6N"/>
+                                            <constraint firstAttribute="height" constant="25" id="b6y-Vl-eai"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="НАЧАЛО АРЕНДЫ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="O3C-Yd-4Tv" customClass="JVFloatLabeledTextField">
+                                        <rect key="frame" x="20" y="190" width="560" height="40"/>
+                                        <animations/>
+                                        <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier=""/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="7Ow-Jw-w5Q"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isDatePicker" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="Wt0-sA-v2s" id="THJ-dx-Jcf"/>
+                                        </connections>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cal" translatesAutoresizingMaskIntoConstraints="NO" id="xu5-Fc-ZQJ">
+                                        <rect key="frame" x="555" y="198" width="25" height="25"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="Vmh-C2-ykv"/>
+                                            <constraint firstAttribute="height" constant="25" id="g7q-JE-R1b"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="kiF-ZW-zds"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="wW6-Aq-4dq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cal" translatesAutoresizingMaskIntoConstraints="NO" id="Voc-XP-JYW">
+                                        <rect key="frame" x="555" y="253" width="25" height="25"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="85s-iP-63n"/>
+                                            <constraint firstAttribute="height" constant="25" id="ALu-KP-i0M"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="Akk-PT-n3t"/>
+                                            <constraint firstAttribute="width" constant="25" id="sEI-RJ-d7e"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="85s-iP-63n"/>
+                                                <exclude reference="Akk-PT-n3t"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="КЛАСС АВТО" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="k97-ze-dXF" customClass="JVFloatLabeledTextField">
+                                        <rect key="frame" x="20" y="300" width="560" height="40"/>
+                                        <animations/>
+                                        <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier=""/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="byq-QL-Hym"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="Wt0-sA-v2s" id="KXg-Pf-QqX"/>
+                                        </connections>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="class" translatesAutoresizingMaskIntoConstraints="NO" id="Ysi-D3-Xl2">
+                                        <rect key="frame" x="557" y="308" width="25" height="25"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="6Gk-Ge-4Hi"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="MuH-HF-958"/>
+                                            <constraint firstAttribute="width" constant="25" id="cPb-Fw-UnA"/>
+                                            <constraint firstAttribute="height" constant="25" id="lfb-7C-fvR"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="6Gk-Ge-4Hi"/>
+                                                <exclude reference="MuH-HF-958"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="МАРКА АВТО" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Ode-TB-NBd" customClass="JVFloatLabeledTextField">
+                                        <rect key="frame" x="20" y="355" width="560" height="40"/>
+                                        <animations/>
+                                        <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier=""/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="EmL-GJ-R7Y"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="search"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="Wt0-sA-v2s" id="Aa2-Xq-9mW"/>
+                                        </connections>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="BgA-rd-k1O">
+                                        <rect key="frame" x="555" y="363" width="25" height="25"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="7tM-7d-hzw"/>
+                                            <constraint firstAttribute="width" constant="25" id="9Ub-kb-VtR"/>
+                                            <constraint firstAttribute="height" constant="25" id="Xjl-3Y-3fU"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="sdb-h1-piV"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ОКОНЧАНИЕ АРЕНДЫ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="5gF-gX-qTZ" customClass="JVFloatLabeledTextField">
+                                        <rect key="frame" x="20" y="245" width="560" height="40"/>
+                                        <animations/>
+                                        <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier=""/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="CFF-2s-nOI"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isDatePicker" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="Wt0-sA-v2s" id="2wm-7z-kHB"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
                                 <animations/>
-                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" identifier=""/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="2X1-Vl-bdU"/>
-                                    <constraint firstAttribute="height" constant="40" id="3po-9u-GN5"/>
+                                    <constraint firstItem="5gF-gX-qTZ" firstAttribute="top" secondItem="O3C-Yd-4Tv" secondAttribute="bottom" constant="15" id="47s-jX-D55"/>
+                                    <constraint firstAttribute="trailing" secondItem="k97-ze-dXF" secondAttribute="trailing" constant="20" id="4ut-U2-e4t"/>
+                                    <constraint firstItem="k97-ze-dXF" firstAttribute="leading" secondItem="z7c-Q1-8CZ" secondAttribute="leading" constant="20" id="65n-6x-uJb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ysi-D3-Xl2" secondAttribute="trailing" constant="18" id="6Is-MB-LBi"/>
+                                    <constraint firstItem="6ei-0I-Z3E" firstAttribute="centerX" secondItem="klb-2a-mJJ" secondAttribute="centerX" id="6WH-0Y-Eqx"/>
+                                    <constraint firstAttribute="trailing" secondItem="klb-2a-mJJ" secondAttribute="trailing" id="7M4-q7-Aj0"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ode-TB-NBd" secondAttribute="bottom" constant="15" id="8gh-OC-BqC"/>
+                                    <constraint firstItem="Kip-Jz-VIF" firstAttribute="top" secondItem="O3C-Yd-4Tv" secondAttribute="bottom" constant="-100" id="ANE-ck-EfB"/>
+                                    <constraint firstAttribute="trailing" secondItem="O3C-Yd-4Tv" secondAttribute="trailing" constant="20" id="BzX-E0-7yl"/>
+                                    <constraint firstAttribute="trailing" secondItem="xu5-Fc-ZQJ" secondAttribute="trailing" constant="20" id="DWj-Jd-elG"/>
+                                    <constraint firstItem="6kd-lK-9hy" firstAttribute="top" secondItem="klb-2a-mJJ" secondAttribute="bottom" constant="-50" id="LyC-2A-2m5"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kip-Jz-VIF" secondAttribute="trailing" constant="20" id="NpU-IO-SsO"/>
+                                    <constraint firstItem="LO4-2S-Zdz" firstAttribute="centerY" secondItem="Kip-Jz-VIF" secondAttribute="centerY" id="PUF-7p-4K0"/>
+                                    <constraint firstItem="k97-ze-dXF" firstAttribute="top" secondItem="5gF-gX-qTZ" secondAttribute="bottom" constant="15" id="RC3-dr-7wQ"/>
+                                    <constraint firstItem="O3C-Yd-4Tv" firstAttribute="leading" secondItem="z7c-Q1-8CZ" secondAttribute="leading" constant="20" id="RTH-5J-KmG"/>
+                                    <constraint firstItem="BgA-rd-k1O" firstAttribute="leading" secondItem="O3C-Yd-4Tv" secondAttribute="trailing" constant="20" id="SGR-gR-r2t"/>
+                                    <constraint firstItem="Ode-TB-NBd" firstAttribute="top" secondItem="k97-ze-dXF" secondAttribute="bottom" constant="15" id="UWL-hH-gtZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ode-TB-NBd" secondAttribute="trailing" constant="20" id="Yz3-WU-ggE"/>
+                                    <constraint firstItem="LO4-2S-Zdz" firstAttribute="centerX" secondItem="Kip-Jz-VIF" secondAttribute="centerX" id="biy-q6-ADf"/>
+                                    <constraint firstItem="5gF-gX-qTZ" firstAttribute="leading" secondItem="z7c-Q1-8CZ" secondAttribute="leading" constant="20" id="cMu-oo-7gB"/>
+                                    <constraint firstAttribute="trailing" secondItem="LO4-2S-Zdz" secondAttribute="trailing" constant="20" id="eLo-Vk-s4R"/>
+                                    <constraint firstAttribute="trailing" secondItem="BgA-rd-k1O" secondAttribute="trailing" constant="20" id="gpI-jF-ZbA"/>
+                                    <constraint firstItem="6ei-0I-Z3E" firstAttribute="top" secondItem="klb-2a-mJJ" secondAttribute="bottom" constant="-70" id="gtY-Jb-HcN"/>
+                                    <constraint firstItem="Kip-Jz-VIF" firstAttribute="top" secondItem="klb-2a-mJJ" secondAttribute="bottom" constant="15" id="hCO-4J-aMD"/>
+                                    <constraint firstItem="Kip-Jz-VIF" firstAttribute="leading" secondItem="z7c-Q1-8CZ" secondAttribute="leading" constant="20" id="iwH-Me-VQU"/>
+                                    <constraint firstItem="O3C-Yd-4Tv" firstAttribute="top" secondItem="Kip-Jz-VIF" secondAttribute="bottom" constant="15" id="k24-ZA-JoJ"/>
+                                    <constraint firstItem="klb-2a-mJJ" firstAttribute="width" secondItem="z7c-Q1-8CZ" secondAttribute="width" id="l3I-lv-VlX"/>
+                                    <constraint firstItem="klb-2a-mJJ" firstAttribute="leading" secondItem="z7c-Q1-8CZ" secondAttribute="leading" id="lGL-H2-pXB"/>
+                                    <constraint firstItem="6kd-lK-9hy" firstAttribute="centerX" secondItem="klb-2a-mJJ" secondAttribute="centerX" id="lQ0-8e-eX9"/>
+                                    <constraint firstAttribute="trailing" secondItem="5gF-gX-qTZ" secondAttribute="trailing" constant="20" id="lp3-dq-VvO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Voc-XP-JYW" secondAttribute="trailing" constant="20" id="nuI-az-gdT"/>
+                                    <constraint firstItem="klb-2a-mJJ" firstAttribute="top" secondItem="z7c-Q1-8CZ" secondAttribute="top" id="p5B-jW-l6E"/>
+                                    <constraint firstItem="Ode-TB-NBd" firstAttribute="leading" secondItem="z7c-Q1-8CZ" secondAttribute="leading" constant="20" id="r8G-Tt-dzx"/>
+                                    <constraint firstItem="xu5-Fc-ZQJ" firstAttribute="centerY" secondItem="O3C-Yd-4Tv" secondAttribute="centerY" id="sGG-1u-ICq"/>
+                                    <constraint firstItem="Voc-XP-JYW" firstAttribute="centerY" secondItem="5gF-gX-qTZ" secondAttribute="centerY" id="wle-3a-tQT"/>
+                                    <constraint firstItem="BgA-rd-k1O" firstAttribute="centerY" secondItem="Ode-TB-NBd" secondAttribute="centerY" id="xG0-4I-m2E"/>
+                                    <constraint firstItem="6ei-0I-Z3E" firstAttribute="leading" secondItem="Voc-XP-JYW" secondAttribute="trailing" constant="20" id="yBN-zq-XIo"/>
+                                    <constraint firstItem="Ysi-D3-Xl2" firstAttribute="centerY" secondItem="k97-ze-dXF" secondAttribute="centerY" id="zFA-9v-0ye"/>
                                 </constraints>
-                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="25k-mH-XkT"/>
-                                </connections>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="geo" translatesAutoresizingMaskIntoConstraints="NO" id="LO4-2S-Zdz">
-                                <rect key="frame" x="555" y="140" width="25" height="25"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="7sr-6S-e6N"/>
-                                    <constraint firstAttribute="height" constant="25" id="b6y-Vl-eai"/>
-                                </constraints>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="НАЧАЛО АРЕНДЫ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="O3C-Yd-4Tv" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="20" y="195" width="560" height="40"/>
-                                <animations/>
-                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="7Ow-Jw-w5Q"/>
-                                </constraints>
-                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="THJ-dx-Jcf"/>
-                                </connections>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cal" translatesAutoresizingMaskIntoConstraints="NO" id="xu5-Fc-ZQJ">
-                                <rect key="frame" x="555" y="195" width="25" height="25"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="Vmh-C2-ykv"/>
-                                    <constraint firstAttribute="height" constant="25" id="g7q-JE-R1b"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="kiF-ZW-zds"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="wW6-Aq-4dq"/>
-                                </constraints>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ОКОНЧАНИЕ АРЕНДЫ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="5gF-gX-qTZ" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="20" y="250" width="560" height="40"/>
-                                <animations/>
-                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="CFF-2s-nOI"/>
-                                </constraints>
-                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="2wm-7z-kHB"/>
-                                </connections>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cal" translatesAutoresizingMaskIntoConstraints="NO" id="Voc-XP-JYW">
-                                <rect key="frame" x="555" y="250" width="25" height="25"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="85s-iP-63n"/>
-                                    <constraint firstAttribute="height" constant="25" id="ALu-KP-i0M"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="Akk-PT-n3t"/>
-                                    <constraint firstAttribute="width" constant="25" id="sEI-RJ-d7e"/>
-                                </constraints>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="КЛАСС АВТО" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="k97-ze-dXF" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="20" y="305" width="560" height="40"/>
-                                <animations/>
-                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="byq-QL-Hym"/>
-                                </constraints>
-                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="KXg-Pf-QqX"/>
-                                </connections>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ysi-D3-Xl2">
-                                <rect key="frame" x="555" y="305" width="25" height="25"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="6Gk-Ge-4Hi"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="MuH-HF-958"/>
-                                    <constraint firstAttribute="width" constant="25" id="cPb-Fw-UnA"/>
-                                    <constraint firstAttribute="height" constant="25" id="lfb-7C-fvR"/>
-                                </constraints>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="МАРКА АВТО" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Ode-TB-NBd" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="20" y="360" width="560" height="40"/>
-                                <animations/>
-                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="EmL-GJ-R7Y"/>
-                                </constraints>
-                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="Wt0-sA-v2s" id="Aa2-Xq-9mW"/>
-                                </connections>
-                            </textField>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ANE-ck-EfB"/>
+                                        <exclude reference="yBN-zq-XIo"/>
+                                        <exclude reference="biy-q6-ADf"/>
+                                        <exclude reference="SGR-gR-r2t"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUI-oF-4hR">
                                 <rect key="frame" x="0.0" y="476" width="600" height="60"/>
                                 <animations/>
@@ -1471,124 +1593,36 @@
                                     <action selector="try_confirm:" destination="K5T-xy-BTG" eventType="touchUpInside" id="s2A-p7-3te"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_reg" translatesAutoresizingMaskIntoConstraints="NO" id="klb-2a-mJJ">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="UHC-FE-lJF"/>
-                                    <constraint firstAttribute="height" constant="120" id="uk9-eG-spr"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Взять в прокат" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ei-0I-Z3E">
-                                <rect key="frame" x="20" y="50" width="560" height="20"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="ALSSchlangesans-Bold" family="ALSSchlangesans-Bold" pointSize="20"/>
-                                <color key="textColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99607849120000003" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="заполните поля" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kd-lK-9hy">
-                                <rect key="frame" x="0.0" y="80" width="600" height="20"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="CS4-xh-WUa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                <color key="textColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99607849120000003" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="BgA-rd-k1O">
-                                <rect key="frame" x="555" y="360" width="25" height="25"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="7tM-7d-hzw"/>
-                                    <constraint firstAttribute="width" constant="25" id="9Ub-kb-VtR"/>
-                                    <constraint firstAttribute="height" constant="25" id="Xjl-3Y-3fU"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="sdb-h1-piV"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94117647058823528" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="fUI-oF-4hR" firstAttribute="leading" secondItem="a98-pI-A9T" secondAttribute="leading" id="1G7-EA-mWB"/>
-                            <constraint firstItem="5gF-gX-qTZ" firstAttribute="top" secondItem="Voc-XP-JYW" secondAttribute="bottom" constant="-30" id="27h-MG-cWb"/>
                             <constraint firstItem="fUI-oF-4hR" firstAttribute="leading" secondItem="a98-pI-A9T" secondAttribute="leadingMargin" id="2Bh-gB-t0c"/>
-                            <constraint firstItem="BgA-rd-k1O" firstAttribute="leading" secondItem="Ode-TB-NBd" secondAttribute="trailing" constant="-25" id="3Fg-nW-gsf"/>
                             <constraint firstItem="EYP-JR-EKg" firstAttribute="top" secondItem="fPs-br-YDa" secondAttribute="bottom" id="4Kh-qO-ZFX"/>
-                            <constraint firstItem="BgA-rd-k1O" firstAttribute="bottom" secondItem="Ode-TB-NBd" secondAttribute="bottom" constant="-15" id="4Mc-4I-JQW"/>
-                            <constraint firstItem="6kd-lK-9hy" firstAttribute="leading" secondItem="a98-pI-A9T" secondAttribute="leading" id="5IR-br-lYE"/>
-                            <constraint firstItem="6ei-0I-Z3E" firstAttribute="centerX" secondItem="klb-2a-mJJ" secondAttribute="centerX" id="5Zh-Nd-5dQ"/>
+                            <constraint firstAttribute="trailing" secondItem="z7c-Q1-8CZ" secondAttribute="trailing" id="6Q6-UA-V5v"/>
                             <constraint firstAttribute="trailing" secondItem="4B8-hF-BBr" secondAttribute="trailing" id="8Ke-j6-R9Q"/>
-                            <constraint firstItem="O3C-Yd-4Tv" firstAttribute="trailing" secondItem="a98-pI-A9T" secondAttribute="trailingMargin" id="9Vo-9Q-0sJ"/>
-                            <constraint firstAttribute="trailing" secondItem="6kd-lK-9hy" secondAttribute="trailing" id="BEw-n3-bUN"/>
-                            <constraint firstItem="Voc-XP-JYW" firstAttribute="centerY" secondItem="5gF-gX-qTZ" secondAttribute="centerY" id="Bqk-B6-DBm"/>
-                            <constraint firstItem="Ode-TB-NBd" firstAttribute="trailing" secondItem="a98-pI-A9T" secondAttribute="trailingMargin" id="COU-Kw-akX"/>
-                            <constraint firstItem="LO4-2S-Zdz" firstAttribute="bottom" secondItem="Kip-Jz-VIF" secondAttribute="bottom" constant="-15" id="Ema-Zc-ejd"/>
-                            <constraint firstItem="xu5-Fc-ZQJ" firstAttribute="bottom" secondItem="O3C-Yd-4Tv" secondAttribute="bottom" constant="-15" id="Ew1-Ny-v3q"/>
-                            <constraint firstItem="5gF-gX-qTZ" firstAttribute="top" secondItem="O3C-Yd-4Tv" secondAttribute="bottom" constant="15" id="F6b-q0-hRp"/>
+                            <constraint firstItem="z7c-Q1-8CZ" firstAttribute="leading" secondItem="a98-pI-A9T" secondAttribute="leading" id="9lX-2t-Y1w"/>
                             <constraint firstItem="6Gd-hm-Q3b" firstAttribute="top" secondItem="fUI-oF-4hR" secondAttribute="bottom" id="Fj7-7r-aEV"/>
-                            <constraint firstItem="Ode-TB-NBd" firstAttribute="top" secondItem="k97-ze-dXF" secondAttribute="bottom" constant="15" id="Fs8-Cd-lXw"/>
                             <constraint firstItem="4B8-hF-BBr" firstAttribute="top" secondItem="fPs-br-YDa" secondAttribute="bottom" id="I2L-K4-Nia"/>
-                            <constraint firstItem="6kd-lK-9hy" firstAttribute="top" secondItem="6ei-0I-Z3E" secondAttribute="bottom" constant="10" id="I8K-Rc-1Qs"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fUI-oF-4hR" secondAttribute="trailing" id="IgW-rv-Wbx"/>
-                            <constraint firstAttribute="trailing" secondItem="klb-2a-mJJ" secondAttribute="trailing" id="KJC-fc-0Lx"/>
-                            <constraint firstItem="klb-2a-mJJ" firstAttribute="leading" secondItem="a98-pI-A9T" secondAttribute="leading" id="Kiv-ej-z5i"/>
-                            <constraint firstItem="Kip-Jz-VIF" firstAttribute="leading" secondItem="a98-pI-A9T" secondAttribute="leadingMargin" id="LO5-Jc-lVD"/>
-                            <constraint firstItem="klb-2a-mJJ" firstAttribute="top" secondItem="fPs-br-YDa" secondAttribute="bottom" id="NjC-Kx-scG"/>
-                            <constraint firstItem="k97-ze-dXF" firstAttribute="trailing" secondItem="a98-pI-A9T" secondAttribute="trailingMargin" id="Nkx-7M-Xw7"/>
-                            <constraint firstItem="Ysi-D3-Xl2" firstAttribute="bottom" secondItem="k97-ze-dXF" secondAttribute="bottom" constant="-15" id="Nou-am-7Ol"/>
-                            <constraint firstItem="xu5-Fc-ZQJ" firstAttribute="leading" secondItem="O3C-Yd-4Tv" secondAttribute="trailing" constant="-25" id="PXv-gb-exf"/>
-                            <constraint firstItem="k97-ze-dXF" firstAttribute="top" secondItem="Ysi-D3-Xl2" secondAttribute="bottom" constant="-32" id="Vjh-Vg-SXG"/>
-                            <constraint firstItem="k97-ze-dXF" firstAttribute="top" secondItem="5gF-gX-qTZ" secondAttribute="bottom" constant="15" id="WHy-9q-gNQ"/>
+                            <constraint firstItem="fUI-oF-4hR" firstAttribute="top" secondItem="z7c-Q1-8CZ" secondAttribute="bottom" id="OTu-Wj-rfp"/>
+                            <constraint firstItem="z7c-Q1-8CZ" firstAttribute="top" secondItem="fPs-br-YDa" secondAttribute="bottom" id="P9V-rh-sWV"/>
                             <constraint firstAttribute="trailing" secondItem="fUI-oF-4hR" secondAttribute="trailing" id="XEM-XT-Wdi"/>
-                            <constraint firstItem="Voc-XP-JYW" firstAttribute="bottom" secondItem="5gF-gX-qTZ" secondAttribute="bottom" constant="-15" id="XYG-dT-TLZ"/>
                             <constraint firstAttribute="bottom" secondItem="EYP-JR-EKg" secondAttribute="bottom" id="ZFf-OJ-YWc"/>
-                            <constraint firstItem="Ysi-D3-Xl2" firstAttribute="leading" secondItem="k97-ze-dXF" secondAttribute="trailing" constant="-25" id="a2s-fv-aag"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Kip-Jz-VIF" secondAttribute="trailing" id="aAr-PE-kKO"/>
-                            <constraint firstItem="Ode-TB-NBd" firstAttribute="top" secondItem="BgA-rd-k1O" secondAttribute="bottom" constant="-32" id="aP3-iq-oLo"/>
-                            <constraint firstItem="klb-2a-mJJ" firstAttribute="leading" secondItem="a98-pI-A9T" secondAttribute="leadingMargin" id="ar1-mn-sBO"/>
-                            <constraint firstItem="5gF-gX-qTZ" firstAttribute="leading" secondItem="a98-pI-A9T" secondAttribute="leadingMargin" id="cPT-Rr-OmW"/>
-                            <constraint firstItem="xu5-Fc-ZQJ" firstAttribute="centerY" secondItem="O3C-Yd-4Tv" secondAttribute="centerY" constant="-15" id="caD-YK-IT0"/>
-                            <constraint firstItem="O3C-Yd-4Tv" firstAttribute="top" secondItem="xu5-Fc-ZQJ" secondAttribute="bottom" constant="-15" id="cxp-ju-vje"/>
-                            <constraint firstItem="Voc-XP-JYW" firstAttribute="leading" secondItem="5gF-gX-qTZ" secondAttribute="trailing" constant="-25" id="dXd-ap-Fjv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6ei-0I-Z3E" secondAttribute="trailing" id="eAA-v5-O2b"/>
-                            <constraint firstItem="EYP-JR-EKg" firstAttribute="top" secondItem="Kip-Jz-VIF" secondAttribute="bottom" constant="20" id="fWW-if-nL5"/>
-                            <constraint firstItem="6ei-0I-Z3E" firstAttribute="leading" secondItem="a98-pI-A9T" secondAttribute="leadingMargin" id="hf5-b8-P5L"/>
-                            <constraint firstItem="O3C-Yd-4Tv" firstAttribute="leading" secondItem="a98-pI-A9T" secondAttribute="leadingMargin" id="hxh-7q-RfX"/>
-                            <constraint firstItem="6ei-0I-Z3E" firstAttribute="centerY" secondItem="klb-2a-mJJ" secondAttribute="centerY" id="jA5-Qr-jyA"/>
-                            <constraint firstItem="6kd-lK-9hy" firstAttribute="top" secondItem="fUI-oF-4hR" secondAttribute="bottom" constant="10" id="kNb-K1-5BX"/>
-                            <constraint firstItem="Ode-TB-NBd" firstAttribute="leading" secondItem="a98-pI-A9T" secondAttribute="leadingMargin" id="kbX-tf-UNV"/>
-                            <constraint firstItem="BgA-rd-k1O" firstAttribute="centerY" secondItem="Ode-TB-NBd" secondAttribute="centerY" id="ndu-vQ-rBY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="z7c-Q1-8CZ" secondAttribute="trailing" id="hHS-VF-FKG"/>
                             <constraint firstItem="6Gd-hm-Q3b" firstAttribute="top" secondItem="4B8-hF-BBr" secondAttribute="bottom" id="nzR-JN-vxA"/>
-                            <constraint firstItem="O3C-Yd-4Tv" firstAttribute="top" secondItem="Kip-Jz-VIF" secondAttribute="bottom" constant="15" id="oe9-KQ-YwL"/>
                             <constraint firstAttribute="trailing" secondItem="EYP-JR-EKg" secondAttribute="trailing" id="pBw-TY-G0b"/>
                             <constraint firstItem="EYP-JR-EKg" firstAttribute="leading" secondItem="a98-pI-A9T" secondAttribute="leading" id="q2T-TH-sOD"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="klb-2a-mJJ" secondAttribute="trailing" id="rFi-is-8Cv"/>
-                            <constraint firstItem="5gF-gX-qTZ" firstAttribute="trailing" secondItem="a98-pI-A9T" secondAttribute="trailingMargin" id="rUQ-jH-7gf"/>
-                            <constraint firstItem="klb-2a-mJJ" firstAttribute="top" secondItem="Kip-Jz-VIF" secondAttribute="bottom" constant="-250" id="tiO-4V-Jed"/>
-                            <constraint firstItem="LO4-2S-Zdz" firstAttribute="leading" secondItem="Kip-Jz-VIF" secondAttribute="trailing" constant="-25" id="vTI-qi-cwS"/>
-                            <constraint firstItem="k97-ze-dXF" firstAttribute="leading" secondItem="a98-pI-A9T" secondAttribute="leadingMargin" id="xf0-Ha-W6W"/>
-                            <constraint firstItem="Kip-Jz-VIF" firstAttribute="top" secondItem="klb-2a-mJJ" secondAttribute="bottom" constant="20" id="y8W-ig-fFl"/>
+                            <constraint firstItem="6Gd-hm-Q3b" firstAttribute="top" secondItem="z7c-Q1-8CZ" secondAttribute="bottom" id="voK-cB-uw2"/>
                             <constraint firstItem="4B8-hF-BBr" firstAttribute="leading" secondItem="a98-pI-A9T" secondAttribute="leading" id="ziJ-E1-bXa"/>
-                            <constraint firstItem="Ysi-D3-Xl2" firstAttribute="centerY" secondItem="k97-ze-dXF" secondAttribute="centerY" id="zwP-Lb-nh5"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="fWW-if-nL5"/>
-                                <exclude reference="ar1-mn-sBO"/>
-                                <exclude reference="rFi-is-8Cv"/>
-                                <exclude reference="tiO-4V-Jed"/>
-                                <exclude reference="kNb-K1-5BX"/>
-                                <exclude reference="cxp-ju-vje"/>
-                                <exclude reference="27h-MG-cWb"/>
-                                <exclude reference="Vjh-Vg-SXG"/>
-                                <exclude reference="aP3-iq-oLo"/>
+                                <exclude reference="hHS-VF-FKG"/>
                                 <exclude reference="2Bh-gB-t0c"/>
                                 <exclude reference="IgW-rv-Wbx"/>
-                                <exclude reference="caD-YK-IT0"/>
-                                <exclude reference="Bqk-B6-DBm"/>
-                                <exclude reference="zwP-Lb-nh5"/>
-                                <exclude reference="ndu-vQ-rBY"/>
+                                <exclude reference="voK-cB-uw2"/>
                             </mask>
                         </variation>
                     </view>
@@ -1600,6 +1634,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="message_icon" id="eGO-at-l02"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="scroll_elem" destination="z7c-Q1-8CZ" id="k4X-ag-h8p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GgN-Ww-Q1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1645,253 +1682,18 @@
                                 <animations/>
                             </imageView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwe-fo-hxv">
-                                <rect key="frame" x="113" y="64" width="375" height="473"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <view clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xm-72-IlL">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="413"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="476"/>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <scrollView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hCB-SR-Ja9">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="413"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="476"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_reg" translatesAutoresizingMaskIntoConstraints="NO" id="xR8-8E-yFe">
-                                                <rect key="frame" x="0.0" y="60" width="375" height="120"/>
-                                                <animations/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="120" id="KBG-k4-7tf"/>
-                                                </constraints>
-                                            </imageView>
-                                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ref_icon" translatesAutoresizingMaskIntoConstraints="NO" id="6Ld-Vv-psB">
-                                                <rect key="frame" x="153" y="85" width="70" height="70"/>
-                                                <animations/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="70" id="ezd-8c-a1l">
-                                                        <variation key="heightClass=regular-widthClass=regular" constant="70"/>
-                                                    </constraint>
-                                                    <constraint firstAttribute="width" constant="70" id="sNQ-Jq-CG9">
-                                                        <variation key="heightClass=regular-widthClass=regular" constant="70"/>
-                                                    </constraint>
-                                                </constraints>
-                                            </imageView>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ФАМИЛИЯ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="8Mb-Ms-EtX" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="195" width="335" height="40"/>
-                                                <animations/>
-                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="ENB-FY-vS1"/>
-                                                </constraints>
-                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ИМЯ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="lOU-aj-P1H" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="250" width="335" height="40"/>
-                                                <animations/>
-                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="7Zs-bC-AiI"/>
-                                                </constraints>
-                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ОТЧЕСТВО" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="MYZ-ST-tO8" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="305" width="335" height="40"/>
-                                                <animations/>
-                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="kAc-l5-DGt"/>
-                                                </constraints>
-                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ДАТА РОЖДЕНИЯ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="w8Q-qH-IJg" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="360" width="335" height="40"/>
-                                                <animations/>
-                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="DAT-1c-y7G"/>
-                                                </constraints>
-                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isDatePicker" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="НОМЕР ПАСПОРТА" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="FcE-8z-L4o" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="415" width="335" height="40"/>
-                                                <animations/>
-                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="6kW-Wd-rzh"/>
-                                                </constraints>
-                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isMaskNeed" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="maskCode" value="## ## ######"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="КЕМ ВЫДАН ПАСПОРТ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="dPN-wr-1Qg" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="470" width="335" height="40"/>
-                                                <animations/>
-                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="wH0-Kd-cOE"/>
-                                                </constraints>
-                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ДАТА ВЫДАЧИ ПАСПОРТА" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="xWp-Ti-7B3" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="525" width="335" height="40"/>
-                                                <animations/>
-                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="YtE-FL-y8A"/>
-                                                </constraints>
-                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isDatePicker" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="АДРЕС ПРОПИСКИ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="WYZ-34-f4r" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="580" width="335" height="40"/>
-                                                <animations/>
-                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="r9C-cC-fpv"/>
-                                                </constraints>
-                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="НОМЕР ВОДИТЕЛЬСКИХ ПРАВ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Pld-91-kkH" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="635" width="335" height="40"/>
-                                                <animations/>
-                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="3xW-Ho-pOy"/>
-                                                </constraints>
-                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isMaskNeed" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="maskCode" value="## ## ######"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="НОМЕР МОБИЛЬНОГО ТЕЛЕФОНА" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="1mN-GL-eMg" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="690" width="335" height="40"/>
-                                                <animations/>
-                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="ufn-mQ-4bq"/>
-                                                </constraints>
-                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" returnKeyType="next"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isMaskNeed" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="maskCode" value="+7 (###) ### ## ##"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="xd7-5D-HQ5" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="745" width="335" height="40"/>
-                                                <animations/>
-                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="23z-6J-bka"/>
-                                                </constraints>
-                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ПРИДУМАЙТЕ ПАРОЛЬ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="yNk-XE-dPz" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="800" width="335" height="40"/>
-                                                <animations/>
-                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="Bjp-Eh-AW1"/>
-                                                </constraints>
-                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ПОДТВЕРДИТЕ ПАРОЛЬ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="aRA-rT-2lf" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="855" width="335" height="40"/>
-                                                <animations/>
-                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <accessibility key="accessibilityConfiguration" identifier=""/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="63F-0C-pOi"/>
-                                                </constraints>
-                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDC-m9-Rsp">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                                                 <animations/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -1902,7 +1704,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Передача данных происходит по защищенному каналу с сервером TENCAR. Проверьте точность данных." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" preferredMaxLayoutWidth="295" translatesAutoresizingMaskIntoConstraints="NO" id="836-us-gMw">
-                                                <rect key="frame" x="70" y="0.0" width="285" height="60"/>
+                                                <rect key="frame" x="70" y="0.0" width="510" height="60"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="DSF-GD-xuc">
@@ -1931,11 +1733,247 @@
                                                     <constraint firstAttribute="height" constant="40" id="g5b-BI-Qr1"/>
                                                 </constraints>
                                             </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_reg" translatesAutoresizingMaskIntoConstraints="NO" id="xR8-8E-yFe">
+                                                <rect key="frame" x="0.0" y="60" width="600" height="120"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="KBG-k4-7tf"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ref_icon" translatesAutoresizingMaskIntoConstraints="NO" id="6Ld-Vv-psB">
+                                                <rect key="frame" x="265" y="85" width="70" height="70"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="ezd-8c-a1l">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="70" id="sNQ-Jq-CG9">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                                    </constraint>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ФАМИЛИЯ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="8Mb-Ms-EtX" customClass="JVFloatLabeledTextField">
+                                                <rect key="frame" x="20" y="195" width="560" height="40"/>
+                                                <animations/>
+                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=""/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="ENB-FY-vS1"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ИМЯ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="lOU-aj-P1H" customClass="JVFloatLabeledTextField">
+                                                <rect key="frame" x="20" y="250" width="560" height="40"/>
+                                                <animations/>
+                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=""/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="7Zs-bC-AiI"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ОТЧЕСТВО" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="MYZ-ST-tO8" customClass="JVFloatLabeledTextField">
+                                                <rect key="frame" x="20" y="305" width="560" height="40"/>
+                                                <animations/>
+                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=""/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="kAc-l5-DGt"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ДАТА РОЖДЕНИЯ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="w8Q-qH-IJg" customClass="JVFloatLabeledTextField">
+                                                <rect key="frame" x="20" y="360" width="560" height="40"/>
+                                                <animations/>
+                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=""/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="DAT-1c-y7G"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isDatePicker" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="НОМЕР ПАСПОРТА" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="FcE-8z-L4o" customClass="JVFloatLabeledTextField">
+                                                <rect key="frame" x="20" y="415" width="560" height="40"/>
+                                                <animations/>
+                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=""/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="6kW-Wd-rzh"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isMaskNeed" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="maskCode" value="## ## ######"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="КЕМ ВЫДАН ПАСПОРТ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="dPN-wr-1Qg" customClass="JVFloatLabeledTextField">
+                                                <rect key="frame" x="20" y="470" width="560" height="40"/>
+                                                <animations/>
+                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=""/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="wH0-Kd-cOE"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ДАТА ВЫДАЧИ ПАСПОРТА" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="xWp-Ti-7B3" customClass="JVFloatLabeledTextField">
+                                                <rect key="frame" x="20" y="525" width="560" height="40"/>
+                                                <animations/>
+                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=""/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="YtE-FL-y8A"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isDatePicker" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="АДРЕС ПРОПИСКИ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="WYZ-34-f4r" customClass="JVFloatLabeledTextField">
+                                                <rect key="frame" x="20" y="580" width="560" height="40"/>
+                                                <animations/>
+                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=""/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="r9C-cC-fpv"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="НОМЕР ВОДИТЕЛЬСКИХ ПРАВ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Pld-91-kkH" customClass="JVFloatLabeledTextField">
+                                                <rect key="frame" x="20" y="635" width="560" height="40"/>
+                                                <animations/>
+                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=""/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="3xW-Ho-pOy"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isMaskNeed" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="maskCode" value="## ## ######"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="НОМЕР МОБИЛЬНОГО ТЕЛЕФОНА" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="1mN-GL-eMg" customClass="JVFloatLabeledTextField">
+                                                <rect key="frame" x="20" y="690" width="560" height="40"/>
+                                                <animations/>
+                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=""/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="ufn-mQ-4bq"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isMaskNeed" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="maskCode" value="+7 (###) ### ## ##"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="xd7-5D-HQ5" customClass="JVFloatLabeledTextField">
+                                                <rect key="frame" x="20" y="745" width="560" height="40"/>
+                                                <animations/>
+                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=""/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="23z-6J-bka"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ПРИДУМАЙТЕ ПАРОЛЬ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="yNk-XE-dPz" customClass="JVFloatLabeledTextField">
+                                                <rect key="frame" x="20" y="800" width="560" height="40"/>
+                                                <animations/>
+                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=""/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Bjp-Eh-AW1"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ПОДТВЕРДИТЕ ПАРОЛЬ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="aRA-rT-2lf" customClass="JVFloatLabeledTextField">
+                                                <rect key="frame" x="20" y="855" width="560" height="40"/>
+                                                <animations/>
+                                                <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=""/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="63F-0C-pOi"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
                                         </subviews>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="8Mb-Ms-EtX" secondAttribute="trailing" constant="20" id="015-p9-2fy"/>
                                             <constraint firstItem="MYZ-ST-tO8" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="1d3-m9-nEp"/>
+                                            <constraint firstItem="6Ld-Vv-psB" firstAttribute="top" secondItem="xR8-8E-yFe" secondAttribute="bottom" constant="-95" id="2lX-8z-Q4C"/>
                                             <constraint firstAttribute="trailing" secondItem="1mN-GL-eMg" secondAttribute="trailing" constant="20" id="3hk-Ms-jLo"/>
                                             <constraint firstItem="xR8-8E-yFe" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" id="6uj-bA-9JX"/>
                                             <constraint firstItem="yNk-XE-dPz" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="7Th-nh-8fv"/>
@@ -1954,8 +1992,6 @@
                                             <constraint firstItem="6Ld-Vv-psB" firstAttribute="centerY" secondItem="xR8-8E-yFe" secondAttribute="centerY" id="Hi2-LI-9L5">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="-25"/>
                                             </constraint>
-                                            <constraint firstItem="FDC-m9-Rsp" firstAttribute="top" secondItem="836-us-gMw" secondAttribute="bottom" id="JfP-uO-Knv"/>
-                                            <constraint firstItem="FDC-m9-Rsp" firstAttribute="top" secondItem="xR8-8E-yFe" secondAttribute="bottom" constant="-180" id="KbR-7z-drA"/>
                                             <constraint firstItem="Pld-91-kkH" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="MLK-WI-NNZ"/>
                                             <constraint firstItem="0ee-e3-SK7" firstAttribute="centerY" secondItem="FDC-m9-Rsp" secondAttribute="centerY" id="NEE-wc-EYS"/>
                                             <constraint firstItem="FcE-8z-L4o" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="NND-Wq-hZH"/>
@@ -1965,15 +2001,14 @@
                                             <constraint firstItem="w8Q-qH-IJg" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="RAW-Yj-j3R"/>
                                             <constraint firstItem="xWp-Ti-7B3" firstAttribute="top" secondItem="dPN-wr-1Qg" secondAttribute="bottom" constant="15" id="RaC-WU-jr1"/>
                                             <constraint firstAttribute="trailing" secondItem="aRA-rT-2lf" secondAttribute="trailing" constant="20" id="Ukr-mb-n3y"/>
-                                            <constraint firstItem="836-us-gMw" firstAttribute="top" secondItem="FDC-m9-Rsp" secondAttribute="bottom" constant="-31" id="UoX-Ca-DNl"/>
                                             <constraint firstItem="w8Q-qH-IJg" firstAttribute="top" secondItem="MYZ-ST-tO8" secondAttribute="bottom" constant="15" id="V26-4y-wyf"/>
                                             <constraint firstItem="0ee-e3-SK7" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="Vm9-Cu-NuS"/>
                                             <constraint firstAttribute="trailing" secondItem="yNk-XE-dPz" secondAttribute="trailing" constant="20" id="Xzb-BP-jDx"/>
                                             <constraint firstItem="yNk-XE-dPz" firstAttribute="top" secondItem="xd7-5D-HQ5" secondAttribute="bottom" constant="15" id="Y1T-Bm-MhW"/>
                                             <constraint firstAttribute="trailing" secondItem="w8Q-qH-IJg" secondAttribute="trailing" constant="20" id="Ytw-mw-iUE"/>
-                                            <constraint firstItem="836-us-gMw" firstAttribute="leading" secondItem="FDC-m9-Rsp" secondAttribute="trailing" id="Z4T-xK-gRy"/>
                                             <constraint firstItem="Pld-91-kkH" firstAttribute="top" secondItem="WYZ-34-f4r" secondAttribute="bottom" constant="15" id="aDm-Ps-6OR"/>
                                             <constraint firstAttribute="trailing" secondItem="WYZ-34-f4r" secondAttribute="trailing" constant="20" id="bcq-QI-jzm"/>
+                                            <constraint firstItem="FDC-m9-Rsp" firstAttribute="top" secondItem="hCB-SR-Ja9" secondAttribute="top" id="cZX-tg-Vey"/>
                                             <constraint firstAttribute="trailing" secondItem="xWp-Ti-7B3" secondAttribute="trailing" constant="20" id="cve-YL-dgg"/>
                                             <constraint firstItem="8Mb-Ms-EtX" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="fUe-Fg-yoP"/>
                                             <constraint firstAttribute="trailing" secondItem="xd7-5D-HQ5" secondAttribute="trailing" constant="20" id="fvQ-yd-rLy"/>
@@ -1981,18 +2016,16 @@
                                             <constraint firstItem="lOU-aj-P1H" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="iZY-gO-JcL"/>
                                             <constraint firstAttribute="trailing" secondItem="FDC-m9-Rsp" secondAttribute="trailing" id="jMC-Gr-Pgs"/>
                                             <constraint firstItem="6Ld-Vv-psB" firstAttribute="centerX" secondItem="xR8-8E-yFe" secondAttribute="centerX" id="jtR-7q-UiL"/>
-                                            <constraint firstItem="xR8-8E-yFe" firstAttribute="top" secondItem="hCB-SR-Ja9" secondAttribute="top" constant="60" id="lZ2-v0-QOG"/>
                                             <constraint firstAttribute="trailing" secondItem="lOU-aj-P1H" secondAttribute="trailing" constant="20" id="n4V-eS-2ZW"/>
                                             <constraint firstItem="1mN-GL-eMg" firstAttribute="top" secondItem="Pld-91-kkH" secondAttribute="bottom" constant="15" id="nwZ-ae-kE0"/>
                                             <constraint firstAttribute="trailing" secondItem="MYZ-ST-tO8" secondAttribute="trailing" constant="20" id="pJ9-h0-Z8g"/>
-                                            <constraint firstItem="836-us-gMw" firstAttribute="leading" secondItem="0ee-e3-SK7" secondAttribute="trailing" id="pSU-f7-J4d"/>
                                             <constraint firstItem="xWp-Ti-7B3" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="pZw-Nh-Czm"/>
-                                            <constraint firstItem="836-us-gMw" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="50" id="rlz-Bf-xKS"/>
+                                            <constraint firstItem="6Ld-Vv-psB" firstAttribute="top" secondItem="836-us-gMw" secondAttribute="bottom" constant="25" id="rM6-pj-qhD"/>
                                             <constraint firstAttribute="trailing" secondItem="dPN-wr-1Qg" secondAttribute="trailing" constant="20" id="t8e-8y-BuG"/>
-                                            <constraint firstItem="836-us-gMw" firstAttribute="leading" secondItem="FDC-m9-Rsp" secondAttribute="trailing" constant="-300" id="tVh-VA-OqP"/>
                                             <constraint firstItem="836-us-gMw" firstAttribute="height" secondItem="FDC-m9-Rsp" secondAttribute="height" id="tsp-Vs-9H6"/>
                                             <constraint firstAttribute="trailing" secondItem="xR8-8E-yFe" secondAttribute="trailing" id="vAi-fl-6nP"/>
                                             <constraint firstItem="xd7-5D-HQ5" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="vR3-0b-vUb"/>
+                                            <constraint firstItem="xR8-8E-yFe" firstAttribute="top" secondItem="FDC-m9-Rsp" secondAttribute="bottom" id="vgU-j2-MvH"/>
                                             <constraint firstItem="WYZ-34-f4r" firstAttribute="top" secondItem="xWp-Ti-7B3" secondAttribute="bottom" constant="15" id="wrg-1J-5RQ"/>
                                             <constraint firstItem="FDC-m9-Rsp" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" id="xF6-5g-RS0"/>
                                             <constraint firstItem="dPN-wr-1Qg" firstAttribute="leading" secondItem="hCB-SR-Ja9" secondAttribute="leading" constant="20" id="y4x-EI-gqW"/>
@@ -2000,17 +2033,13 @@
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="JfP-uO-Knv"/>
-                                                <exclude reference="UoX-Ca-DNl"/>
-                                                <exclude reference="Z4T-xK-gRy"/>
-                                                <exclude reference="pSU-f7-J4d"/>
-                                                <exclude reference="rlz-Bf-xKS"/>
-                                                <exclude reference="tVh-VA-OqP"/>
+                                                <exclude reference="2lX-8z-Q4C"/>
+                                                <exclude reference="Hi2-LI-9L5"/>
                                             </mask>
                                         </variation>
                                     </scrollView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbV-Ec-c9Q">
-                                        <rect key="frame" x="0.0" y="413" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="476" width="600" height="60"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.0" green="0.71764705880000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -2042,21 +2071,33 @@
                                     <constraint firstAttribute="trailing" secondItem="hCB-SR-Ja9" secondAttribute="trailing" id="rAd-Ma-i18"/>
                                     <constraint firstItem="5xm-72-IlL" firstAttribute="leading" secondItem="qwe-fo-hxv" secondAttribute="leading" id="vpH-UW-HXi"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="UAC-30-gvw"/>
+                                        <exclude reference="ex8-fB-TnM"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <animations/>
                         <constraints>
                             <constraint firstItem="Abs-B7-MUH" firstAttribute="leading" secondItem="nmH-1O-Jt7" secondAttribute="leading" id="CWV-2Q-e4I"/>
-                            <constraint firstItem="qwe-fo-hxv" firstAttribute="leading" secondItem="nmH-1O-Jt7" secondAttribute="leading" priority="900" id="KvD-TD-fNn"/>
-                            <constraint firstAttribute="trailing" secondItem="qwe-fo-hxv" secondAttribute="trailing" priority="900" id="NIW-bq-ACf"/>
+                            <constraint firstItem="qwe-fo-hxv" firstAttribute="leading" secondItem="nmH-1O-Jt7" secondAttribute="leading" id="KvD-TD-fNn"/>
+                            <constraint firstAttribute="trailing" secondItem="qwe-fo-hxv" secondAttribute="trailing" id="NIW-bq-ACf"/>
                             <constraint firstItem="qwe-fo-hxv" firstAttribute="centerY" secondItem="nmH-1O-Jt7" secondAttribute="centerY" id="O13-Ca-z76"/>
-                            <constraint firstItem="LwU-Uw-scv" firstAttribute="top" secondItem="qwe-fo-hxv" secondAttribute="bottom" priority="750" id="OUH-qk-zgF"/>
+                            <constraint firstItem="LwU-Uw-scv" firstAttribute="top" secondItem="qwe-fo-hxv" secondAttribute="bottom" id="OUH-qk-zgF"/>
                             <constraint firstItem="qwe-fo-hxv" firstAttribute="centerX" secondItem="nmH-1O-Jt7" secondAttribute="centerX" id="RVi-Il-Gzd"/>
                             <constraint firstItem="LwU-Uw-scv" firstAttribute="top" secondItem="Abs-B7-MUH" secondAttribute="bottom" id="Xst-OQ-e75"/>
                             <constraint firstItem="Abs-B7-MUH" firstAttribute="top" secondItem="jOO-SF-KWE" secondAttribute="bottom" id="fgs-mi-ryo"/>
                             <constraint firstAttribute="trailing" secondItem="Abs-B7-MUH" secondAttribute="trailing" id="hUT-TZ-08w"/>
-                            <constraint firstItem="qwe-fo-hxv" firstAttribute="top" secondItem="jOO-SF-KWE" secondAttribute="bottom" priority="900" id="lgE-bD-00I"/>
+                            <constraint firstItem="qwe-fo-hxv" firstAttribute="top" secondItem="jOO-SF-KWE" secondAttribute="bottom" id="lgE-bD-00I"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="O13-Ca-z76"/>
+                                <exclude reference="RVi-Il-Gzd"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="ПЕРСОНАЛЬНЫЕ ДАННЫЕ" id="Sti-sE-7GK">
                         <barButtonItem key="backBarButtonItem" title=" " id="FVV-Fv-aWg"/>
@@ -2088,18 +2129,18 @@
                                 <animations/>
                             </imageView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xrW-al-g5Y">
-                                <rect key="frame" x="113" y="64" width="375" height="473"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <view clipsSubviews="YES" alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZy-8S-dE3">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="413"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="476"/>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <scrollView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oDk-3X-a2T">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="413"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="476"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJ5-pC-gqW">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                                                 <animations/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -2110,7 +2151,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Передача данных происходит по защищенному каналу с сервером TENCAR." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" preferredMaxLayoutWidth="295" translatesAutoresizingMaskIntoConstraints="NO" id="bMk-qx-Lfn">
-                                                <rect key="frame" x="70" y="0.0" width="285" height="60"/>
+                                                <rect key="frame" x="70" y="0.0" width="510" height="60"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -2125,7 +2166,7 @@
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ВВЕДИТЕ КОД ИЗ EMAIL СООБЩЕНИЯ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="5Zz-x1-gub" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="75" width="335" height="40"/>
+                                                <rect key="frame" x="20" y="75" width="560" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" identifier=""/>
@@ -2141,7 +2182,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ВВЕДИТЕ КОД ИЗ СМС СООБЩЕНИЯ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="RKm-yD-VIy" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="130" width="335" height="40"/>
+                                                <rect key="frame" x="20" y="130" width="560" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" identifier=""/>
@@ -2157,7 +2198,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uga-jC-HZY">
-                                                <rect key="frame" x="0.0" y="185" width="375" height="75"/>
+                                                <rect key="frame" x="0.0" y="185" width="600" height="75"/>
                                                 <animations/>
                                                 <color key="backgroundColor" red="0.0" green="0.73333333329999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -2168,7 +2209,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="8" preferredMaxLayoutWidth="295" translatesAutoresizingMaskIntoConstraints="NO" id="BL2-uX-zme">
-                                                <rect key="frame" x="70" y="185" width="285" height="75"/>
+                                                <rect key="frame" x="70" y="185" width="510" height="75"/>
                                                 <animations/>
                                                 <string key="text">Привязка кредитной карты обязательна и требуется для мгновенного бронирования автомобиля, а так же своевременного погашения штрафов ГИБДД.</string>
                                                 <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
@@ -2184,7 +2225,7 @@
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="НОМЕР КРЕДИТНОЙ КАРТЫ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="8vN-9P-FwX" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="275" width="335" height="40"/>
+                                                <rect key="frame" x="20" y="275" width="560" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" identifier=""/>
@@ -2202,7 +2243,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ВЛАДЕЛЕЦ КРЕДИТНОЙ КАРТЫ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="EpF-VA-l5T" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="385" width="335" height="40"/>
+                                                <rect key="frame" x="20" y="385" width="560" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" identifier=""/>
@@ -2219,7 +2260,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="МЕСЯЦ" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="0Mn-BY-ere" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="20" y="330" width="75" height="40"/>
+                                                <rect key="frame" x="20" y="330" width="120" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" identifier=""/>
@@ -2237,7 +2278,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ГОД" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Q2e-n5-VBC" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="105" y="330" width="75" height="40"/>
+                                                <rect key="frame" x="150" y="330" width="120" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" identifier=""/>
@@ -2255,7 +2296,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVV/CVC" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="yT1-vq-VNX" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="200" y="330" width="155" height="40"/>
+                                                <rect key="frame" x="290" y="330" width="290" height="40"/>
                                                 <animations/>
                                                 <color key="tintColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" identifier=""/>
@@ -2271,7 +2312,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для проверки подлинности карты будет снят и немедленно возвращен 1 рубль." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="295" translatesAutoresizingMaskIntoConstraints="NO" id="qur-Pb-E0w">
-                                                <rect key="frame" x="20" y="445" width="335" height="28"/>
+                                                <rect key="frame" x="20" y="445" width="560" height="28"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" name="ALSSchlangesans" family="ALSSchlangesans" pointSize="14"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -2345,7 +2386,7 @@
                                         </variation>
                                     </scrollView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtg-PO-c1f">
-                                        <rect key="frame" x="0.0" y="413" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="476" width="600" height="60"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.0" green="0.71764705880000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -2374,21 +2415,33 @@
                                     <constraint firstItem="Mtg-PO-c1f" firstAttribute="top" secondItem="oDk-3X-a2T" secondAttribute="bottom" id="pq1-n3-0KF"/>
                                     <constraint firstItem="cZy-8S-dE3" firstAttribute="leading" secondItem="xrW-al-g5Y" secondAttribute="leading" id="xL1-gM-h0t"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="24i-O9-ZlH"/>
+                                        <exclude reference="edN-kw-ddk"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <animations/>
                         <constraints>
                             <constraint firstItem="xrW-al-g5Y" firstAttribute="centerY" secondItem="YvU-Zo-Obo" secondAttribute="centerY" id="A9W-SJ-k1v"/>
-                            <constraint firstItem="xrW-al-g5Y" firstAttribute="leading" secondItem="YvU-Zo-Obo" secondAttribute="leading" priority="900" id="HtF-vU-Fln"/>
+                            <constraint firstItem="xrW-al-g5Y" firstAttribute="leading" secondItem="YvU-Zo-Obo" secondAttribute="leading" id="HtF-vU-Fln"/>
                             <constraint firstItem="A9k-KX-lpq" firstAttribute="top" secondItem="q8q-r0-vcp" secondAttribute="bottom" id="MGD-EG-q9S"/>
                             <constraint firstItem="IRK-rm-6VF" firstAttribute="top" secondItem="A9k-KX-lpq" secondAttribute="bottom" id="Q55-TJ-cCg"/>
                             <constraint firstItem="xrW-al-g5Y" firstAttribute="centerX" secondItem="YvU-Zo-Obo" secondAttribute="centerX" id="ZC3-yD-wVq"/>
-                            <constraint firstItem="xrW-al-g5Y" firstAttribute="top" secondItem="q8q-r0-vcp" secondAttribute="bottom" priority="900" id="bKc-07-19r"/>
+                            <constraint firstItem="xrW-al-g5Y" firstAttribute="top" secondItem="q8q-r0-vcp" secondAttribute="bottom" id="bKc-07-19r"/>
                             <constraint firstAttribute="trailing" secondItem="A9k-KX-lpq" secondAttribute="trailing" id="fp5-Id-gzF"/>
-                            <constraint firstItem="IRK-rm-6VF" firstAttribute="top" secondItem="xrW-al-g5Y" secondAttribute="bottom" priority="750" id="q9d-Vv-A2S"/>
+                            <constraint firstItem="IRK-rm-6VF" firstAttribute="top" secondItem="xrW-al-g5Y" secondAttribute="bottom" id="q9d-Vv-A2S"/>
                             <constraint firstItem="A9k-KX-lpq" firstAttribute="leading" secondItem="YvU-Zo-Obo" secondAttribute="leading" id="xXG-eT-pfq"/>
-                            <constraint firstAttribute="trailing" secondItem="xrW-al-g5Y" secondAttribute="trailing" priority="900" id="xwv-i9-67g"/>
+                            <constraint firstAttribute="trailing" secondItem="xrW-al-g5Y" secondAttribute="trailing" id="xwv-i9-67g"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="A9W-SJ-k1v"/>
+                                <exclude reference="ZC3-yD-wVq"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="ПОДТВЕРЖДЕНИЕ ДАННЫХ" id="syi-Fg-pUj"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -2412,6 +2465,7 @@
         <image name="cal" width="25" height="25"/>
         <image name="car" width="25" height="25"/>
         <image name="checked" width="33" height="33"/>
+        <image name="class" width="25" height="25"/>
         <image name="fb" width="25" height="25"/>
         <image name="geo" width="25" height="25"/>
         <image name="help" width="50" height="50"/>

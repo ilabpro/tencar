@@ -25,6 +25,8 @@
     //                                                        NSFontAttributeName: [UIFont fontWithName:@"ALSSchlangesans" size:18.0f]
       //                                                      }];
     //[[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
     
     return YES;
 }

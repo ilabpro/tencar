@@ -146,7 +146,7 @@
     
     UIView *bgColorView = [[UIView alloc] init];
     bgColorView.backgroundColor = [self colorFromHexString:@"#4E5F71"];
-    
+    [cell setBackgroundColor:[UIColor clearColor]];
     [cell setSelectedBackgroundView:bgColorView];
     
     

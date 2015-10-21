@@ -7,8 +7,11 @@
 //
 
 #import "dashboardViewController.h"
+#import "IHKeyboardAvoiding.h"
 
 @interface dashboardViewController ()
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scroll_elem;
 
 @end
 
@@ -18,11 +21,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIGestureRecognizer *tapper1 = [[UITapGestureRecognizer alloc]
+                                    initWithTarget:self action:@selector(handleSingleTap:)];
+    tapper1.cancelsTouchesInView = NO;
+    [self.view addGestureRecognizer:tapper1];
 }
-
+- (void)viewWillAppear:(BOOL)animated
+{
+    [IHKeyboardAvoiding setAvoidingView:self.scroll_elem];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (void)handleSingleTap:(UITapGestureRecognizer *) sender
+{
+    [self.view endEditing:YES];
 }
 - (IBAction)showMenu:(id)sender {
     // Dismiss keyboard (optional)

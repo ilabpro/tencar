@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2208_2208.png" translatesAutoresizingMaskIntoConstraints="NO" id="eXV-tz-Qaw">
-                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <animations/>
                             </imageView>
                         </subviews>
@@ -27,10 +27,18 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="eXV-tz-Qaw" secondAttribute="trailing" id="KMV-Z0-kB3"/>
+                            <constraint firstAttribute="trailing" secondItem="eXV-tz-Qaw" secondAttribute="trailing" id="lOU-D7-cfj"/>
+                            <constraint firstItem="eXV-tz-Qaw" firstAttribute="leading" secondItem="yXc-IY-83F" secondAttribute="leading" id="nud-dF-Lxl"/>
                             <constraint firstItem="e1T-i6-rs2" firstAttribute="top" secondItem="eXV-tz-Qaw" secondAttribute="bottom" id="oKz-fC-hsl"/>
                             <constraint firstItem="eXV-tz-Qaw" firstAttribute="leading" secondItem="yXc-IY-83F" secondAttribute="leadingMargin" id="vFd-Js-Yza"/>
                             <constraint firstItem="eXV-tz-Qaw" firstAttribute="top" secondItem="KEI-yO-TVG" secondAttribute="bottom" id="yZN-5l-WLl"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="KMV-Z0-kB3"/>
+                                <exclude reference="vFd-Js-Yza"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                 </viewController>

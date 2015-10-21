@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		77057A4D1B566FAE00FCE40C /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77057A4C1B566FAE00FCE40C /* JASidePanelController.m */; };
 		77057A501B56711800FCE40C /* PanelsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77057A4F1B56711800FCE40C /* PanelsController.m */; };
-		770D6AFA1B5F869E000B16DA /* UIViewController+JASidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D6AF91B5F869E000B16DA /* UIViewController+JASidePanel.m */; };
 		770D6AFC1B5F8776000B16DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770D6AFB1B5F8776000B16DA /* Foundation.framework */; };
 		770D6AFE1B5F87CC000B16DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770D6AFD1B5F87CC000B16DA /* UIKit.framework */; };
 		770D6B001B5F87D1000B16DA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770D6AFF1B5F87D1000B16DA /* QuartzCore.framework */; };
@@ -70,16 +68,12 @@
 
 /* Begin PBXFileReference section */
 		770449E11B54E2B7007C099F /* TENCAR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TENCAR.entitlements; sourceTree = "<group>"; };
-		77057A4B1B566FAE00FCE40C /* JASidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JASidePanelController.h; sourceTree = "<group>"; };
-		77057A4C1B566FAE00FCE40C /* JASidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASidePanelController.m; sourceTree = "<group>"; };
 		77057A4E1B56711800FCE40C /* PanelsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanelsController.h; sourceTree = "<group>"; };
 		77057A4F1B56711800FCE40C /* PanelsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelsController.m; sourceTree = "<group>"; };
 		770D6AEB1B5D0841000B16DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		770D6AEC1B5D0845000B16DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		770D6AF01B5D0F69000B16DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		770D6AF11B5D0F69000B16DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		770D6AF81B5F869E000B16DA /* UIViewController+JASidePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JASidePanel.h"; sourceTree = "<group>"; };
-		770D6AF91B5F869E000B16DA /* UIViewController+JASidePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JASidePanel.m"; sourceTree = "<group>"; };
 		770D6AFB1B5F8776000B16DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		770D6AFD1B5F87CC000B16DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		770D6AFF1B5F87D1000B16DA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -209,17 +203,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		770D6B0B1B5F98BF000B16DA /* jaside */ = {
-			isa = PBXGroup;
-			children = (
-				77057A4B1B566FAE00FCE40C /* JASidePanelController.h */,
-				77057A4C1B566FAE00FCE40C /* JASidePanelController.m */,
-				770D6AF81B5F869E000B16DA /* UIViewController+JASidePanel.h */,
-				770D6AF91B5F869E000B16DA /* UIViewController+JASidePanel.m */,
-			);
-			name = jaside;
-			sourceTree = "<group>";
-		};
 		770D6B0C1B5F98CB000B16DA /* badges */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,7 +293,6 @@
 				77B77B231BD137F300267D94 /* SLScrollViewKeyboardSupport */,
 				77BD05E81BCF9AE400EF648A /* privacy */,
 				770449E11B54E2B7007C099F /* TENCAR.entitlements */,
-				770D6B0B1B5F98BF000B16DA /* jaside */,
 				770D6B0C1B5F98CB000B16DA /* badges */,
 				77BB57381B53F87C0060E181 /* AppDelegate.h */,
 				77BB57391B53F87C0060E181 /* AppDelegate.m */,
@@ -516,10 +498,8 @@
 				77B77B291BD1399300267D94 /* IHKeyboardAvoiding.m in Sources */,
 				77BB57431B53F87C0060E181 /* TENCAR.xcdatamodeld in Sources */,
 				77522A6D1BD50864008F5EDF /* dashboardViewController.m in Sources */,
-				77057A4D1B566FAE00FCE40C /* JASidePanelController.m in Sources */,
 				77B77B221BD11D4B00267D94 /* ConfirmViewController.m in Sources */,
 				77BD05DB1BCE517600EF648A /* PrivacyViewController.m in Sources */,
-				770D6AFA1B5F869E000B16DA /* UIViewController+JASidePanel.m in Sources */,
 				77522A641BD5028F008F5EDF /* UIViewController+REFrostedViewController.m in Sources */,
 				77522A701BD5092A008F5EDF /* MenuViewController.m in Sources */,
 				77522A621BD5028F008F5EDF /* UIImage+REFrostedViewController.m in Sources */,

@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "REFrostedViewController.h"
 
+
+
 @interface navbarViewController : UINavigationController
 - (void)panGestureRecognized:(UIPanGestureRecognizer *)sender;
 @end

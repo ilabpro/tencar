@@ -26,9 +26,20 @@
     tapper1.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:tapper1];
 }
-- (void)viewWillAppear:(BOOL)animated
+- (void)viewDidAppear:(BOOL)animated
 {
     [IHKeyboardAvoiding setAvoidingView:self.scroll_elem];
+    
+    
+   
+    //dispatch_time_t delay = dispatch_time( DISPATCH_TIME_NOW, 0.3 * NSEC_PER_SEC );
+    //dispatch_after( delay, dispatch_get_main_queue(), ^{
+        [self.frostedViewController presentMenuViewControllerNoAnimation];
+        [self.frostedViewController hideMenuViewController];
+        
+    //});
+    
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -81,6 +81,8 @@
     _liveBlur = REUIKitIsFlatMode();
     _panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:_containerViewController action:@selector(panGestureRecognized:)];
     _automaticSize = YES;
+    
+    
 }
 
 - (id)initWithContentViewController:(UIViewController *)contentViewController menuViewController:(UIViewController *)menuViewController
@@ -89,6 +91,8 @@
     if (self) {
         _contentViewController = contentViewController;
         _menuViewController = menuViewController;
+        
+        
     }
     return self;
 }
@@ -97,6 +101,9 @@
 {
     [super viewDidLoad];
     [self re_displayController:self.contentViewController frame:self.view.bounds];
+    
+   
+    
 }
 
 - (UIViewController *)childViewControllerForStatusBarStyle
@@ -133,6 +140,9 @@
     if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]) {
         [self performSelector:@selector(setNeedsStatusBarAppearanceUpdate)];
     }
+    
+    
+    
 }
 
 - (void)setMenuViewController:(UIViewController *)menuViewController
@@ -156,6 +166,8 @@
     menuViewController.view.frame = frame;
     [self.containerViewController.containerView addSubview:menuViewController.view];
     [menuViewController didMoveToParentViewController:self];
+    
+   
 }
 
 - (void)setMenuViewSize:(CGSize)menuViewSize
@@ -170,6 +182,13 @@
 {
     [self presentMenuViewControllerWithAnimatedApperance:YES];
 }
+- (void)presentMenuViewControllerNoAnimation
+{
+    [self presentMenuViewControllerWithAnimatedApperance:NO];
+    
+}
+
+
 
 - (void)presentMenuViewControllerWithAnimatedApperance:(BOOL)animateApperance
 {
@@ -197,7 +216,13 @@
         if (REUIKitIsFlatMode() && !self.blurTintColor) {
             self.blurTintColor = [UIColor colorWithWhite:1 alpha:0.75f];
         }
-        self.containerViewController.screenshotImage = [[self.contentViewController.view re_screenshot] re_applyBlurWithRadius:self.blurRadius tintColor:self.blurTintColor saturationDeltaFactor:self.blurSaturationDeltaFactor maskImage:nil];
+        
+        if(!self.containerViewController.screenshotImage)
+        {
+            self.containerViewController.screenshotImage = [[self.contentViewController.view re_screenshot] re_applyBlurWithRadius:self.blurRadius tintColor:self.blurTintColor saturationDeltaFactor:self.blurSaturationDeltaFactor maskImage:nil];
+        }
+        
+        
     }
 
     [self re_displayController:self.containerViewController frame:self.contentViewController.view.frame];

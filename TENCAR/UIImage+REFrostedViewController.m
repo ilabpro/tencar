@@ -101,7 +101,7 @@
 {
     // Check pre-conditions.
     
-    NSLog(@"start");
+ 
     if (self.size.width < 1 || self.size.height < 1) {
         NSLog (@"*** error: invalid size: (%.2f x %.2f). Both dimensions must be >= 1: %@", self.size.width, self.size.height, self);
         return nil;
@@ -226,7 +226,7 @@
     // Output image is ready.
     UIImage *outputImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-     NSLog(@"end");
+   
     return outputImage;
 }
 

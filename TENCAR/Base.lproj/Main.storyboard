@@ -583,8 +583,19 @@
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                 </state>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xni-3j-k3D">
+                                                <rect key="frame" x="225" y="306" width="150" height="150"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.0" green="0.71764705880000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="xni-3j-k3D" secondAttribute="height" multiplier="1:1" id="gQd-H5-aEe"/>
+                                                </constraints>
+                                                <state key="normal" image="photo_icon">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                                </state>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="EGt-h0-qH0">
-                                                <rect key="frame" x="20" y="178" width="560" height="37"/>
+                                                <rect key="frame" x="28" y="178" width="544" height="37"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="37" id="X7q-Cp-CG2"/>
@@ -605,17 +616,6 @@
                                                     <action selector="agree_privacy_touch:" destination="5IL-MH-2fp" eventType="touchUpInside" id="I4V-SH-c2e"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xni-3j-k3D">
-                                                <rect key="frame" x="225" y="306" width="150" height="150"/>
-                                                <animations/>
-                                                <color key="backgroundColor" red="0.0" green="0.71764705880000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="xni-3j-k3D" secondAttribute="height" multiplier="1:1" id="gQd-H5-aEe"/>
-                                                </constraints>
-                                                <state key="normal" image="photo_icon">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                                </state>
-                                            </button>
                                         </subviews>
                                         <animations/>
                                         <constraints>
@@ -633,6 +633,7 @@
                                             <constraint firstItem="EGt-h0-qH0" firstAttribute="leading" secondItem="BlL-GD-WwO" secondAttribute="leading" constant="20" id="Wm6-40-2zR"/>
                                             <constraint firstItem="sx0-d9-peP" firstAttribute="leading" secondItem="BlL-GD-WwO" secondAttribute="leading" constant="20" id="bXW-yE-vue"/>
                                             <constraint firstItem="sP4-e7-Wes" firstAttribute="width" secondItem="BlL-GD-WwO" secondAttribute="width" multiplier="0.25" id="bdw-L2-qDh"/>
+                                            <constraint firstItem="EGt-h0-qH0" firstAttribute="leading" secondItem="BlL-GD-WwO" secondAttribute="leadingMargin" constant="20" id="cgw-9v-tLJ"/>
                                             <constraint firstAttribute="bottom" secondItem="aCZ-ve-YUZ" secondAttribute="bottom" constant="20" id="cs1-DX-beS"/>
                                             <constraint firstItem="60B-4b-mlb" firstAttribute="top" secondItem="SSu-hT-BKX" secondAttribute="bottom" constant="20" id="exo-tX-7Oh"/>
                                             <constraint firstItem="xni-3j-k3D" firstAttribute="width" secondItem="BlL-GD-WwO" secondAttribute="width" multiplier="0.25" id="h2G-Bd-hxn"/>
@@ -646,7 +647,14 @@
                                             <constraint firstItem="SSu-hT-BKX" firstAttribute="centerX" secondItem="BlL-GD-WwO" secondAttribute="centerX" id="vqA-dQ-YN2"/>
                                             <constraint firstItem="60B-4b-mlb" firstAttribute="width" secondItem="BlL-GD-WwO" secondAttribute="width" multiplier="0.25" id="w73-ZP-t0a"/>
                                             <constraint firstItem="60B-4b-mlb" firstAttribute="leading" secondItem="Aep-Jx-p1c" secondAttribute="trailing" constant="20" id="wDQ-Fj-wvh"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="EGt-h0-qH0" secondAttribute="trailing" constant="20" id="yOr-hA-gQ1"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="N7R-ae-ou9"/>
+                                                <exclude reference="Wm6-40-2zR"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                 </subviews>
                                 <animations/>
@@ -2464,7 +2472,7 @@
         <image name="bonus" width="48" height="48"/>
         <image name="cal" width="25" height="25"/>
         <image name="car" width="25" height="25"/>
-        <image name="checked" width="33" height="33"/>
+        <image name="checked" width="32" height="32"/>
         <image name="class" width="25" height="25"/>
         <image name="fb" width="25" height="25"/>
         <image name="geo" width="25" height="25"/>
@@ -2482,7 +2490,7 @@
         <image name="rent" width="50" height="50"/>
         <image name="sec_warn" width="50" height="50"/>
         <image name="settings" width="50" height="50"/>
-        <image name="uncheck" width="33" height="33"/>
+        <image name="uncheck" width="32" height="32"/>
         <image name="vk" width="25" height="25"/>
         <image name="warn_personal" width="50" height="50"/>
     </resources>

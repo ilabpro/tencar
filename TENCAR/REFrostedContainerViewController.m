@@ -88,6 +88,8 @@
     }
     
     [self.view addGestureRecognizer:self.frostedViewController.panGestureRecognizer];
+    
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -280,6 +282,7 @@
 
 - (void)refreshBackgroundImage
 {
+   
     self.backgroundImageView.image = self.screenshotImage;
 }
 

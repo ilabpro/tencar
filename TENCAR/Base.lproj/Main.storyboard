@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9058" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ep4-O6-bHF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9058" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ep4-O6-bHF">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9048"/>
@@ -237,7 +237,7 @@
                                                 </connections>
                                             </textField>
                                             <webView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" keyboardDisplayRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDe-Ew-aTX">
-                                                <rect key="frame" x="106" y="164" width="155" height="51"/>
+                                                <rect key="frame" x="32" y="54" width="73" height="50"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -739,8 +739,6 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="T6g-Dv-OZw"/>
-                                <exclude reference="xia-71-JcI"/>
                                 <exclude reference="0rw-SN-dnX"/>
                                 <exclude reference="1fU-oH-fpk"/>
                                 <exclude reference="D1C-Y5-d9d"/>
@@ -750,6 +748,8 @@
                                 <exclude reference="hW6-kI-t1A"/>
                                 <exclude reference="pCa-U9-8w0"/>
                                 <exclude reference="xx0-ZX-DTp"/>
+                                <exclude reference="T6g-Dv-OZw"/>
+                                <exclude reference="xia-71-JcI"/>
                             </mask>
                         </variation>
                     </view>
@@ -1391,9 +1391,6 @@
                                                 <exclude reference="2X1-Vl-bdU"/>
                                             </mask>
                                         </variation>
-                                        <connections>
-                                            <outlet property="delegate" destination="Wt0-sA-v2s" id="25k-mH-XkT"/>
-                                        </connections>
                                     </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="geo" translatesAutoresizingMaskIntoConstraints="NO" id="LO4-2S-Zdz">
                                         <rect key="frame" x="555" y="143" width="25" height="25"/>
@@ -1416,11 +1413,10 @@
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isDatePicker" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <outlet property="delegate" destination="Wt0-sA-v2s" id="THJ-dx-Jcf"/>
+                                            <outlet property="delegate" destination="pl3-fY-ELj" id="yFH-A5-v72"/>
                                         </connections>
                                     </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cal" translatesAutoresizingMaskIntoConstraints="NO" id="xu5-Fc-ZQJ">
@@ -1464,9 +1460,6 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <outlet property="delegate" destination="Wt0-sA-v2s" id="KXg-Pf-QqX"/>
-                                        </connections>
                                     </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="class" translatesAutoresizingMaskIntoConstraints="NO" id="Ysi-D3-Xl2">
                                         <rect key="frame" x="557" y="308" width="25" height="25"/>
@@ -1499,9 +1492,6 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <outlet property="delegate" destination="Wt0-sA-v2s" id="Aa2-Xq-9mW"/>
-                                        </connections>
                                     </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="BgA-rd-k1O">
                                         <rect key="frame" x="555" y="363" width="25" height="25"/>
@@ -1526,11 +1516,10 @@
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isDatePicker" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <outlet property="delegate" destination="Wt0-sA-v2s" id="2wm-7z-kHB"/>
+                                            <outlet property="delegate" destination="pl3-fY-ELj" id="D7S-zY-GRe"/>
                                         </connections>
                                     </textField>
                                 </subviews>
@@ -1635,6 +1624,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="ВЗЯТЬ В ПРОКАТ" id="2zR-e1-Z3e">
+                        <barButtonItem key="backBarButtonItem" title=" " id="GzY-GN-QiS"/>
                         <barButtonItem key="leftBarButtonItem" image="menu_icon" id="HEA-NJ-zRU">
                             <connections>
                                 <action selector="showMenu:" destination="pl3-fY-ELj" id="bvj-Jh-dio"/>
@@ -1643,12 +1633,57 @@
                         <barButtonItem key="rightBarButtonItem" image="message_icon" id="eGO-at-l02"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="firstDateField" destination="O3C-Yd-4Tv" id="tln-EF-sbQ"/>
                         <outlet property="scroll_elem" destination="z7c-Q1-8CZ" id="k4X-ag-h8p"/>
+                        <outlet property="secondDateField" destination="5gF-gX-qTZ" id="GgD-Tg-xiT"/>
+                        <segue destination="WQQ-nf-JQF" kind="show" identifier="set_date" id="sDF-Za-GYN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GgN-Ww-Q1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="869" y="1833"/>
+        </scene>
+        <!--ВЫБЕРИТЕ ПЕРИОД АРЕНДЫ-->
+        <scene sceneID="CwK-e6-4qv">
+            <objects>
+                <viewController id="WQQ-nf-JQF" customClass="CalendarViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nCL-s5-pdq"/>
+                        <viewControllerLayoutGuide type="bottom" id="iSZ-lD-czo"/>
+                    </layoutGuides>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="qWb-HR-Xnb">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYK-Rk-r0G" customClass="GLCalendarView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iSZ-lD-czo" firstAttribute="top" secondItem="MYK-Rk-r0G" secondAttribute="bottom" id="5rb-Cd-wUN"/>
+                            <constraint firstAttribute="trailing" secondItem="MYK-Rk-r0G" secondAttribute="trailing" id="LtX-ce-DVw"/>
+                            <constraint firstItem="MYK-Rk-r0G" firstAttribute="top" secondItem="nCL-s5-pdq" secondAttribute="bottom" id="WFm-Xu-15W"/>
+                            <constraint firstItem="MYK-Rk-r0G" firstAttribute="leading" secondItem="qWb-HR-Xnb" secondAttribute="leading" id="ciO-RQ-elr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ВЫБЕРИТЕ ПЕРИОД АРЕНДЫ" id="Np9-7S-UFf">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="uQ2-dT-PL5">
+                            <connections>
+                                <action selector="goback:" destination="WQQ-nf-JQF" id="3XY-vT-Yrb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="calendarView" destination="MYK-Rk-r0G" id="Q1l-1h-eWH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7kV-0k-BT3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869" y="2554"/>
         </scene>
         <!--Navbar View Controller-->
         <scene sceneID="XsX-a9-SHR">

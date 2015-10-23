@@ -20,6 +20,20 @@
 		771272BF1BC7A72000697807 /* ALSSchlangesans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 771272BA1BC7A72000697807 /* ALSSchlangesans-Light.otf */; };
 		771272C01BC7A72000697807 /* ALSSchlangesans-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 771272BB1BC7A72000697807 /* ALSSchlangesans-Thin.otf */; };
 		771272C11BC7A72000697807 /* ALSSchlangesans.otf in Resources */ = {isa = PBXBuildFile; fileRef = 771272BC1BC7A72000697807 /* ALSSchlangesans.otf */; };
+		7722E6931BDA1E6600C5DA76 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7722E6921BDA1E6600C5DA76 /* CalendarViewController.m */; };
+		7722E69E1BDA1F4A00C5DA76 /* GLCalendarDateRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 7722E6961BDA1F4A00C5DA76 /* GLCalendarDateRange.m */; };
+		7722E69F1BDA1F4A00C5DA76 /* GLCalendarMonthCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7722E6981BDA1F4A00C5DA76 /* GLCalendarMonthCoverView.m */; };
+		7722E6A01BDA1F4A00C5DA76 /* GLCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7722E69A1BDA1F4A00C5DA76 /* GLCalendarView.m */; };
+		7722E6A11BDA1F4A00C5DA76 /* GLCalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7722E69B1BDA1F4A00C5DA76 /* GLCalendarView.xib */; };
+		7722E6A21BDA1F4A00C5DA76 /* GLDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7722E69D1BDA1F4A00C5DA76 /* GLDateUtils.m */; };
+		7722E6B21BDA1FD400C5DA76 /* gl-calendar-magnify-glass.png in Resources */ = {isa = PBXBuildFile; fileRef = 7722E6AC1BDA1FD400C5DA76 /* gl-calendar-magnify-glass.png */; };
+		7722E6B31BDA1FD400C5DA76 /* gl-calendar-magnify-glass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7722E6AD1BDA1FD400C5DA76 /* gl-calendar-magnify-glass@2x.png */; };
+		7722E6B41BDA1FD400C5DA76 /* gl-calendar-shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7722E6AE1BDA1FD400C5DA76 /* gl-calendar-shadow.png */; };
+		7722E6B51BDA1FD400C5DA76 /* gl-calendar-shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7722E6AF1BDA1FD400C5DA76 /* gl-calendar-shadow@2x.png */; };
+		7722E6B61BDA1FD400C5DA76 /* gl-calendar-shadow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7722E6B01BDA1FD400C5DA76 /* gl-calendar-shadow@3x.png */; };
+		7722E6BD1BDA1FEF00C5DA76 /* GLCalendarDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7722E6B81BDA1FEF00C5DA76 /* GLCalendarDayCell.m */; };
+		7722E6BE1BDA1FEF00C5DA76 /* GLCalendarDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7722E6B91BDA1FEF00C5DA76 /* GLCalendarDayCell.xib */; };
+		7722E6BF1BDA1FEF00C5DA76 /* GLCalendarDayCellBackgroundCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 7722E6BB1BDA1FEF00C5DA76 /* GLCalendarDayCellBackgroundCover.m */; };
 		773E82311BD26E4E00F57AD1 /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 773E822C1BD26E4E00F57AD1 /* JVFloatLabeledTextField.m */; };
 		773E82321BD26E4E00F57AD1 /* JVFloatLabeledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 773E822E1BD26E4E00F57AD1 /* JVFloatLabeledTextView.m */; };
 		773E82331BD26E4E00F57AD1 /* NSString+TextDirectionality.m in Sources */ = {isa = PBXBuildFile; fileRef = 773E82301BD26E4E00F57AD1 /* NSString+TextDirectionality.m */; };
@@ -89,6 +103,27 @@
 		771272BA1BC7A72000697807 /* ALSSchlangesans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ALSSchlangesans-Light.otf"; sourceTree = "<group>"; };
 		771272BB1BC7A72000697807 /* ALSSchlangesans-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ALSSchlangesans-Thin.otf"; sourceTree = "<group>"; };
 		771272BC1BC7A72000697807 /* ALSSchlangesans.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ALSSchlangesans.otf; sourceTree = "<group>"; };
+		7722E6911BDA1E6600C5DA76 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		7722E6921BDA1E6600C5DA76 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		7722E6951BDA1F4A00C5DA76 /* GLCalendarDateRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCalendarDateRange.h; sourceTree = "<group>"; };
+		7722E6961BDA1F4A00C5DA76 /* GLCalendarDateRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCalendarDateRange.m; sourceTree = "<group>"; };
+		7722E6971BDA1F4A00C5DA76 /* GLCalendarMonthCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCalendarMonthCoverView.h; sourceTree = "<group>"; };
+		7722E6981BDA1F4A00C5DA76 /* GLCalendarMonthCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCalendarMonthCoverView.m; sourceTree = "<group>"; };
+		7722E6991BDA1F4A00C5DA76 /* GLCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCalendarView.h; sourceTree = "<group>"; };
+		7722E69A1BDA1F4A00C5DA76 /* GLCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCalendarView.m; sourceTree = "<group>"; };
+		7722E69B1BDA1F4A00C5DA76 /* GLCalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLCalendarView.xib; sourceTree = "<group>"; };
+		7722E69C1BDA1F4A00C5DA76 /* GLDateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLDateUtils.h; sourceTree = "<group>"; };
+		7722E69D1BDA1F4A00C5DA76 /* GLDateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLDateUtils.m; sourceTree = "<group>"; };
+		7722E6AC1BDA1FD400C5DA76 /* gl-calendar-magnify-glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gl-calendar-magnify-glass.png"; sourceTree = "<group>"; };
+		7722E6AD1BDA1FD400C5DA76 /* gl-calendar-magnify-glass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gl-calendar-magnify-glass@2x.png"; sourceTree = "<group>"; };
+		7722E6AE1BDA1FD400C5DA76 /* gl-calendar-shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gl-calendar-shadow.png"; sourceTree = "<group>"; };
+		7722E6AF1BDA1FD400C5DA76 /* gl-calendar-shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gl-calendar-shadow@2x.png"; sourceTree = "<group>"; };
+		7722E6B01BDA1FD400C5DA76 /* gl-calendar-shadow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gl-calendar-shadow@3x.png"; sourceTree = "<group>"; };
+		7722E6B71BDA1FEF00C5DA76 /* GLCalendarDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCalendarDayCell.h; sourceTree = "<group>"; };
+		7722E6B81BDA1FEF00C5DA76 /* GLCalendarDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCalendarDayCell.m; sourceTree = "<group>"; };
+		7722E6B91BDA1FEF00C5DA76 /* GLCalendarDayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLCalendarDayCell.xib; sourceTree = "<group>"; };
+		7722E6BA1BDA1FEF00C5DA76 /* GLCalendarDayCellBackgroundCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCalendarDayCellBackgroundCover.h; sourceTree = "<group>"; };
+		7722E6BB1BDA1FEF00C5DA76 /* GLCalendarDayCellBackgroundCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCalendarDayCellBackgroundCover.m; sourceTree = "<group>"; };
 		773E822B1BD26E4E00F57AD1 /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextField.h; sourceTree = "<group>"; };
 		773E822C1BD26E4E00F57AD1 /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextField.m; sourceTree = "<group>"; };
 		773E822D1BD26E4E00F57AD1 /* JVFloatLabeledTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextView.h; sourceTree = "<group>"; };
@@ -223,6 +258,50 @@
 			name = images;
 			sourceTree = "<group>";
 		};
+		7722E6941BDA1F3600C5DA76 /* GLCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				7722E6951BDA1F4A00C5DA76 /* GLCalendarDateRange.h */,
+				7722E6961BDA1F4A00C5DA76 /* GLCalendarDateRange.m */,
+				7722E6971BDA1F4A00C5DA76 /* GLCalendarMonthCoverView.h */,
+				7722E6BC1BDA1FEF00C5DA76 /* GLCalendarDayCell */,
+				7722E6981BDA1F4A00C5DA76 /* GLCalendarMonthCoverView.m */,
+				7722E6991BDA1F4A00C5DA76 /* GLCalendarView.h */,
+				7722E69A1BDA1F4A00C5DA76 /* GLCalendarView.m */,
+				7722E69B1BDA1F4A00C5DA76 /* GLCalendarView.xib */,
+				7722E6B11BDA1FD400C5DA76 /* Images */,
+				7722E69C1BDA1F4A00C5DA76 /* GLDateUtils.h */,
+				7722E69D1BDA1F4A00C5DA76 /* GLDateUtils.m */,
+			);
+			name = GLCalendar;
+			sourceTree = "<group>";
+		};
+		7722E6B11BDA1FD400C5DA76 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7722E6AC1BDA1FD400C5DA76 /* gl-calendar-magnify-glass.png */,
+				7722E6AD1BDA1FD400C5DA76 /* gl-calendar-magnify-glass@2x.png */,
+				7722E6AE1BDA1FD400C5DA76 /* gl-calendar-shadow.png */,
+				7722E6AF1BDA1FD400C5DA76 /* gl-calendar-shadow@2x.png */,
+				7722E6B01BDA1FD400C5DA76 /* gl-calendar-shadow@3x.png */,
+			);
+			name = Images;
+			path = "../../../../Downloads/GLCalendarView-master/GLCalendarView/Sources/Images";
+			sourceTree = "<group>";
+		};
+		7722E6BC1BDA1FEF00C5DA76 /* GLCalendarDayCell */ = {
+			isa = PBXGroup;
+			children = (
+				7722E6B71BDA1FEF00C5DA76 /* GLCalendarDayCell.h */,
+				7722E6B81BDA1FEF00C5DA76 /* GLCalendarDayCell.m */,
+				7722E6B91BDA1FEF00C5DA76 /* GLCalendarDayCell.xib */,
+				7722E6BA1BDA1FEF00C5DA76 /* GLCalendarDayCellBackgroundCover.h */,
+				7722E6BB1BDA1FEF00C5DA76 /* GLCalendarDayCellBackgroundCover.m */,
+			);
+			name = GLCalendarDayCell;
+			path = "../../../../Downloads/GLCalendarView-master/GLCalendarView/Sources/GLCalendarDayCell";
+			sourceTree = "<group>";
+		};
 		773E822A1BD26E4500F57AD1 /* JVFloatLabeledTextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +367,7 @@
 		77BB57341B53F87C0060E181 /* TENCAR */ = {
 			isa = PBXGroup;
 			children = (
+				7722E6941BDA1F3600C5DA76 /* GLCalendar */,
 				77522A521BD50281008F5EDF /* REFrostedViewController */,
 				773E822A1BD26E4500F57AD1 /* JVFloatLabeledTextField */,
 				77B77B231BD137F300267D94 /* SLScrollViewKeyboardSupport */,
@@ -299,6 +379,8 @@
 				77057A4E1B56711800FCE40C /* PanelsController.h */,
 				77057A4F1B56711800FCE40C /* PanelsController.m */,
 				77BB573E1B53F87C0060E181 /* Main.storyboard */,
+				7722E6911BDA1E6600C5DA76 /* CalendarViewController.h */,
+				7722E6921BDA1E6600C5DA76 /* CalendarViewController.m */,
 				77522A6E1BD5092A008F5EDF /* MenuViewController.h */,
 				77522A6F1BD5092A008F5EDF /* MenuViewController.m */,
 				77522A6B1BD50864008F5EDF /* dashboardViewController.h */,
@@ -462,12 +544,19 @@
 				771272BE1BC7A72000697807 /* ALSSchlangesans-Bold.otf in Resources */,
 				771272BD1BC7A72000697807 /* ALSSchlangesans-Black.otf in Resources */,
 				77BB57481B53F87C0060E181 /* LaunchScreen.storyboard in Resources */,
+				7722E6B51BDA1FD400C5DA76 /* gl-calendar-shadow@2x.png in Resources */,
+				7722E6A11BDA1F4A00C5DA76 /* GLCalendarView.xib in Resources */,
 				77BB57451B53F87C0060E181 /* Assets.xcassets in Resources */,
 				771272C11BC7A72000697807 /* ALSSchlangesans.otf in Resources */,
+				7722E6BE1BDA1FEF00C5DA76 /* GLCalendarDayCell.xib in Resources */,
+				7722E6B41BDA1FD400C5DA76 /* gl-calendar-shadow.png in Resources */,
+				7722E6B61BDA1FD400C5DA76 /* gl-calendar-shadow@3x.png in Resources */,
 				771272C01BC7A72000697807 /* ALSSchlangesans-Thin.otf in Resources */,
 				77BD05E91BCF9AE400EF648A /* privacy in Resources */,
 				7710587F1BD3E8C40010CAD8 /* 2208_2208.png in Resources */,
 				77BB57401B53F87C0060E181 /* Main.storyboard in Resources */,
+				7722E6B21BDA1FD400C5DA76 /* gl-calendar-magnify-glass.png in Resources */,
+				7722E6B31BDA1FD400C5DA76 /* gl-calendar-magnify-glass@2x.png in Resources */,
 				771272BF1BC7A72000697807 /* ALSSchlangesans-Light.otf in Resources */,
 				77522A751BD65B83008F5EDF /* avatar.jpg in Resources */,
 			);
@@ -496,11 +585,17 @@
 			files = (
 				77057A501B56711800FCE40C /* PanelsController.m in Sources */,
 				77B77B291BD1399300267D94 /* IHKeyboardAvoiding.m in Sources */,
+				7722E69E1BDA1F4A00C5DA76 /* GLCalendarDateRange.m in Sources */,
 				77BB57431B53F87C0060E181 /* TENCAR.xcdatamodeld in Sources */,
 				77522A6D1BD50864008F5EDF /* dashboardViewController.m in Sources */,
+				7722E6931BDA1E6600C5DA76 /* CalendarViewController.m in Sources */,
+				7722E6A21BDA1F4A00C5DA76 /* GLDateUtils.m in Sources */,
 				77B77B221BD11D4B00267D94 /* ConfirmViewController.m in Sources */,
 				77BD05DB1BCE517600EF648A /* PrivacyViewController.m in Sources */,
+				7722E6BF1BDA1FEF00C5DA76 /* GLCalendarDayCellBackgroundCover.m in Sources */,
+				7722E69F1BDA1F4A00C5DA76 /* GLCalendarMonthCoverView.m in Sources */,
 				77522A641BD5028F008F5EDF /* UIViewController+REFrostedViewController.m in Sources */,
+				7722E6A01BDA1F4A00C5DA76 /* GLCalendarView.m in Sources */,
 				77522A701BD5092A008F5EDF /* MenuViewController.m in Sources */,
 				77522A621BD5028F008F5EDF /* UIImage+REFrostedViewController.m in Sources */,
 				77522A5F1BD5028F008F5EDF /* RECommonFunctions.m in Sources */,
@@ -511,6 +606,7 @@
 				773E82331BD26E4E00F57AD1 /* NSString+TextDirectionality.m in Sources */,
 				77522A631BD5028F008F5EDF /* UIView+REFrostedViewController.m in Sources */,
 				77522A611BD5028F008F5EDF /* REFrostedViewController.m in Sources */,
+				7722E6BD1BDA1FEF00C5DA76 /* GLCalendarDayCell.m in Sources */,
 				770D6B091B5F98B7000B16DA /* UIBarButtonItem+Badge.m in Sources */,
 				77BD05EC1BCFD16F00EF648A /* RegisterViewController.m in Sources */,
 				77BB573A1B53F87C0060E181 /* AppDelegate.m in Sources */,

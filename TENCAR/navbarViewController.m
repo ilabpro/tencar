@@ -7,6 +7,7 @@
 //
 
 #import "navbarViewController.h"
+#import "CalendarViewController.h"
 
 @interface navbarViewController ()
 
@@ -28,6 +29,12 @@
 
 - (void)panGestureRecognized:(UIPanGestureRecognizer *)sender
 {
+    
+    
+    
+    
+    
+    
     // Dismiss keyboard (optional)
     //
     [self.view endEditing:YES];

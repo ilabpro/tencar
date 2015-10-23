@@ -8,10 +8,13 @@
 
 #import "dashboardViewController.h"
 #import "IHKeyboardAvoiding.h"
+#import "JVFloatLabeledTextField.h"
 
 @interface dashboardViewController ()
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scroll_elem;
+@property (weak, nonatomic) IBOutlet JVFloatLabeledTextField *firstDateField;
+@property (weak, nonatomic) IBOutlet JVFloatLabeledTextField *secondDateField;
 
 @end
 
@@ -25,6 +28,11 @@
                                     initWithTarget:self action:@selector(handleSingleTap:)];
     tapper1.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:tapper1];
+    
+    //[_firstDateField addTarget:self action:@selector(textFieldShouldBeginEditing:) forControlEvents:UIControlEventEditingDidBegin];
+    
+    //[_secondDateField addTarget:self action:@selector(textFieldShouldBeginEditing:) forControlEvents:UIControlEventEditingDidBegin];
+    
 }
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -36,11 +44,32 @@
     //dispatch_after( delay, dispatch_get_main_queue(), ^{
         [self.frostedViewController presentMenuViewControllerNoAnimation];
         [self.frostedViewController hideMenuViewController];
+    self.frostedViewController.panGestureEnabled = YES;
+  
+
         
     //});
     
     
 }
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    
+    if(textField.tag==1)
+    {
+        [self performSegueWithIdentifier:@"set_date" sender:nil];
+        return NO;
+    }
+    else if (textField.tag==2)
+    {
+        [self performSegueWithIdentifier:@"set_date" sender:nil];
+        return NO;
+    }
+    return YES;
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

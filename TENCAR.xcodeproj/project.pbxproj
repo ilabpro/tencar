@@ -34,6 +34,7 @@
 		7722E6BD1BDA1FEF00C5DA76 /* GLCalendarDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7722E6B81BDA1FEF00C5DA76 /* GLCalendarDayCell.m */; };
 		7722E6BE1BDA1FEF00C5DA76 /* GLCalendarDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7722E6B91BDA1FEF00C5DA76 /* GLCalendarDayCell.xib */; };
 		7722E6BF1BDA1FEF00C5DA76 /* GLCalendarDayCellBackgroundCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 7722E6BB1BDA1FEF00C5DA76 /* GLCalendarDayCellBackgroundCover.m */; };
+		772F2B231BE0EC0B003C0483 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772F2B221BE0EC0B003C0483 /* CoreLocation.framework */; };
 		773E82311BD26E4E00F57AD1 /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 773E822C1BD26E4E00F57AD1 /* JVFloatLabeledTextField.m */; };
 		773E82321BD26E4E00F57AD1 /* JVFloatLabeledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 773E822E1BD26E4E00F57AD1 /* JVFloatLabeledTextView.m */; };
 		773E82331BD26E4E00F57AD1 /* NSString+TextDirectionality.m in Sources */ = {isa = PBXBuildFile; fileRef = 773E82301BD26E4E00F57AD1 /* NSString+TextDirectionality.m */; };
@@ -124,6 +125,7 @@
 		7722E6B91BDA1FEF00C5DA76 /* GLCalendarDayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLCalendarDayCell.xib; sourceTree = "<group>"; };
 		7722E6BA1BDA1FEF00C5DA76 /* GLCalendarDayCellBackgroundCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCalendarDayCellBackgroundCover.h; sourceTree = "<group>"; };
 		7722E6BB1BDA1FEF00C5DA76 /* GLCalendarDayCellBackgroundCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCalendarDayCellBackgroundCover.m; sourceTree = "<group>"; };
+		772F2B221BE0EC0B003C0483 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		773E822B1BD26E4E00F57AD1 /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextField.h; sourceTree = "<group>"; };
 		773E822C1BD26E4E00F57AD1 /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextField.m; sourceTree = "<group>"; };
 		773E822D1BD26E4E00F57AD1 /* JVFloatLabeledTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextView.h; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 		77BD05E81BCF9AE400EF648A /* privacy */ = {isa = PBXFileReference; lastKnownFileType = folder; path = privacy; sourceTree = "<group>"; };
 		77BD05EA1BCFD16F00EF648A /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		77BD05EB1BCFD16F00EF648A /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		CE8D0E3567E3232BF21A357A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				772F2B231BE0EC0B003C0483 /* CoreLocation.framework in Frameworks */,
 				770D6B021B5F87E3000B16DA /* CoreGraphics.framework in Frameworks */,
 				770D6B001B5F87D1000B16DA /* QuartzCore.framework in Frameworks */,
 				770D6AFE1B5F87CC000B16DA /* UIKit.framework in Frameworks */,
@@ -230,10 +234,12 @@
 		770D6B031B5F885C000B16DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				772F2B221BE0EC0B003C0483 /* CoreLocation.framework */,
 				770D6B011B5F87E3000B16DA /* CoreGraphics.framework */,
 				770D6AFF1B5F87D1000B16DA /* QuartzCore.framework */,
 				770D6AFD1B5F87CC000B16DA /* UIKit.framework */,
 				770D6AFB1B5F8776000B16DA /* Foundation.framework */,
+				CE8D0E3567E3232BF21A357A /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -385,9 +391,9 @@
 				77522A6F1BD5092A008F5EDF /* MenuViewController.m */,
 				77522A6B1BD50864008F5EDF /* dashboardViewController.h */,
 				77522A6C1BD50864008F5EDF /* dashboardViewController.m */,
-				7741566B1BCD0D0600DB6EE7 /* LoginViewController.h */,
 				77522A681BD507E4008F5EDF /* navbarViewController.h */,
 				77522A691BD507E4008F5EDF /* navbarViewController.m */,
+				7741566B1BCD0D0600DB6EE7 /* LoginViewController.h */,
 				7741566C1BCD0D0600DB6EE7 /* LoginViewController.m */,
 				77BD05EA1BCFD16F00EF648A /* RegisterViewController.h */,
 				77BD05EB1BCFD16F00EF648A /* RegisterViewController.m */,
@@ -691,6 +697,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -735,6 +742,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

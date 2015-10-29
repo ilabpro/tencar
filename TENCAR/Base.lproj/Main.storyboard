@@ -1633,6 +1633,7 @@
                         <barButtonItem key="rightBarButtonItem" image="message_icon" id="eGO-at-l02"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="cityInput" destination="Kip-Jz-VIF" id="zWy-1h-hg9"/>
                         <outlet property="firstDateField" destination="O3C-Yd-4Tv" id="tln-EF-sbQ"/>
                         <outlet property="scroll_elem" destination="z7c-Q1-8CZ" id="k4X-ag-h8p"/>
                         <outlet property="secondDateField" destination="5gF-gX-qTZ" id="GgD-Tg-xiT"/>

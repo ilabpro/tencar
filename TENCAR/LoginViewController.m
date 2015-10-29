@@ -31,9 +31,12 @@
     NSURL *url = [NSURL fileURLWithPath:path];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [precache_webview loadRequest:request];
+    
 
 }
 - (IBAction)tryLogin:(id)sender {
+   
+    
     [self performSegueWithIdentifier:@"go_dasboard" sender:nil];
 }
 

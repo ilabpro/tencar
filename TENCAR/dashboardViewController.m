@@ -10,16 +10,22 @@
 #import "IHKeyboardAvoiding.h"
 #import "JVFloatLabeledTextField.h"
 
+
 @interface dashboardViewController ()
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scroll_elem;
 @property (weak, nonatomic) IBOutlet JVFloatLabeledTextField *firstDateField;
 @property (weak, nonatomic) IBOutlet JVFloatLabeledTextField *secondDateField;
+@property (weak, nonatomic) IBOutlet JVFloatLabeledTextField *cityInput;
+
+
 
 @end
 
 @implementation dashboardViewController
 
+@synthesize locationManager;
+@synthesize currentLocation;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,6 +38,19 @@
     //[_firstDateField addTarget:self action:@selector(textFieldShouldBeginEditing:) forControlEvents:UIControlEventEditingDidBegin];
     
     //[_secondDateField addTarget:self action:@selector(textFieldShouldBeginEditing:) forControlEvents:UIControlEventEditingDidBegin];
+    
+    
+    
+    
+    
+    locationManager = [CLLocationManager new];
+    locationManager.delegate = self;
+    locationManager.distanceFilter = kCLDistanceFilterNone;
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [locationManager requestWhenInUseAuthorization];
+    [locationManager startUpdatingLocation];
+    
+    
     
 }
 - (void)viewDidAppear:(BOOL)animated
@@ -52,11 +71,35 @@
     
     
 }
+#pragma mark CLLocationManager Delegate
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    currentLocation = [locations objectAtIndex:0];
+    [locationManager stopUpdatingLocation];
+   // NSLog(@"Detected Location : %f, %f", currentLocation.coordinate.latitude, currentLocation.coordinate.longitude);
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init] ;
+    [geocoder reverseGeocodeLocation:currentLocation
+                   completionHandler:^(NSArray *placemarks, NSError *error) {
+                       if (error){
+                           NSLog(@"Geocode failed with error: %@", error);
+                           return;
+                       }
+                       CLPlacemark *placemark = [placemarks objectAtIndex:0];
+                       //NSLog(@"Postal code %@",placemark.postalCode);
+                       _cityInput.text = placemark.locality;
+                      
+                       
+                   }];
+}
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
-    
-    if(textField.tag==1)
+    if(textField.tag==0)
+    {
+        [self performSegueWithIdentifier:@"set_city" sender:nil];
+        return NO;
+    }
+    else if(textField.tag==1)
     {
         [self performSegueWithIdentifier:@"set_date" sender:nil];
         return NO;

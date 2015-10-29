@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "REFrostedViewController.h"
-@interface dashboardViewController : UIViewController
+#import <CoreLocation/CoreLocation.h>
+
+@interface dashboardViewController : UIViewController<CLLocationManagerDelegate>
+
+@property (strong, nonatomic)   CLLocationManager *locationManager;
+@property (strong, nonatomic)  CLLocation *currentLocation;
+
 
 @end

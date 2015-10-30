@@ -26,8 +26,6 @@ static NSString * const CELL_REUSE_IDENTIFIER = @"DayCell";
 @property (nonatomic) BOOL draggingBeginDate;
 @property (nonatomic) BOOL draggingEndDate;
 
-@property (nonatomic) BOOL draggingNewRange;
-
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UIView *weekDayTitle;
 @property (weak, nonatomic) IBOutlet GLCalendarMonthCoverView *monthCoverView;
@@ -70,21 +68,19 @@ static NSString * const CELL_REUSE_IDENTIFIER = @"DayCell";
 - (void)setup
 {
     self.collectionView.decelerationRate = UIScrollViewDecelerationRateFast;
-
+    
     self.ranges = [NSMutableArray array];
     
     self.calendar = [GLDateUtils calendar];
     
     self.monthCoverView.hidden = YES;
-
+    
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
     [self.collectionView registerNib:[UINib nibWithNibName:@"GLCalendarDayCell" bundle:[NSBundle bundleForClass:self.class]] forCellWithReuseIdentifier:CELL_REUSE_IDENTIFIER];
     
     self.dragBeginDateGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleDragBeginDate:)];
     self.dragEndDateGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleDragEndDate:)];
-    
-    
     
     self.dragBeginDateGesture.delegate = self;
     self.dragEndDateGesture.delegate = self;
@@ -155,7 +151,8 @@ static NSString * const CELL_REUSE_IDENTIFIER = @"DayCell";
 
 - (void)addRange:(GLCalendarDateRange *)range
 {
-    [self.ranges addObject:range];
+    
+    [self.ranges replaceObjectAtIndex:0 withObject:range];
     [self reloadFromBeginDate:range.beginDate toDate:range.endDate];
 }
 
@@ -272,58 +269,35 @@ static NSString * const CELL_REUSE_IDENTIFIER = @"DayCell";
 }
 
 # pragma mark - UICollectionView delegate
-- (void)collectionView:(UICollectionView *)collectionView didHighlightItemAtIndexPath:(nonnull NSIndexPath *)indexPath
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"touch down");
-    _draggingNewRange = NO;
-    
     NSDate *date = [self dateForCellAtIndexPath:indexPath];
     GLCalendarDateRange *range = [self selectedRangeForDate:date];
     
     // if click in a range
     if (range && range.editable) {
-        
         if (range == self.rangeUnderEdit) {
             return;
         }
         // click a different range
         if (self.rangeUnderEdit && range != self.rangeUnderEdit) {
-            
-            
             [self finishEditRange:self.rangeUnderEdit continueEditing:YES];
-            
-            
         }
-        
-        
         [self beginToEditRange:range];
-        
     } else {
-        
         if (self.rangeUnderEdit) {
-            
-            BOOL canAdd = [self.delegate calenderView:self canAddRangeWithBeginDate:date];
-            
-            if (canAdd) {
-                _draggingNewRange = YES;
-                [self finishEditRange:self.rangeUnderEdit continueEditing:NO];
-                GLCalendarDateRange *rangeToAdd = [self.delegate calenderView:self rangeToAddWithBeginDate:date];
-                [self addRange:rangeToAdd];
-            }
-            
+            [self finishEditRange:self.rangeUnderEdit continueEditing:NO];
         } else {
             BOOL canAdd = [self.delegate calenderView:self canAddRangeWithBeginDate:date];
             if (canAdd) {
+                
+                
                 GLCalendarDateRange *rangeToAdd = [self.delegate calenderView:self rangeToAddWithBeginDate:date];
                 [self addRange:rangeToAdd];
             }
         }
     }
-    
-}
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    //
 }
 
 # pragma mark - UICollectionView layout
@@ -404,46 +378,25 @@ static NSString * const CELL_REUSE_IDENTIFIER = @"DayCell";
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)recognizer
 {
-    
-   
     if (!self.rangeUnderEdit) {
         return NO;
     }
-    
-    if(_draggingNewRange)
-    {
-        NSLog(@"drag new");
-        if (recognizer == self.dragBeginDateGesture) {
-            
-            NSLog(@"begin date");
-            return NO;
-        }
-        if (recognizer == self.dragEndDateGesture) {
-            NSLog(@"enddate");
-            return YES;
-        }
-    }
-    
     if (recognizer == self.dragBeginDateGesture) {
-        
-        
         CGPoint location = [recognizer locationInView:self.collectionView];
         CGRect rectForBeginDate = [self rectForDate:self.rangeUnderEdit.beginDate];
-        //rectForBeginDate.origin.x -= self.cellWidth / 2;
+        rectForBeginDate.origin.x -= self.cellWidth / 2;
         if (CGRectContainsPoint(rectForBeginDate, location)) {
             return YES;
         }
     }
     if (recognizer == self.dragEndDateGesture) {
-        
         CGPoint location = [recognizer locationInView:self.collectionView];
         CGRect rectForEndDate = [self rectForDate:self.rangeUnderEdit.endDate];
-        //rectForEndDate.origin.x += self.cellWidth / 2;
+        rectForEndDate.origin.x += self.cellWidth / 2;
         if (CGRectContainsPoint(rectForEndDate, location)) {
             return YES;
         }
     }
-    
     return NO;
 }
 
@@ -507,14 +460,14 @@ static NSString * const CELL_REUSE_IDENTIFIER = @"DayCell";
         [self reloadCellOnDate:self.rangeUnderEdit.endDate];
         return;
     }
-
+    
     CGPoint location = [recognizer locationInView:self.collectionView];
     if (location.y <= self.collectionView.contentOffset.y) {
         return;
     }
     
     NSDate *date = [self dateAtLocation:location];
-
+    
     if ([GLDateUtils date:self.rangeUnderEdit.endDate isSameDayAsDate:date]) {
         return;
     }
@@ -617,6 +570,7 @@ static NSDate *today;
 
 - (void)reloadFromBeginDate:(NSDate *)beginDate toDate:(NSDate *)endDate
 {
+    
     NSMutableArray *indexPaths = [NSMutableArray array];
     NSInteger beginIndex = MAX(0, [GLDateUtils daysBetween:self.firstDate and:beginDate]);
     NSInteger endIndex = MIN([self collectionView:self.collectionView numberOfItemsInSection:0] - 1, [GLDateUtils daysBetween:self.firstDate and:endDate]);
@@ -624,13 +578,25 @@ static NSDate *today;
         [indexPaths addObject:[NSIndexPath indexPathForItem:i inSection:0]];
     }
     // prevent crash: too many update animations on one view - limit is 31 in flight at a time
+    
     if (indexPaths.count > 30) {
-        [self.collectionView reloadData];
+       
+       
+            [self.collectionView reloadData];
+    
+        
+        
+        
+        
     } else {
+      
         [UIView performWithoutAnimation:^{
             [self.collectionView reloadItemsAtIndexPaths:indexPaths];
         }];
+        
     }
+    
+    
 }
 
 - (NSIndexPath *)indexPathForDate:(NSDate *)date

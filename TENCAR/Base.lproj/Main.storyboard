@@ -1391,6 +1391,9 @@
                                                 <exclude reference="2X1-Vl-bdU"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <outlet property="delegate" destination="pl3-fY-ELj" id="RfX-8O-d3J"/>
+                                        </connections>
                                     </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="geo" translatesAutoresizingMaskIntoConstraints="NO" id="LO4-2S-Zdz">
                                         <rect key="frame" x="555" y="143" width="25" height="25"/>
@@ -1637,7 +1640,9 @@
                         <outlet property="firstDateField" destination="O3C-Yd-4Tv" id="tln-EF-sbQ"/>
                         <outlet property="scroll_elem" destination="z7c-Q1-8CZ" id="k4X-ag-h8p"/>
                         <outlet property="secondDateField" destination="5gF-gX-qTZ" id="GgD-Tg-xiT"/>
-                        <segue destination="WQQ-nf-JQF" kind="show" identifier="set_date" id="sDF-Za-GYN"/>
+                        <segue destination="WQQ-nf-JQF" kind="show" identifier="set_from_date" id="sDF-Za-GYN"/>
+                        <segue destination="NeB-Pl-Iag" kind="show" identifier="set_city" id="qQL-3Y-yVg"/>
+                        <segue destination="WQQ-nf-JQF" kind="show" identifier="set_to_date" id="aCc-5J-cGa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GgN-Ww-Q1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1671,13 +1676,7 @@
                             <constraint firstItem="MYK-Rk-r0G" firstAttribute="leading" secondItem="qWb-HR-Xnb" secondAttribute="leading" id="ciO-RQ-elr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="ВЫБЕРИТЕ ПЕРИОД АРЕНДЫ" id="Np9-7S-UFf">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="uQ2-dT-PL5">
-                            <connections>
-                                <action selector="goback:" destination="WQQ-nf-JQF" id="3XY-vT-Yrb"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="ВЫБЕРИТЕ ПЕРИОД АРЕНДЫ" id="Np9-7S-UFf"/>
                     <connections>
                         <outlet property="calendarView" destination="MYK-Rk-r0G" id="Q1l-1h-eWH"/>
                     </connections>
@@ -1685,6 +1684,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7kV-0k-BT3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="869" y="2554"/>
+        </scene>
+        <!--ВЫБЕРИТЕ ГОРОД-->
+        <scene sceneID="pxr-fV-bIC">
+            <objects>
+                <tableViewController id="NeB-Pl-Iag" customClass="selectCityTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="K8D-o8-4xZ">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Поиск" id="fie-hw-0Pk">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="W8w-CG-BBw">
+                                <rect key="frame" x="0.0" y="72" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W8w-CG-BBw" id="lRd-Xr-wUy">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NeB-Pl-Iag" id="e8i-GJ-Lm9"/>
+                            <outlet property="delegate" destination="NeB-Pl-Iag" id="ZwI-Kd-nZQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="ВЫБЕРИТЕ ГОРОД" id="mgd-8b-Ebf"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9mk-Ox-Hb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1514" y="2554"/>
         </scene>
         <!--Navbar View Controller-->
         <scene sceneID="XsX-a9-SHR">
@@ -2530,4 +2567,7 @@
         <image name="vk" width="25" height="25"/>
         <image name="warn_personal" width="50" height="50"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="aCc-5J-cGa"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface CalendarViewController : UIViewController
-
+@property (nonatomic) int dateType; //1-from, 2-to
 @end

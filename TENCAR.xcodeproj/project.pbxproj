@@ -62,6 +62,8 @@
 		77BD05DB1BCE517600EF648A /* PrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BD05DA1BCE517600EF648A /* PrivacyViewController.m */; };
 		77BD05E91BCF9AE400EF648A /* privacy in Resources */ = {isa = PBXBuildFile; fileRef = 77BD05E81BCF9AE400EF648A /* privacy */; };
 		77BD05EC1BCFD16F00EF648A /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BD05EB1BCFD16F00EF648A /* RegisterViewController.m */; };
+		77DC48A51BE36E5300DA9514 /* selectCityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DC48A41BE36E5300DA9514 /* selectCityTableViewController.m */; };
+		77DC48A81BE3785200DA9514 /* DataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DC48A71BE3785200DA9514 /* DataClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +179,10 @@
 		77BD05E81BCF9AE400EF648A /* privacy */ = {isa = PBXFileReference; lastKnownFileType = folder; path = privacy; sourceTree = "<group>"; };
 		77BD05EA1BCFD16F00EF648A /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		77BD05EB1BCFD16F00EF648A /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		77DC48A31BE36E5300DA9514 /* selectCityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = selectCityTableViewController.h; sourceTree = "<group>"; };
+		77DC48A41BE36E5300DA9514 /* selectCityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = selectCityTableViewController.m; sourceTree = "<group>"; };
+		77DC48A61BE3785200DA9514 /* DataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataClass.h; sourceTree = "<group>"; };
+		77DC48A71BE3785200DA9514 /* DataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataClass.m; sourceTree = "<group>"; };
 		CE8D0E3567E3232BF21A357A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -381,10 +387,14 @@
 				770449E11B54E2B7007C099F /* TENCAR.entitlements */,
 				770D6B0C1B5F98CB000B16DA /* badges */,
 				77BB57381B53F87C0060E181 /* AppDelegate.h */,
+				77DC48A61BE3785200DA9514 /* DataClass.h */,
+				77DC48A71BE3785200DA9514 /* DataClass.m */,
 				77BB57391B53F87C0060E181 /* AppDelegate.m */,
 				77057A4E1B56711800FCE40C /* PanelsController.h */,
 				77057A4F1B56711800FCE40C /* PanelsController.m */,
 				77BB573E1B53F87C0060E181 /* Main.storyboard */,
+				77DC48A31BE36E5300DA9514 /* selectCityTableViewController.h */,
+				77DC48A41BE36E5300DA9514 /* selectCityTableViewController.m */,
 				7722E6911BDA1E6600C5DA76 /* CalendarViewController.h */,
 				7722E6921BDA1E6600C5DA76 /* CalendarViewController.m */,
 				77522A6E1BD5092A008F5EDF /* MenuViewController.h */,
@@ -591,6 +601,7 @@
 			files = (
 				77057A501B56711800FCE40C /* PanelsController.m in Sources */,
 				77B77B291BD1399300267D94 /* IHKeyboardAvoiding.m in Sources */,
+				77DC48A51BE36E5300DA9514 /* selectCityTableViewController.m in Sources */,
 				7722E69E1BDA1F4A00C5DA76 /* GLCalendarDateRange.m in Sources */,
 				77BB57431B53F87C0060E181 /* TENCAR.xcdatamodeld in Sources */,
 				77522A6D1BD50864008F5EDF /* dashboardViewController.m in Sources */,
@@ -610,6 +621,7 @@
 				773E82321BD26E4E00F57AD1 /* JVFloatLabeledTextView.m in Sources */,
 				770D6B0A1B5F98B7000B16DA /* UIButton+Badge.m in Sources */,
 				773E82331BD26E4E00F57AD1 /* NSString+TextDirectionality.m in Sources */,
+				77DC48A81BE3785200DA9514 /* DataClass.m in Sources */,
 				77522A631BD5028F008F5EDF /* UIView+REFrostedViewController.m in Sources */,
 				77522A611BD5028F008F5EDF /* REFrostedViewController.m in Sources */,
 				7722E6BD1BDA1FEF00C5DA76 /* GLCalendarDayCell.m in Sources */,

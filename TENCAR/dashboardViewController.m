@@ -9,7 +9,9 @@
 #import "dashboardViewController.h"
 #import "IHKeyboardAvoiding.h"
 #import "JVFloatLabeledTextField.h"
-
+#import "GLDateUtils.h"
+#import "DataClass.h"
+#import "CalendarViewController.h"
 
 @interface dashboardViewController ()
 
@@ -23,7 +25,7 @@
 @end
 
 @implementation dashboardViewController
-
+DataClass *dataClass;
 @synthesize locationManager;
 @synthesize currentLocation;
 
@@ -50,6 +52,17 @@
     [locationManager requestWhenInUseAuthorization];
     [locationManager startUpdatingLocation];
     
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"dd.MM.YYYY"];
+    NSDate *todaysDate = [NSDate date];
+    
+    _firstDateField.text = [formatter stringFromDate:todaysDate];
+    _secondDateField.text = [formatter stringFromDate:[GLDateUtils dateByAddingDays:1 toDate:todaysDate]];
+    
+    dataClass=[DataClass getInstance];
+    dataClass.from_date= todaysDate;
+    dataClass.to_date= [GLDateUtils dateByAddingDays:1 toDate:todaysDate];
+    
     
     
 }
@@ -57,7 +70,14 @@
 {
     [IHKeyboardAvoiding setAvoidingView:self.scroll_elem];
     
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"dd.MM.YYYY"];
     
+    
+    
+    
+    _firstDateField.text = [formatter stringFromDate:dataClass.from_date];
+    _secondDateField.text = [formatter stringFromDate:dataClass.to_date];
    
     //dispatch_time_t delay = dispatch_time( DISPATCH_TIME_NOW, 0.3 * NSEC_PER_SEC );
     //dispatch_after( delay, dispatch_get_main_queue(), ^{
@@ -101,12 +121,12 @@
     }
     else if(textField.tag==1)
     {
-        [self performSegueWithIdentifier:@"set_date" sender:nil];
+        [self performSegueWithIdentifier:@"set_from_date" sender:nil];
         return NO;
     }
     else if (textField.tag==2)
     {
-        [self performSegueWithIdentifier:@"set_date" sender:nil];
+        [self performSegueWithIdentifier:@"set_to_date" sender:nil];
         return NO;
     }
     return YES;
@@ -132,14 +152,24 @@
     [self.frostedViewController presentMenuViewController];
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([[segue identifier] isEqualToString:@"set_from_date"]) {
+        CalendarViewController *myVC = [segue destinationViewController];
+        myVC.title = @"НАЧАЛО АРЕНДЫ";// set your properties here
+        myVC.dateType = 1;
+    }
+    if ([[segue identifier] isEqualToString:@"set_to_date"]) {
+        CalendarViewController *myVC = [segue destinationViewController];
+        myVC.title = @"ОКОНЧАНИЕ АРЕНДЫ";// set your properties here
+        myVC.dateType = 2;
+    }
 }
-*/
+
 
 @end

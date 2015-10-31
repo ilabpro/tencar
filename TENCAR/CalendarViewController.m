@@ -7,19 +7,16 @@
 //
 
 #import "CalendarViewController.h"
-#import "GLCalendarView.h"
-#import "GLCalendarDateRange.h"
-#import "GLDateUtils.h"
-#import "GLCalendarDayCell.h"
+
 #import "REFrostedViewController.h"
 #import "DataClass.h"
 
 #define UIColorFromRGB(rgbValue) \
 [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
-@interface CalendarViewController ()<GLCalendarViewDelegate>
+@interface CalendarViewController ()
 
-@property (weak, nonatomic) IBOutlet GLCalendarView *calendarView;
+
 
 
 @end
@@ -29,16 +26,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    /*
     self.calendarView.delegate = self;
     self.calendarView.showMagnifier = NO;
    
     self.calendarView.firstDate = [self dateAtStartOfMonth];
     self.calendarView.lastDate = [self dateAtEndOfMonth];
     
+     */
     
     DataClass *dataClass=[DataClass getInstance];
     
-    
+    /*
     GLCalendarDateRange *range2 = [GLCalendarDateRange rangeWithBeginDate:dataClass.from_date endDate:dataClass.to_date];
     range2.backgroundColor = UIColorFromRGB(0x00B7F5);
     
@@ -52,13 +51,14 @@
     [self.calendarView reload];
     
     //[self.calendarView beginToEditRange:range2];
-    /*
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         //[self.calendarView scrollToDate:self.calendarView.lastDate animated:NO];
         //[self.calendarView beginToEditRange:range2];
     });
-     */
-
+     
+*/
+    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         self.navigationController.interactivePopGestureRecognizer.enabled = false;
     });
@@ -75,7 +75,7 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 */
-
+/*
 - (BOOL)calenderView:(GLCalendarView *)calendarView canAddRangeWithBeginDate:(NSDate *)beginDate
 {
     
@@ -110,9 +110,9 @@
 - (GLCalendarDateRange *)calenderView:(GLCalendarView *)calendarView rangeToAddWithBeginDate:(NSDate *)beginDate
 {
     
-   // [self.calendarView removeRange:self.calendarView.ranges[0]];
+   [self.calendarView removeRange:self.calendarView.ranges[0]];
     
-    //[self.calendarView reload];
+   // [self.calendarView reload];
     
     
     GLCalendarDateRange *range;
@@ -182,20 +182,20 @@
 - (void)calenderView:(GLCalendarView *)calendarView beginToEditRange:(GLCalendarDateRange *)range
 {
     NSLog(@"begin to edit range: %@", range);
-    /*
+ 
     self.rangeUnderEdit = range;
-     */
+ 
 }
 
 - (void)calenderView:(GLCalendarView *)calendarView finishEditRange:(GLCalendarDateRange *)range continueEditing:(BOOL)continueEditing
 {
     NSLog(@"finish edit range: %@", range);
-    /*
+    
     if (self.rangeUnderEdit) {
         [self.calendarView removeRange:self.rangeUnderEdit];
     }
     self.rangeUnderEdit = nil;
-    */
+    
     
     
 }
@@ -204,7 +204,7 @@
 - (BOOL)calenderView:(GLCalendarView *)calendarView canUpdateRange:(GLCalendarDateRange *)range toBeginDate:(NSDate *)beginDate endDate:(NSDate *)endDate
 {
     NSLog(@"can update range: %@", range);
-    /*
+    
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSInteger comps = (NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit);
     
@@ -239,7 +239,7 @@
         return NO;
     }
     
-    */
+    
     
     
     
@@ -278,7 +278,7 @@
     
     return [calendar dateByAddingComponents: months toDate: [NSDate date] options: 0];
 }
-
+*/
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -1660,26 +1660,10 @@
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="qWb-HR-Xnb">
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYK-Rk-r0G" customClass="GLCalendarView">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="iSZ-lD-czo" firstAttribute="top" secondItem="MYK-Rk-r0G" secondAttribute="bottom" id="5rb-Cd-wUN"/>
-                            <constraint firstAttribute="trailing" secondItem="MYK-Rk-r0G" secondAttribute="trailing" id="LtX-ce-DVw"/>
-                            <constraint firstItem="MYK-Rk-r0G" firstAttribute="top" secondItem="nCL-s5-pdq" secondAttribute="bottom" id="WFm-Xu-15W"/>
-                            <constraint firstItem="MYK-Rk-r0G" firstAttribute="leading" secondItem="qWb-HR-Xnb" secondAttribute="leading" id="ciO-RQ-elr"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ВЫБЕРИТЕ ПЕРИОД АРЕНДЫ" id="Np9-7S-UFf"/>
-                    <connections>
-                        <outlet property="calendarView" destination="MYK-Rk-r0G" id="Q1l-1h-eWH"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7kV-0k-BT3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

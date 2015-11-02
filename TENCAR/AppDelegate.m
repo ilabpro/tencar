@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "GLCalendarView.h"
-#import "GLCalendarDayCell.h"
+
 
 
 #define UIColorFromRGB(rgbValue) \
@@ -35,25 +34,7 @@
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
     
     
-    //calendar settings!
-    [GLCalendarView appearance].rowHeight = 54;
-    [GLCalendarView appearance].padding = 6;
     
-    [GLCalendarView appearance].weekDayTitleAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:12], NSForegroundColorAttributeName:[UIColor grayColor]};
-    [GLCalendarView appearance].monthCoverAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:24], NSForegroundColorAttributeName:UIColorFromRGB(0x00B7F5)};
-    [GLCalendarDayCell appearance].evenMonthBackgroundColor = UIColorFromRGB(0xf5f5f5);
-    
-    [GLCalendarDayCell appearance].rangeDisplayMode = RANGE_DISPLAY_MODE_SINGLE;
-    
-    [GLCalendarDayCell appearance].dayLabelAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:20], NSForegroundColorAttributeName:UIColorFromRGB(0x555555)};
-    [GLCalendarDayCell appearance].monthLabelAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:12]};
-    
-    [GLCalendarDayCell appearance].editCoverBorderWidth = 1;
-    [GLCalendarDayCell appearance].editCoverBorderColor = UIColorFromRGB(0x00B7F5);
-    [GLCalendarDayCell appearance].editCoverPointSize = 10;
-    
-    [GLCalendarDayCell appearance].todayBackgroundColor = UIColorFromRGB(0x4E5F71);
-    [GLCalendarDayCell appearance].todayLabelAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:20]};
     
     
     

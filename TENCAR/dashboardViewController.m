@@ -55,12 +55,14 @@ DataClass *dataClass;
     [formatter setDateFormat:@"dd.MM.YYYY"];
     NSDate *todaysDate = [NSDate date];
     
+    
+    NSDate *newDate1 = [todaysDate dateByAddingTimeInterval:60*60*24*1];
     _firstDateField.text = [formatter stringFromDate:todaysDate];
-    _secondDateField.text = [formatter stringFromDate:[GLDateUtils dateByAddingDays:1 toDate:todaysDate]];
+    _secondDateField.text = [formatter stringFromDate:newDate1];
     
     dataClass=[DataClass getInstance];
     dataClass.from_date= todaysDate;
-    dataClass.to_date= [GLDateUtils dateByAddingDays:1 toDate:todaysDate];
+    dataClass.to_date= newDate1;
     
     
     

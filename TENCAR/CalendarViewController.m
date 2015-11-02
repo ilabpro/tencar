@@ -10,6 +10,8 @@
 
 #import "REFrostedViewController.h"
 #import "DataClass.h"
+#import "RSDFDatePickerView.h"
+
 
 #define UIColorFromRGB(rgbValue) \
 [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
@@ -34,6 +36,13 @@
     self.calendarView.lastDate = [self dateAtEndOfMonth];
     
      */
+    RSDFDatePickerView *datePickerView = [[RSDFDatePickerView alloc] initWithFrame:self.view.bounds];
+    datePickerView.delegate = (id)self;
+    datePickerView.dataSource = (id)self;
+    
+    [self.view addSubview:datePickerView];
+    
+    
     
     DataClass *dataClass=[DataClass getInstance];
     
@@ -70,6 +79,172 @@
     
     self.frostedViewController.panGestureEnabled = NO;
 }
+- (BOOL)datePickerView:(RSDFDatePickerView *)view shouldMarkDate:(NSDate *)date
+{
+    // The date is an `NSDate` object without time components.
+    // So, we need to use dates without time components.
+    /*
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    unsigned unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit |  NSDayCalendarUnit;
+    NSDateComponents *todayComponents = [calendar components:unitFlags fromDate:[NSDate date]];
+    NSDate *today = [calendar dateFromComponents:todayComponents];
+    */
+    //return [date isEqual:today];
+    
+    DataClass *dataClass=[DataClass getInstance];
+    
+    
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSInteger comps = (NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit);
+    
+    NSDateComponents *date1Components = [calendar components:comps
+                                                    fromDate: date];
+    NSDateComponents *date2Components = [calendar components:comps
+                                                    fromDate: dataClass.from_date];
+    NSDateComponents *date3Components = [calendar components:comps
+                                                    fromDate: dataClass.to_date];
+    
+    NSDate *date1 = [calendar dateFromComponents:date1Components];
+    NSDate *date2 = [calendar dateFromComponents:date2Components];
+    NSDate *date3 = [calendar dateFromComponents:date3Components];
+    
+    
+    
+    
+    NSComparisonResult result = [date1 compare:date2];
+    NSComparisonResult result2 = [date1 compare:date3];
+    if (result == NSOrderedAscending) {
+        
+        
+        
+    } else if (result == NSOrderedDescending && result2==NSOrderedAscending) {
+        return YES;
+    
+    } else if (result == NSOrderedAscending || result2==NSOrderedDescending) {
+        return NO;
+        
+    
+    }  else {
+       return YES;
+    }
+    
+    return NO;
+}
+- (UIColor *)datePickerView:(RSDFDatePickerView *)view markImageColorForDate:(NSDate *)date
+{
+    
+        return UIColorFromRGB(0x00B7F5);
+    
+}
+// Prints out the selected date.
+- (void)datePickerView:(RSDFDatePickerView *)view didSelectDate:(NSDate *)date
+{
+    DataClass *dataClass=[DataClass getInstance];
+    if(_dateType==1)
+    {
+        
+        
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+        NSInteger comps = (NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit);
+        
+        NSDateComponents *date1Components = [calendar components:comps
+                                                        fromDate: date];
+        NSDateComponents *date2Components = [calendar components:comps
+                                                        fromDate: dataClass.to_date];
+        NSDate *date1 = [calendar dateFromComponents:date1Components];
+        NSDate *date2 = [calendar dateFromComponents:date2Components];
+        
+        NSComparisonResult result = [date1 compare:date2];
+        if (result == NSOrderedAscending) {
+            //
+            
+        } else if (result == NSOrderedDescending) {
+            //return YES;
+            dataClass.to_date = [date1 dateByAddingTimeInterval:60*60*24*1];
+            
+        }  else {
+            //return YES;
+            dataClass.to_date = [date1 dateByAddingTimeInterval:60*60*24*1];
+        }
+        
+        dataClass.from_date = date;
+        
+    }
+    else if(_dateType==2)
+    {
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+        NSInteger comps = (NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit);
+        
+        NSDateComponents *date1Components = [calendar components:comps
+                                                        fromDate: date];
+        NSDateComponents *date2Components = [calendar components:comps
+                                                        fromDate: dataClass.from_date];
+        NSDate *date1 = [calendar dateFromComponents:date1Components];
+        NSDate *date2 = [calendar dateFromComponents:date2Components];
+        
+        NSComparisonResult result = [date1 compare:date2];
+        if (result == NSOrderedAscending) {
+            //
+            dataClass.from_date = [date1 dateByAddingTimeInterval:-60*60*24*1];
+            
+        } else if (result == NSOrderedDescending) {
+            //return YES;
+            
+            
+        }  else {
+            //return YES;
+            dataClass.from_date = [date1 dateByAddingTimeInterval:-60*60*24*1];
+        }
+        
+        
+        dataClass.to_date = date;
+    }
+    [self.navigationController popViewControllerAnimated:YES];
+}
+- (BOOL)datePickerView:(RSDFDatePickerView *)view shouldSelectDate:(NSDate *)date
+{
+    if(_dateType==1)
+    {
+        //
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+        NSInteger comps = (NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit);
+        
+        NSDateComponents *date1Components = [calendar components:comps
+                                                        fromDate: date];
+        NSDateComponents *date2Components = [calendar components:comps
+                                                        fromDate: [NSDate date]];
+        NSDate *date1 = [calendar dateFromComponents:date1Components];
+        NSDate *date2 = [calendar dateFromComponents:date2Components];
+        
+        NSComparisonResult result = [date1 compare:date2];
+        if (result == NSOrderedAscending) {
+            //
+            return NO;
+        }
+    }
+    else if(_dateType==2)
+    {
+        //
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+        NSInteger comps = (NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit);
+        
+        NSDateComponents *date1Components = [calendar components:comps
+                                                        fromDate: [date dateByAddingTimeInterval:-60*60*24*1]];
+        NSDateComponents *date2Components = [calendar components:comps
+                                                        fromDate: [NSDate date]];
+        NSDate *date1 = [calendar dateFromComponents:date1Components];
+        NSDate *date2 = [calendar dateFromComponents:date2Components];
+        
+        NSComparisonResult result = [date1 compare:date2];
+        if (result == NSOrderedAscending) {
+            //
+            return NO;
+        }
+    }
+    
+    return YES;
+}
+
 /*
 - (IBAction)goback:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];

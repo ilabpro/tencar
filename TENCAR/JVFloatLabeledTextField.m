@@ -44,6 +44,8 @@ static CGFloat const kLineViewHeight = 1.0f;
 @property (nonatomic, strong) UIBarButtonItem *clear_btn;
 @property (nonatomic, strong) UIBarButtonItem *done_btn;
 @property (nonatomic, strong) UIDatePicker* datePicker;
+@property (nonatomic, strong) UIPickerView* listPicker;
+@property (nonatomic, strong) NSArray *pickerData;
 @end
 
 @implementation JVFloatLabeledTextField
@@ -297,6 +299,70 @@ static CGFloat const kLineViewHeight = 1.0f;
     [scanner setScanLocation:1]; // bypass '#' character
     [scanner scanHexInt:&rgbValue];
     return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
+}
+- (void)setListPickerValues:(NSString*)listPickerValues {
+    
+    _listPickerValues = listPickerValues;
+    
+    _pickerData= [_listPickerValues componentsSeparatedByString:@","];;
+    
+    /*
+    [maskedTextField resignFirstResponder];
+    [self autoKeyboardDecision];
+    maskedTextField.text = @"";
+    */
+}
+- (void)setIsListPicker:(BOOL)isListPicker {
+    
+    _isListPicker = isListPicker;
+    
+    if(isListPicker)
+    {
+        if(!_listPicker)
+        {
+            
+            
+            
+            //_listPicker = [[UIDatePicker alloc] initWithFrame:CGRectZero];
+            //[_listPicker addTarget:self action:@selector(onDatePickerValueChanged:) forControlEvents:UIControlEventValueChanged];
+            
+            
+            _listPicker = [[UIPickerView alloc] initWithFrame:CGRectZero];
+            _listPicker.showsSelectionIndicator = YES;
+            _listPicker.hidden = NO;
+            _listPicker.delegate = (id)self;
+            //[self.view addSubview:languageSelect];
+            
+            
+            
+            self.inputView = _listPicker;
+            
+        }
+    }
+    else
+    {
+        [_listPicker removeFromSuperview];
+    }
+    
+    
+    
+}
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+{
+    //NSLog(@"ok: %@", [_pickerData objectAtIndex:row]);
+    self.text = [_pickerData objectAtIndex:row];
+}
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView; {
+    return 1;
+}
+//Rows in each Column
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component; {
+    return _pickerData.count;
+}
+-(NSString*) pickerView:(UIPickerView*)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return [_pickerData objectAtIndex:row];
 }
 - (void)setIsDatePicker:(BOOL)isDatePicker {
     

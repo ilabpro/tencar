@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet JVFloatLabeledTextField *firstDateField;
 @property (weak, nonatomic) IBOutlet JVFloatLabeledTextField *secondDateField;
 @property (weak, nonatomic) IBOutlet JVFloatLabeledTextField *cityInput;
+@property (weak, nonatomic) IBOutlet JVFloatLabeledTextField *classOfAuto;
 
 
 
@@ -64,7 +65,7 @@ DataClass *dataClass;
     dataClass.from_date= todaysDate;
     dataClass.to_date= newDate1;
     
-    
+    _classOfAuto.text = @"Любой";
     
 }
 - (void)viewDidAppear:(BOOL)animated
@@ -129,6 +130,10 @@ DataClass *dataClass;
     {
         [self performSegueWithIdentifier:@"set_to_date" sender:nil];
         return NO;
+    }
+    else if (textField.tag==3)
+    {
+        //textField.tintColor = [UIColor clearColor];
     }
     return YES;
 }

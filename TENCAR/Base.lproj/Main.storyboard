@@ -1462,7 +1462,12 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorderEnabled" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="haveClearDone" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isListPicker" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="listPickerValues" value="Любой,Эконом,Средний,Бизнес"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="pl3-fY-ELj" id="CYH-A3-yKk"/>
+                                        </connections>
                                     </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="class" translatesAutoresizingMaskIntoConstraints="NO" id="Ysi-D3-Xl2">
                                         <rect key="frame" x="557" y="308" width="25" height="25"/>
@@ -1637,6 +1642,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="cityInput" destination="Kip-Jz-VIF" id="zWy-1h-hg9"/>
+                        <outlet property="classOfAuto" destination="k97-ze-dXF" id="QyI-7T-2Mz"/>
                         <outlet property="firstDateField" destination="O3C-Yd-4Tv" id="tln-EF-sbQ"/>
                         <outlet property="scroll_elem" destination="z7c-Q1-8CZ" id="k4X-ag-h8p"/>
                         <outlet property="secondDateField" destination="5gF-gX-qTZ" id="GgD-Tg-xiT"/>

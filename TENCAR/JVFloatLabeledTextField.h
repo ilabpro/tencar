@@ -132,9 +132,13 @@ IB_DESIGNABLE
 
 @property (nonatomic, assign) IBInspectable BOOL isDatePicker;
 
+@property (nonatomic, assign) IBInspectable BOOL isListPicker;
+
 
 
 @property (nonatomic, strong) IBInspectable NSString* maskCode;
+@property (nonatomic, strong) IBInspectable NSString* listPickerValues;
+
 
 - (UITextField*)maskedTextField;
 //get the user input text without any format

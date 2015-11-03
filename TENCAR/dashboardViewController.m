@@ -68,6 +68,9 @@ DataClass *dataClass;
     _classOfAuto.text = @"Любой";
     
 }
+- (IBAction)go_search:(id)sender {
+     [self performSegueWithIdentifier:@"go_search" sender:nil];
+}
 - (void)viewDidAppear:(BOOL)animated
 {
     [IHKeyboardAvoiding setAvoidingView:self.scroll_elem];

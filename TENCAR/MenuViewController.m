@@ -7,8 +7,11 @@
 //
 
 #import "MenuViewController.h"
-
+#import <SimpleKeychain/SimpleKeychain.h>
 #import "dashboardViewController.h"
+#import "Application.h"
+#import <Lock/Lock.h>
+
 
 #warning not work
 //#import "DEMOSecondViewController.h"
@@ -18,6 +21,7 @@
 
 @interface MenuViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *avatar_image;
+@property (weak, nonatomic) IBOutlet UILabel *username_label;
 
 @end
 
@@ -35,6 +39,12 @@
     _avatar_image.layer.rasterizationScale = [UIScreen mainScreen].scale;
     _avatar_image.layer.shouldRasterize = YES;
     _avatar_image.clipsToBounds = YES;
+    
+    A0SimpleKeychain *keychain = [[Application sharedInstance] store];
+    A0UserProfile *profile = [NSKeyedUnarchiver unarchiveObjectWithData:[keychain dataForKey:@"profile"]];
+    _avatar_image.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:profile.picture]];
+    _username_label.text = profile.name;
+   
     
     
 }

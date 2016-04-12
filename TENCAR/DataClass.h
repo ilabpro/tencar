@@ -1,3 +1,5 @@
+
+
 @interface DataClass : NSObject {
     
     NSDate *from_date;

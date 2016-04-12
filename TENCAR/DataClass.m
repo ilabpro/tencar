@@ -21,6 +21,7 @@ static DataClass *instance = nil;
         if(instance==nil)
         {
             instance= [DataClass new];
+            
         }
     }
     return instance;

@@ -1,0 +1,10 @@
+/* 
+  lock.strings
+  TENCAR
+
+  Created by ILAB PRO on 09.01.16.
+  Copyright © 2016 ilab.pro LLC. All rights reserved.
+*/
+"The server could not be contacted" = "Ошибка соединения с сервером";
+"There was an error contacting Facebook" = "Ошибка входа через Facebook";
+"There was an error contacting vkontakte" = "Ошибка входа через VKontakte";

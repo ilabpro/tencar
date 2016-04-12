@@ -1,0 +1,8 @@
+/* 
+  AFNetworking.strings
+  TENCAR
+
+  Created by ILAB PRO on 09.01.16.
+  Copyright © 2016 ilab.pro LLC. All rights reserved.
+*/
+"Request failed: %@ (%ld)" = "Неправильный email или пароль";
